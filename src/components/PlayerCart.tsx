@@ -102,7 +102,7 @@ export function PlayerCart({ items, onDropItem, onEditItem, onBuyItem }: PlayerC
             ))}
             {unknownCount > 0 && (
               <p className="text-[10px] text-gray-600 pt-1">
-                * {unknownCount} item{unknownCount > 1 ? 's' : ''} ไม่มีราคา
+                * {unknownCount} item{unknownCount > 1 ? 's' : ''} — no price
               </p>
             )}
           </div>
@@ -117,7 +117,7 @@ export function PlayerCart({ items, onDropItem, onEditItem, onBuyItem }: PlayerC
           {/* Adjustment */}
           <div className="px-3 pb-2 space-y-1.5">
             <div className="flex items-center justify-between gap-2">
-              <span className="text-gray-400 text-xs shrink-0">ส่วนลด / เพิ่ม</span>
+              <span className="text-gray-400 text-xs shrink-0">Discount / Markup</span>
               <div className="flex items-center gap-1">
                 <button
                   onClick={() => adjStep(-10)}
@@ -148,7 +148,7 @@ export function PlayerCart({ items, onDropItem, onEditItem, onBuyItem }: PlayerC
             {adjustment !== 0 && (
               <p className="text-[10px] text-right">
                 <span className={adjustment < 0 ? 'text-red-400' : 'text-green-400'}>
-                  {adjustment < 0 ? `ลด ${fmtGp(Math.abs(adjustment))}` : `เพิ่ม ${fmtGp(adjustment)}`}
+                  {adjustment < 0 ? `Discount ${fmtGp(Math.abs(adjustment))}` : `Markup ${fmtGp(adjustment)}`}
                 </span>
                 {' '}
                 <button
