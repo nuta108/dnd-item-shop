@@ -19,3 +19,9 @@ export interface Item {
   image: string;
   stats: ItemStats | null;
 }
+
+export interface ShopData {
+  id: string;
+  name: string;
+  items: Item[];
+}

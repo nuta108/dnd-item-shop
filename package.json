@@ -4,12 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"json-server db.json --port 3001\"",
+    "dev:client": "vite",
+    "server": "json-server db.json --port 3001",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-db": "npx tsx scripts/generate-db.ts"
   },
   "dependencies": {
+    "concurrently": "^9.2.1",
+    "json-server": "1.0.0-beta.6",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },

@@ -1,11 +1,13 @@
 import { useState, useRef, useCallback } from 'react';
 import type { Item, ItemStats } from '../types/item';
+import { ItemEditForm } from './ItemEditForm';
 
 export type DisplayMode = 'image' | 'text';
 
 interface ItemCardProps {
   item: Item;
   displayMode: DisplayMode;
+  onEdit?: (id: string, patch: Partial<Item>) => Promise<unknown>;
 }
 
 const THUMB_W = 82;
@@ -94,9 +96,10 @@ function StatBlock({ name, stats }: { name: string; stats: ItemStats }) {
 
 // ── ItemCard ──────────────────────────────────────────────────────────────────
 
-export function ItemCard({ item, displayMode }: ItemCardProps) {
+export function ItemCard({ item, displayMode, onEdit }: ItemCardProps) {
   const [showPreview, setShowPreview] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [editing, setEditing] = useState(false);
   const [previewPos, setPreviewPos] = useState({ top: 0, left: 0 });
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -151,14 +154,14 @@ export function ItemCard({ item, displayMode }: ItemCardProps) {
         </div>
       )}
 
-      {/* Click modal — card image center + stat block floating to the right */}
+      {/* Click modal */}
       {showModal && (
         <div
-          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-6"
-          onClick={() => setShowModal(false)}
+          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-6 overflow-auto"
+          onClick={() => { setShowModal(false); setEditing(false); }}
         >
           <div
-            className="relative flex items-start gap-4"
+            className="flex items-start gap-4"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Card image */}
@@ -169,18 +172,34 @@ export function ItemCard({ item, displayMode }: ItemCardProps) {
               draggable={false}
             />
 
-            {/* Floating stat block pinned to the right of the card */}
-            {item.stats && (
-              <div className="absolute left-full ml-4 top-0">
-                <StatBlock name={item.name} stats={item.stats} />
-              </div>
-            )}
+            {/* Stat block or edit form */}
+            <div className="self-start">
+              {editing && onEdit ? (
+                <ItemEditForm
+                  item={item}
+                  onSave={onEdit}
+                  onCancel={() => setEditing(false)}
+                />
+              ) : (
+                <div>
+                  {item.stats && <StatBlock name={item.name} stats={item.stats} />}
+                  {onEdit && (
+                    <button
+                      onClick={() => setEditing(true)}
+                      className="mt-2 w-full bg-indigo-600 hover:bg-indigo-500 text-white text-sm rounded py-1.5 font-bold cursor-pointer"
+                    >
+                      {item.stats ? 'Edit' : 'Add Stats'}
+                    </button>
+                  )}
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Close button */}
           <button
-            className="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl leading-none cursor-pointer"
-            onClick={() => setShowModal(false)}
+            className="fixed top-4 right-4 text-gray-400 hover:text-white text-2xl leading-none cursor-pointer"
+            onClick={() => { setShowModal(false); setEditing(false); }}
           >
             ✕
           </button>

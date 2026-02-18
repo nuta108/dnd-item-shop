@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef } from 'react';
-import type { Item } from './types/item';
-import { allItems } from './data/items';
+import type { Item, ShopData } from './types/item';
+import { useItems } from './hooks/useItems';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { DmInventory } from './components/DmInventory';
 import { ShopDisplay } from './components/ShopDisplay';
@@ -9,10 +9,14 @@ import type { DisplayMode } from './components/ItemCard';
 
 type Mode = 'dm' | 'player';
 
+const DEFAULT_SHOPS: ShopData[] = [
+  { id: 'shop-1', name: 'Shop 1', items: [] },
+];
+
 function App() {
   const [mode, setMode] = useState<Mode>('dm');
   const [displayMode, setDisplayMode] = useState<DisplayMode>('image');
-  const [leftPct, setLeftPct] = useState(40); // left panel width %
+  const [leftPct, setLeftPct] = useState(40);
   const dragging = useRef(false);
   const mainRef = useRef<HTMLElement>(null);
 
@@ -39,35 +43,98 @@ function App() {
     window.addEventListener('mousemove', onMouseMove);
     window.addEventListener('mouseup', onMouseUp);
   }, []);
-  const [inventory] = useLocalStorage<Item[]>('dnd-inventory-v2', allItems);
-  const [shop, setShop] = useLocalStorage<Item[]>('dnd-shop-v2', []);
+
+  const { items: inventory, loading, editItem } = useItems();
+  const [shops, setShops] = useLocalStorage<ShopData[]>('dnd-shops-v1', DEFAULT_SHOPS);
+  const [activeShopId, setActiveShopId] = useState<string>(() => shops[0]?.id ?? 'shop-1');
   const [cart, setCart] = useLocalStorage<Item[]>('dnd-cart-v2', []);
+
+  // Ensure activeShopId is always valid
+  const safeActiveShopId = shops.some((s) => s.id === activeShopId)
+    ? activeShopId
+    : (shops[0]?.id ?? '');
+
+  const activeShopItems = shops.find((s) => s.id === safeActiveShopId)?.items ?? [];
 
   let nextId = 0;
   const uniqueId = () => `copy-${Date.now()}-${nextId++}`;
 
-  // Drag from Inventory → Shop: create copy. Drag from Cart → Shop: move (remove from cart)
+  const updateActiveItems = (updater: (items: Item[]) => Item[]) => {
+    setShops((prev) =>
+      prev.map((s) => (s.id === safeActiveShopId ? { ...s, items: updater(s.items) } : s))
+    );
+  };
+
+  // Drag from Inventory → Shop: create copy. Drag from Cart → Shop: move
   const handleDropToShop = (item: Item) => {
     const fromCart = item.id.startsWith('copy-');
     if (fromCart) {
       setCart((prev) => prev.filter((i) => i.id !== item.id));
-      setShop((prev) => [...prev, item]);
+      updateActiveItems((items) => [...items, item]);
     } else {
-      setShop((prev) => [...prev, { ...item, id: uniqueId() }]);
+      updateActiveItems((items) => [...items, { ...item, id: uniqueId() }]);
     }
   };
 
-  // Drag from Shop → Cart: move (remove from shop, add to cart)
+  // Drag from Shop → Cart
   const handleDropToCart = (item: Item) => {
-    setShop((prev) => prev.filter((i) => i.id !== item.id));
+    updateActiveItems((items) => items.filter((i) => i.id !== item.id));
     setCart((prev) => [...prev, item]);
   };
 
-  // Drag from Shop/Cart → Inventory: just remove from shop/cart (inventory never changes)
+  // Drag back to Inventory: remove from all shops + cart
   const handleReturnToInventory = (item: Item) => {
-    setShop((prev) => prev.filter((i) => i.id !== item.id));
+    setShops((prev) =>
+      prev.map((s) => ({ ...s, items: s.items.filter((i) => i.id !== item.id) }))
+    );
     setCart((prev) => prev.filter((i) => i.id !== item.id));
   };
+
+  // Buy item
+  const handleBuyItem = (item: Item) => {
+    setCart((prev) => prev.filter((i) => i.id !== item.id));
+  };
+
+  // Shop management
+  const handleAddShop = () => {
+    const id = `shop-${Date.now()}`;
+    const name = `Shop ${shops.length + 1}`;
+    setShops((prev) => [...prev, { id, name, items: [] }]);
+    setActiveShopId(id);
+  };
+
+  const handleRemoveShop = (id: string) => {
+    setShops((prev) => {
+      const next = prev.filter((s) => s.id !== id);
+      if (activeShopId === id) setActiveShopId(next[0]?.id ?? '');
+      return next;
+    });
+  };
+
+  const handleRenameShop = (id: string, name: string) => {
+    setShops((prev) => prev.map((s) => (s.id === id ? { ...s, name } : s)));
+  };
+
+  const shopProps = {
+    shops,
+    activeShopId: safeActiveShopId,
+    items: activeShopItems,
+    onDropItem: handleDropToShop,
+    displayMode,
+    onEditItem: editItem,
+    onSelectShop: setActiveShopId,
+    onAddShop: handleAddShop,
+    onRemoveShop: handleRemoveShop,
+    onRenameShop: handleRenameShop,
+  };
+
+  if (loading) {
+    return (
+      <div className="h-screen bg-gray-900 text-gray-100 flex items-center justify-center">
+        <p className="text-lg">Loading items...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="h-screen bg-gray-900 text-gray-100 flex flex-col">
@@ -97,7 +164,7 @@ function App() {
 
       {/* Panel Layout */}
       <main ref={mainRef} className="flex-1 flex p-4 overflow-hidden">
-        {/* DM mode: Inventory + Divider + Shop */}
+        {/* DM mode */}
         {mode === 'dm' && (
           <>
             <section
@@ -109,10 +176,10 @@ function App() {
                 onReturnFromShop={handleReturnToInventory}
                 displayMode={displayMode}
                 onToggleDisplayMode={() => setDisplayMode((d) => d === 'image' ? 'text' : 'image')}
+                onEditItem={editItem}
               />
             </section>
 
-            {/* Draggable divider */}
             <div
               className="w-2 shrink-0 cursor-col-resize flex items-center justify-center group"
               onMouseDown={onMouseDown}
@@ -121,19 +188,19 @@ function App() {
             </div>
 
             <section className="bg-gray-800/50 rounded-lg p-4 overflow-hidden flex-1 min-w-0">
-              <ShopDisplay items={shop} onDropItem={handleDropToShop} displayMode={displayMode} />
+              <ShopDisplay {...shopProps} />
             </section>
           </>
         )}
 
-        {/* Player mode: Shop + Divider + Cart */}
+        {/* Player mode */}
         {mode === 'player' && (
           <>
             <section
               className="bg-gray-800/50 rounded-lg p-4 overflow-hidden shrink-0"
               style={{ width: `${leftPct}%` }}
             >
-              <ShopDisplay items={shop} onDropItem={handleDropToShop} displayMode={displayMode} />
+              <ShopDisplay {...shopProps} hideTabs />
             </section>
 
             <div
@@ -144,7 +211,7 @@ function App() {
             </div>
 
             <section className="bg-gray-800/50 rounded-lg p-4 overflow-hidden flex-1 min-w-0">
-              <PlayerCart items={cart} onDropItem={handleDropToCart} />
+              <PlayerCart items={cart} onDropItem={handleDropToCart} onEditItem={editItem} onBuyItem={handleBuyItem} />
             </section>
           </>
         )}

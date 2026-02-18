@@ -8,9 +8,10 @@ interface DmInventoryProps {
   onReturnFromShop: (item: Item) => void;
   displayMode: DisplayMode;
   onToggleDisplayMode: () => void;
+  onEditItem?: (id: string, patch: Partial<Item>) => Promise<unknown>;
 }
 
-export function DmInventory({ items, onReturnFromShop, displayMode, onToggleDisplayMode }: DmInventoryProps) {
+export function DmInventory({ items, onReturnFromShop, displayMode, onToggleDisplayMode, onEditItem }: DmInventoryProps) {
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
   const [dragOver, setDragOver] = useState(false);
   const [search, setSearch] = useState('');
@@ -77,7 +78,7 @@ export function DmInventory({ items, onReturnFromShop, displayMode, onToggleDisp
               {!collapsed[cat] && (
                 <div className="flex flex-wrap gap-2 mt-1.5">
                   {grouped[cat].map((item) => (
-                    <ItemCard key={item.id} item={item} displayMode={displayMode} />
+                    <ItemCard key={item.id} item={item} displayMode={displayMode} onEdit={onEditItem} />
                   ))}
                 </div>
               )}

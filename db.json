@@ -1,0 +1,4098 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "name": "Arrows",
+      "category": "Ammunition",
+      "image": "/cards/Ammunition/Arrows.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Ammunition",
+        "description": "Ammunition for weapons that use arrows. Comes in a pack of 20. Typically stored in a quiver.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "2",
+      "name": "Blowgun Needles",
+      "category": "Ammunition",
+      "image": "/cards/Ammunition/Blowgun Needles.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "1 lb.",
+        "damage_dice": "1",
+        "damage_type": "piercing",
+        "properties": [
+          "ammunition (range 25/100)",
+          "loading"
+        ],
+        "category_detail": "Ammunition",
+        "description": "Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "3",
+      "name": "Crossbow Bolts",
+      "category": "Ammunition",
+      "image": "/cards/Ammunition/Crossbow Bolts.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "1.5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Ammunition",
+        "description": "Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "4",
+      "name": "Sling bullets",
+      "category": "Ammunition",
+      "image": "/cards/Ammunition/Sling bullets.png",
+      "stats": {
+        "cost": "0.04 gp",
+        "weight": "1.5 lb.",
+        "damage_dice": "1d4",
+        "damage_type": "bludgeoning",
+        "properties": [
+          "ammunition (range 30/120)"
+        ],
+        "category_detail": "Ammunition",
+        "description": "Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "5",
+      "name": "Breastplate Armor",
+      "category": "Armor",
+      "image": "/cards/Armor/Breastplate Armor.png",
+      "stats": {
+        "cost": "400 gp",
+        "weight": "20 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Medium Armor",
+        "description": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered.",
+        "ac_display": "14 + Dex modifier (max 2)",
+        "stealth_disadvantage": false,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "6",
+      "name": "Chain Mail",
+      "category": "Armor",
+      "image": "/cards/Armor/Chain Mail Armor.png",
+      "stats": {
+        "cost": "75 gp",
+        "weight": "55 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Heavy Armor",
+        "description": "Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.",
+        "ac_display": "16",
+        "stealth_disadvantage": true,
+        "strength_required": 13
+      }
+    },
+    {
+      "id": "7",
+      "name": "Chain Shirt",
+      "category": "Armor",
+      "image": "/cards/Armor/Chain Shirt.png",
+      "stats": {
+        "cost": "50 gp",
+        "weight": "20 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Medium Armor",
+        "description": "Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.",
+        "ac_display": "13 + Dex modifier (max 2)",
+        "stealth_disadvantage": false,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "8",
+      "name": "half plate armor",
+      "category": "Armor",
+      "image": "/cards/Armor/half plate armor.png",
+      "stats": {
+        "cost": "750 gp",
+        "weight": "40 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Medium Armor",
+        "description": "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps.",
+        "ac_display": "15 + Dex modifier (max 2)",
+        "stealth_disadvantage": true,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "9",
+      "name": "Hide",
+      "category": "Armor",
+      "image": "/cards/Armor/Hide.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "12 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Medium Armor",
+        "description": "This crude armor consists of thick furs and pelts.",
+        "ac_display": "12 + Dex modifier (max 2)",
+        "stealth_disadvantage": false,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "10",
+      "name": "Leather",
+      "category": "Armor",
+      "image": "/cards/Armor/Leather Armor.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "10 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Light Armor",
+        "description": "The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.",
+        "ac_display": "11 + Dex modifier",
+        "stealth_disadvantage": false,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "11",
+      "name": "Padded armor",
+      "category": "Armor",
+      "image": "/cards/Armor/Padded armor.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "8 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Light Armor",
+        "description": "Padded armor consists of quilted layers of cloth and batting.",
+        "ac_display": "11 + Dex modifier",
+        "stealth_disadvantage": true,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "12",
+      "name": "plate",
+      "category": "Armor",
+      "image": "/cards/Armor/plate.png",
+      "stats": {
+        "cost": "1500 gp",
+        "weight": "65 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Heavy Armor",
+        "description": "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.",
+        "ac_display": "18",
+        "stealth_disadvantage": true,
+        "strength_required": 15
+      }
+    },
+    {
+      "id": "13",
+      "name": "Ring Mail",
+      "category": "Armor",
+      "image": "/cards/Armor/Ring Mail.png",
+      "stats": {
+        "cost": "30 gp",
+        "weight": "40 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Heavy Armor",
+        "description": "This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor.",
+        "ac_display": "14",
+        "stealth_disadvantage": true,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "14",
+      "name": "Scale Mail",
+      "category": "Armor",
+      "image": "/cards/Armor/Scale Mail.png",
+      "stats": {
+        "cost": "50 gp",
+        "weight": "45 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Medium Armor",
+        "description": "This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.",
+        "ac_display": "14 + Dex modifier (max 2)",
+        "stealth_disadvantage": true,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "15",
+      "name": "shield",
+      "category": "Armor",
+      "image": "/cards/Armor/sheild.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "6 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Shield",
+        "description": "Shields require the Utilize action to Don or Doff. You gain the Armor Class benefit of a Shield only if you have training with it.",
+        "ac_display": "2",
+        "stealth_disadvantage": false,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "16",
+      "name": "Splint",
+      "category": "Armor",
+      "image": "/cards/Armor/Splint Armor.png",
+      "stats": {
+        "cost": "200 gp",
+        "weight": "60 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Heavy Armor",
+        "description": "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.",
+        "ac_display": "17",
+        "stealth_disadvantage": true,
+        "strength_required": 15
+      }
+    },
+    {
+      "id": "17",
+      "name": "Studded leather",
+      "category": "Armor",
+      "image": "/cards/Armor/Studded leather.png",
+      "stats": {
+        "cost": "45 gp",
+        "weight": "13 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Light Armor",
+        "description": "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.",
+        "ac_display": "12 + Dex modifier",
+        "stealth_disadvantage": false,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "18",
+      "name": "Carpenters Tools",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Carpenters Tools.png",
+      "stats": {
+        "cost": "8 gp",
+        "weight": "6 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "19",
+      "name": "Cartographers Tools",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Cartographers Tools.png",
+      "stats": {
+        "cost": "15 gp",
+        "weight": "6 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "20",
+      "name": "Cobblers Tools",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Cobblers Tools.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "21",
+      "name": "Cooks Utensils",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Cooks Utensils.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "8 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "22",
+      "name": "Glassblowers Tools",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Glassblowers Tools.png",
+      "stats": {
+        "cost": "30 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "23",
+      "name": "Leatherworkers Tools",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Leatherworkers Tools.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Light Armor",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": "11 + Dex modifier",
+        "stealth_disadvantage": false,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "24",
+      "name": "Masons Tools",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Masons Tools.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "8 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "25",
+      "name": "Navigators Tools",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Navigators Tools.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Ability: Wisdom. Utilize: Plot a course (DC 15), or determine position (DC 15)",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "26",
+      "name": "Potters Tools",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Potters Tools.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "3 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "27",
+      "name": "Smiths Tools",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Smiths Tools.png",
+      "stats": {
+        "cost": "20 gp",
+        "weight": "8 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "28",
+      "name": "Thieves Tools",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Thieves Tools.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Ability: Dexterity. Utilize: Pick a lock (DC 15), or disarm a trap (DC 15)",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "29",
+      "name": "Weavers Tools",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Weavers Tools.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "30",
+      "name": "Woodcarvers Tools",
+      "category": "Artisans Tools",
+      "image": "/cards/Artisans Tools/Woodcarvers Tools.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "31",
+      "name": "Book",
+      "category": "Books And Paper",
+      "image": "/cards/Books And Paper/Book.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Book contains fiction or nonfiction. If you consult an accurate nonfiction Book about its topic, you gain a +5 bonus to Intelligence (Arcana, History, Nature, or Religion) checks you make about that topic.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "32",
+      "name": "Paper",
+      "category": "Books And Paper",
+      "image": "/cards/Books And Paper/Paper.png",
+      "stats": {
+        "cost": "0.2 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "One sheet of Paper can hold about 250 handwritten words.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "33",
+      "name": "Parchment",
+      "category": "Books And Paper",
+      "image": "/cards/Books And Paper/Parchment.png",
+      "stats": {
+        "cost": "0.1 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "One sheet of Parchment can hold about 250 handwritten words.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "34",
+      "name": "Spellbook",
+      "category": "Books And Paper",
+      "image": "/cards/Books And Paper/Spellbook.png",
+      "stats": {
+        "cost": "50 gp",
+        "weight": "3 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Essential for wizards, a spellbook is a leather-­‐‑bound tome with 100 blank vellum pages suitable for recording spells.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "35",
+      "name": "Common Clothes",
+      "category": "Clothes",
+      "image": "/cards/Clothes/Common Clothes.png",
+      "stats": {
+        "cost": "0.5 gp",
+        "weight": "3 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "This set of clothes could consist of a loose shirt and baggy breeches, or a loose shirt and skirt or overdress. Cloth wrappings are used for shoes.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "36",
+      "name": "costume clothes",
+      "category": "Clothes",
+      "image": "/cards/Clothes/costume clothes.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "4 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "This set of clothes is fashioned after a particular costume, typically meant for entertaining.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "37",
+      "name": "Fine Clothes",
+      "category": "Clothes",
+      "image": "/cards/Clothes/Fine Clothes.png",
+      "stats": {
+        "cost": "15 gp",
+        "weight": "6 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Fine Clothes are made of expensive fabrics and adorned with expertly crafted details. Some events and locations admit only people wearing these clothes.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "38",
+      "name": "Robe",
+      "category": "Clothes",
+      "image": "/cards/Clothes/Robe.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "4 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Robe has vocational or ceremonial significance. Some events and locations admit only people wearing a Robe bearing certain colors or symbols.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "39",
+      "name": "Travelers Clothes",
+      "category": "Clothes",
+      "image": "/cards/Clothes/Travelers Clothes.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "4 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Traveler's Clothes are resilient garments designed for travel in various environments.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "40",
+      "name": "Chain",
+      "category": "Common Tools",
+      "image": "/cards/Common Tools/Chain.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "10 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "As a Utilize action, you can wrap a Chain around an unwilling creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Strength (Athletics) check. If the creature’s legs are bound, the creature has the Restrained condition until it escapes. Escaping the Chain requires the creature to make a successful DC 18 Dexterity (Acrobatics) check as an action. Bursting the Chain requires a successful DC 20 Strength (Athletics) check as an action.",
+        "ac_display": "16",
+        "stealth_disadvantage": true,
+        "strength_required": 13
+      }
+    },
+    {
+      "id": "41",
+      "name": "Crowbar",
+      "category": "Common Tools",
+      "image": "/cards/Common Tools/Crowbar.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Using a Crowbar gives you Advantage on Strength checks where the Crowbar's leverage can be applied.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "42",
+      "name": "Grappling Hook",
+      "category": "Common Tools",
+      "image": "/cards/Common Tools/Grappling Hook.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "4 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "As a Utilize action, you can throw the Grappling Hook at a railing, a ledge, or another catch within 50 feet of yourself, and the hook catches on if you succeed on a DC 13 Dexterity (Acrobatics) check. If you tied a Rope to the hook, you can then climb it.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "43",
+      "name": "Hammer",
+      "category": "Common Tools",
+      "image": "/cards/Common Tools/Hammer.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "3 lb.",
+        "damage_dice": "1d4",
+        "damage_type": "bludgeoning",
+        "properties": [
+          "light",
+          "thrown (range 20/60)"
+        ],
+        "category_detail": "Adventuring Gear",
+        "description": "A hammer.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "44",
+      "name": "Hempen Rope",
+      "category": "Common Tools",
+      "image": "/cards/Common Tools/Hempen Rope.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "As a Utilize action, you can tie a knot with Rope if you succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope can be burst with a successful DC 20 Strength (Athletics) check. You can bind an unwilling creature with the Rope only if the creature has the Grappled, Incapacitated, or Restrained condition. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Rope requires the creature to make a successful DC 15 Dexterity (Acrobatics) check as an action.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "45",
+      "name": "Ladder",
+      "category": "Common Tools",
+      "image": "/cards/Common Tools/Ladder.png",
+      "stats": {
+        "cost": "0.1 gp",
+        "weight": "25 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Ladder is 10 feet tall. You must climb to move up or down it.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "46",
+      "name": "Miners Pick",
+      "category": "Common Tools",
+      "image": "/cards/Common Tools/Miners Pick.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "10 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A pick for mining.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "47",
+      "name": "Pole",
+      "category": "Common Tools",
+      "image": "/cards/Common Tools/Pole.png",
+      "stats": {
+        "cost": "0.05 gp",
+        "weight": "7 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Pole is 10 feet long. You can use it to touch something up to 10 feet away. If you must make a Strength (Athletics) check as part of a High or Long Jump, you can use the Pole to vault, giving yourself Advantage on the check.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "48",
+      "name": "Shovel",
+      "category": "Common Tools",
+      "image": "/cards/Common Tools/Shovel.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Working for 1 hour, you can use a Shovel to dig a hole that is 5 feet on each side in soil or similar material.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "49",
+      "name": "Silk Rope",
+      "category": "Common Tools",
+      "image": "/cards/Common Tools/Silk Rope.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "As a Utilize action, you can tie a knot with Rope if you succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope can be burst with a successful DC 20 Strength (Athletics) check. You can bind an unwilling creature with the Rope only if the creature has the Grappled, Incapacitated, or Restrained condition. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Rope requires the creature to make a successful DC 15 Dexterity (Acrobatics) check as an action.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "50",
+      "name": "Hammer, Sledge",
+      "category": "Common Tools",
+      "image": "/cards/Common Tools/Sledgehammer.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "10 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "This two-handed, iron-headed hammer is good for smashing open treasure chests.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "51",
+      "name": "Backpack",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Backpack.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Equipment Pack",
+        "description": "A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "52",
+      "name": "Barrel",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Barrel.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "70 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Barrel holds up to 40 gallons of liquid or up to 4 cubic feet of dry goods.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "53",
+      "name": "Basket",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Basket.png",
+      "stats": {
+        "cost": "0.4 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Basket holds up to 40 pounds within 2 cubic feet.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "54",
+      "name": "Bottle",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Bottle.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Glass Bottle holds up to 1 0.5 pints.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "55",
+      "name": "Bucket",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Bucket.png",
+      "stats": {
+        "cost": "0.05 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Bucket holds up to half a cubic foot of contents.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "56",
+      "name": "Chest",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Chest.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "25 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Chest holds up to 12 cubic feet of contents.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "57",
+      "name": "Component Pouch",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Component Pouch.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Component Pouch is watertight and filled with compartments that hold all the free Material components of your spells.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "58",
+      "name": "Crossbow Bolt Case",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Crossbow Bolt Case.png",
+      "stats": {
+        "cost": "0.05 gp",
+        "weight": "0.08 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Ammunition",
+        "description": "Bolts to be used in a crossbow.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "59",
+      "name": "Flask",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Flask.png",
+      "stats": {
+        "cost": "0.02 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Flask holds up to 1 pint.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "60",
+      "name": "Ink Vial",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Ink Vial.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Ink comes in a 1-ounce bottle, which provides enough ink to write about 500 pages.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "61",
+      "name": "Iron Pot",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Iron Pot.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Trade Good",
+        "description": "An Iron Pot holds up to 1 gallon.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "62",
+      "name": "Jug",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Jug.png",
+      "stats": {
+        "cost": "0.02 gp",
+        "weight": "4 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Jug holds up to 1 gallon.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "63",
+      "name": "Pitcher",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Pitcher.png",
+      "stats": {
+        "cost": "0.02 gp",
+        "weight": "4 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "For drinking a lot. Capacity: 1 gallon liquid.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "64",
+      "name": "Pouch",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Pouch.png",
+      "stats": {
+        "cost": "0.5 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Pouch holds up to 6 pounds within one-fifth of a cubic foot.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "65",
+      "name": "Quiver",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Quiver.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Quiver holds up to 20 Arrows.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "66",
+      "name": "Sack",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Sack.png",
+      "stats": {
+        "cost": "0.01 gp",
+        "weight": "0.5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Sack holds up to 30 pounds within 1 cubic foot.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "67",
+      "name": "Map or Scroll Case",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Scroll Case.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Map or Scroll Case holds up to 10 sheets of paper or 5 sheets of parchment.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "68",
+      "name": "Tankard",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Tankard.png",
+      "stats": {
+        "cost": "0.02 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "For drinking. Capacity: 1 pint liquid.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "69",
+      "name": "Vial",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Vial.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Vial holds up to 4 ounces.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "70",
+      "name": "Waterskin",
+      "category": "Containers and Pouches",
+      "image": "/cards/Containers and Pouches/Waterskin.png",
+      "stats": {
+        "cost": "0.2 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Waterskin holds up to 4 pints. If you don't drink sufficient water, you risk dehydration (see \"Rules Glossary\").",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "71",
+      "name": "Apple",
+      "category": "Food And Drink",
+      "image": "/cards/Food And Drink/Apple.png",
+      "stats": {
+        "cost": "0.03 gp",
+        "weight": "0.5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Food And Drink",
+        "description": "An apple satisfies hunger for 1d4 - 1 hours.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "72",
+      "name": "Bread Loaf",
+      "category": "Food And Drink",
+      "image": "/cards/Food And Drink/Bread Loaf.png",
+      "stats": {
+        "cost": "0.2 gp",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Food",
+        "description": "A bread loaf satisfies hunger for 1d4 + 1 hours.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "73",
+      "name": "Feed",
+      "category": "Food And Drink",
+      "image": "/cards/Food And Drink/Feed.png",
+      "stats": {
+        "cost": "0.05 gp",
+        "weight": "10 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Daily feed for a mount.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "74",
+      "name": "Fine Wine",
+      "category": "Food And Drink",
+      "image": "/cards/Food And Drink/Fine Wine.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Drink",
+        "description": "A bottle of fine wine.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "75",
+      "name": "Gallon of Ale",
+      "category": "Food And Drink",
+      "image": "/cards/Food And Drink/Gallon of Ale.png",
+      "stats": {
+        "cost": "0.2 sp",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Drink",
+        "description": "A gallon filled with ale.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "76",
+      "name": "Hunk of Cheese",
+      "category": "Food And Drink",
+      "image": "/cards/Food And Drink/Hunk of Cheese.png",
+      "stats": {
+        "cost": "0.1 sp",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Food",
+        "description": "A hunk of cheese satisfies hunger for 1d4 + 1 hours.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "77",
+      "name": "Meat Chunk",
+      "category": "Food And Drink",
+      "image": "/cards/Food And Drink/Meat Chunk.png",
+      "stats": {
+        "cost": "0.3 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Food",
+        "description": "Meat Chunk satisfies hunger for 1d6 + 3 hours and requires cooking to avoid food poisoning.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "78",
+      "name": "Mug of Ale",
+      "category": "Food And Drink",
+      "image": "/cards/Food And Drink/Mug of Ale.png",
+      "stats": {
+        "cost": "0.04 gp",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Drink",
+        "description": "A nug filled with ale.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "79",
+      "name": "Pitcher of Wine",
+      "category": "Food And Drink",
+      "image": "/cards/Food And Drink/Pitcher of Wine.png",
+      "stats": {
+        "cost": "0.2 gp",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Drink",
+        "description": "A-1 gallon pitcher filled with common wine.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "80",
+      "name": "Rations",
+      "category": "Food And Drink",
+      "image": "/cards/Food And Drink/Rations.png",
+      "stats": {
+        "cost": "0.5 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Rations consist of travel-ready food, including jerky, dried fruit, hardtack, and nuts. See \"Malnutrition\" in \"Rules Glossary\" for the risks of not eating.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "81",
+      "name": "Turkey Leg",
+      "category": "Food And Drink",
+      "image": "/cards/Food And Drink/Turkey Leg.png",
+      "stats": {
+        "cost": "0.2 gp",
+        "weight": "1/2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Food",
+        "description": "A turkey leg satisfies hunger for 1d6 hours.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "82",
+      "name": "3 Dragon Ante Set",
+      "category": "Game Sets",
+      "image": "/cards/Game Sets/3 Dragon Ante Set.png",
+      "stats": {
+        "cost": "1 GP",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tool",
+        "description": "If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "83",
+      "name": "Dice Set",
+      "category": "Game Sets",
+      "image": "/cards/Game Sets/Dice Set.png",
+      "stats": {
+        "cost": "0.1 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-­‐‑Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "84",
+      "name": "Dragonchess Set",
+      "category": "Game Sets",
+      "image": "/cards/Game Sets/Dragonchess Set.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "0.5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tool",
+        "description": "If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "85",
+      "name": "Playing Card Set",
+      "category": "Game Sets",
+      "image": "/cards/Game Sets/Playing Card Set.png",
+      "stats": {
+        "cost": "0.5 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "This item encompasses a wide range of game pieces, including dice and decks of cards (for games such as Three-­‐‑Dragon Ante). A few common examples appear on the Tools table, but other kinds of gaming sets exist. If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "86",
+      "name": "Bagpipes",
+      "category": "Instruments",
+      "image": "/cards/Instruments/Bagpipes.png",
+      "stats": {
+        "cost": "30 gp",
+        "weight": "6 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "87",
+      "name": "Drum",
+      "category": "Instruments",
+      "image": "/cards/Instruments/Drum.png",
+      "stats": {
+        "cost": "6 gp",
+        "weight": "3 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "88",
+      "name": "Dulcimer",
+      "category": "Instruments",
+      "image": "/cards/Instruments/Dulcimer.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "10 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "89",
+      "name": "Flute",
+      "category": "Instruments",
+      "image": "/cards/Instruments/Flute.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "90",
+      "name": "Lute",
+      "category": "Instruments",
+      "image": "/cards/Instruments/Lute.png",
+      "stats": {
+        "cost": "35 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "91",
+      "name": "Lyre",
+      "category": "Instruments",
+      "image": "/cards/Instruments/Lyre.png",
+      "stats": {
+        "cost": "30 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "92",
+      "name": "Pan Flute",
+      "category": "Instruments",
+      "image": "/cards/Instruments/Pan Flute.png",
+      "stats": {
+        "cost": "12 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "93",
+      "name": "Shawm",
+      "category": "Instruments",
+      "image": "/cards/Instruments/Shawm.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "94",
+      "name": "Viol",
+      "category": "Instruments",
+      "image": "/cards/Instruments/Viol.png",
+      "stats": {
+        "cost": "30 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Several of the most common types of musical instruments are shown on the table as examples. If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "95",
+      "name": "Aristocratic Room Key",
+      "category": "Keys",
+      "image": "/cards/Keys/Aristocratic Room Key.png",
+      "stats": {
+        "cost": "4 gp",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": null,
+        "description": null,
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "96",
+      "name": "Comfortable Room Key",
+      "category": "Keys",
+      "image": "/cards/Keys/Comfortable Room Key.png",
+      "stats": {
+        "cost": "0.8 gp",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": null,
+        "description": null,
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "97",
+      "name": "Modest Room Key",
+      "category": "Keys",
+      "image": "/cards/Keys/Modest Room Key.png",
+      "stats": {
+        "cost": "0.5 sp",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": null,
+        "description": null,
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "98",
+      "name": "Mysterious or Random Key",
+      "category": "Keys",
+      "image": "/cards/Keys/Mysterious or Random Key.png",
+      "stats": null
+    },
+    {
+      "id": "99",
+      "name": "Poor Room Key",
+      "category": "Keys",
+      "image": "/cards/Keys/Poor Room Key.png",
+      "stats": {
+        "cost": "0.1 gp",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": null,
+        "description": null,
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "100",
+      "name": "Squalid Room Key",
+      "category": "Keys",
+      "image": "/cards/Keys/Squalid Room Key.png",
+      "stats": {
+        "cost": "0.07 gp",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": null,
+        "description": null,
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "101",
+      "name": "Wealthy Room Key",
+      "category": "Keys",
+      "image": "/cards/Keys/Wealthy Room Key.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": null,
+        "description": null,
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "102",
+      "name": "Climbers Kit",
+      "category": "Kits",
+      "image": "/cards/Kits/Climbers Kit.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "12 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "A Climber's Kit includes boot tips, gloves, pitons, and a harness. As a Utilize action, you can use the Climber's Kit to anchor yourself; when you do, you can't fall more than 25 feet from the anchor point, and you can't move more than 25 feet from there without undoing the anchor as a Bonus Action.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "103",
+      "name": "Disguise Kit",
+      "category": "Kits",
+      "image": "/cards/Kits/Disguise Kit.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "3 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Ability: Charisma. Utilize: Apply makeup (DC 10). Craft: Costume",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "104",
+      "name": "Forgery Kit",
+      "category": "Kits",
+      "image": "/cards/Kits/Forgery Kit.png",
+      "stats": {
+        "cost": "15 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Ability: Dexterity. Utilize: Mimic 10 or fewer words of someone else's handwriting (DC 15), or duplicate a wax seal (DC 20)",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "105",
+      "name": "Healers Kit",
+      "category": "Kits",
+      "image": "/cards/Kits/Healers Kit.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "3 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "A Healer's Kit has ten uses. As a Utilize action, you can expend one of its uses to stabilize an Unconscious creature that has 0 Hit Points without needing to make a Wisdom (Medicine) check.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "106",
+      "name": "Herbalism Kit",
+      "category": "Kits",
+      "image": "/cards/Kits/Herbalism Kit.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "3 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Ability: Intelligence |||||\nUtilize: Identify a plant (DC 10) ||||\nCraft: Antitoxin, Candle, Healer’s Kit, Potion of Healing\n\n|||| A character who has proficiency with the Herbalism Kit can create a Potion of Healing. Doing so requires using this kit and 25 GP of raw material over the course of 1 day (8 hours of work).\n\nIf you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that’s used with that check, you have Advantage on the check too.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "107",
+      "name": "Mess Kit",
+      "category": "Kits",
+      "image": "/cards/Kits/Mess Kit.png",
+      "stats": {
+        "cost": "0.2 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "108",
+      "name": "Poisoners Kit",
+      "category": "Kits",
+      "image": "/cards/Kits/Poisoners Kit.png",
+      "stats": {
+        "cost": "50 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "Ability: Intelligence. Utilize: Detect a poisoned object (DC 10). Craft: Basic Poison",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "109",
+      "name": "Bullseye Lantern",
+      "category": "Lighting",
+      "image": "/cards/Lighting/Bullseye Lantern.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Bullseye Lantern burns Oil as fuel to cast Bright Light in a 60-foot Cone and Dim Light for an additional 60 feet.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "110",
+      "name": "Candle",
+      "category": "Lighting",
+      "image": "/cards/Lighting/Candle.png",
+      "stats": {
+        "cost": "0.01 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "For 1 hour, a lit Candle sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "111",
+      "name": "Hooded Lantern",
+      "category": "Lighting",
+      "image": "/cards/Lighting/Hooded Lantern.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Hooded Lantern burns Oil as fuel to cast Bright Light in a 30-foot radius and Dim Light for an additional 30 feet. As a Bonus Action, you can lower the hood, reducing the light to Dim Light in a 5-foot radius, or raise it again.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "112",
+      "name": "Lamp",
+      "category": "Lighting",
+      "image": "/cards/Lighting/Lamp.png",
+      "stats": {
+        "cost": "0.5 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Lamp burns Oil as fuel to cast Bright Light in a 15 foot radius and Dim Light for an additional 30 feet.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "113",
+      "name": "Torch",
+      "category": "Lighting",
+      "image": "/cards/Lighting/Torch.png",
+      "stats": {
+        "cost": "0.05 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Weapon",
+        "description": "A Torch burns for 1 hour, casting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. When you take the Attack action, you can attack with the Torch, using it as a Simple Melee weapon. On a hit, the target takes 1 Fire damage.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "114",
+      "name": "Abacus",
+      "category": "MISC",
+      "image": "/cards/MISC/Abacus.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "An abacus.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "115",
+      "name": "Ball Bearings",
+      "category": "MISC",
+      "image": "/cards/MISC/Ball Bearings.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "As a Utilize action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-footsquare area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 10 Dexterity saving throw or have the Prone condition. It takes 10 minutes to recover the Ball Bearings.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "116",
+      "name": "Bedroll",
+      "category": "MISC",
+      "image": "/cards/MISC/Bedroll.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "7 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Bedroll sleeps one Small or Medium creature. While in a Bedroll, you automatically succeed on saving throws against extreme cold (see \"Gameplay Toolbox\").",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "117",
+      "name": "Bell",
+      "category": "MISC",
+      "image": "/cards/MISC/Bell.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "When rung as a Utilize action, a Bell produces a sound that can be heard up to 60 feet away.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "118",
+      "name": "Blanket",
+      "category": "MISC",
+      "image": "/cards/MISC/Blanket.png",
+      "stats": {
+        "cost": "0.5 gp",
+        "weight": "3 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "While wrapped in a blanket, you have Advantage on saving throws against extreme cold (see \"Gameplay Toolbox\").",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "119",
+      "name": "Block And Tackle",
+      "category": "MISC",
+      "image": "/cards/MISC/Block And Tackle.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Block and Tackle allows you to hoist up to four times the weight you can normally lift.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "120",
+      "name": "Chalk",
+      "category": "MISC",
+      "image": "/cards/MISC/Chalk.png",
+      "stats": {
+        "cost": "0.01 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A piece of chalk.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "121",
+      "name": "Fishing Tackle",
+      "category": "MISC",
+      "image": "/cards/MISC/Fishing Tackle.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "4 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "122",
+      "name": "Hourglass",
+      "category": "MISC",
+      "image": "/cards/MISC/Hourglass.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "An hourglass.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "123",
+      "name": "Hunting Trap",
+      "category": "MISC",
+      "image": "/cards/MISC/Hunting Trap.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "25 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "As a Utilize action, you can set a Hunting Trap, which is a sawtooth steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 Piercing damage and have its Speed reduced to 0 until the start of its next turn. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet). A creature can use its action to make a DC 13 Strength (Athletics) check, freeing itself or another creature within its reach on a success. Each failed check deals 1 Piercing damage to the trapped creature.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "124",
+      "name": "Ink Pen",
+      "category": "MISC",
+      "image": "/cards/MISC/Ink Pen.png",
+      "stats": {
+        "cost": "0.02 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Using Ink, an Ink Pen is used to write or draw.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "125",
+      "name": "Iron Spike",
+      "category": "MISC",
+      "image": "/cards/MISC/Iron Spike.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "18 lb.",
+        "damage_dice": "1d10",
+        "damage_type": "piercing",
+        "properties": [
+          "heavy",
+          "reach",
+          "two-handed"
+        ],
+        "category_detail": "Weapon",
+        "description": "A pike.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "126",
+      "name": "Lock",
+      "category": "MISC",
+      "image": "/cards/MISC/Lock.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Lock comes with a key. Without the key, a creature can use Thieves' Tools to pick this Lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "127",
+      "name": "Magnifying Glass",
+      "category": "MISC",
+      "image": "/cards/MISC/Magnifying Glass.png",
+      "stats": {
+        "cost": "100 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Magnifying Glass grants Advantage on any ability check made to appraise or inspect a highly detailed item. Lighting a fire with a Magnifying Glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "128",
+      "name": "Manacles",
+      "category": "MISC",
+      "image": "/cards/MISC/Manacles.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "6 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "As a Utilize action, you can use Manacles to bind an unwilling Small or Medium creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Dexterity (Sleight of Hand) check. While bound, a creature has Disadvantage on attack rolls, and the creature is Restrained if the Manacles are attached to a chain or hook that is fixed in place. Escaping the Manacles requires a successful DC 20 Dexterity (Sleight of Hand) check as an action. Bursting them requires a successful DC 25 Strength (Athletics) check as an action. Each set of Manacles comes with a key. Without the key, a creature can use Thieves' Tools to pick the Manacles' lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "129",
+      "name": "Merchants Scale",
+      "category": "MISC",
+      "image": "/cards/MISC/Merchants Scale.png",
+      "stats": null
+    },
+    {
+      "id": "130",
+      "name": "Perfume",
+      "category": "MISC",
+      "image": "/cards/MISC/Perfume.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Perfume comes in a 4-ounce vial. For 1 hour after applying Perfume to yourself, you have Advantage on Charisma (Persuasion) checks made to influence an Indifferent Humanoid within 5 feet of yourself.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "131",
+      "name": "Piton",
+      "category": "MISC",
+      "image": "/cards/MISC/Piton.png",
+      "stats": {
+        "cost": "0.05 gp",
+        "weight": "0.25 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A piton for climbing.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "132",
+      "name": "Portable Ram",
+      "category": "MISC",
+      "image": "/cards/MISC/Portable Ram.png",
+      "stats": {
+        "cost": "4 gp",
+        "weight": " 35 lbs",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "You can use a Portable Ram to break down doors. When doing so, you gain a +4 bonus to the Strength check. One other character can help you use the ram, giving you Advantage on this check.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "133",
+      "name": "Sealing Wax",
+      "category": "MISC",
+      "image": "/cards/MISC/Sealing Wax.png",
+      "stats": {
+        "cost": "0.5 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "For sealing written letters.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "134",
+      "name": "Signal Whistle",
+      "category": "MISC",
+      "image": "/cards/MISC/Signal Whistle.png",
+      "stats": {
+        "cost": "0.05 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "When blown as a Utilize action, a Signal Whistle produces a sound that can be heard up to 600 feet away.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "135",
+      "name": "Signet Ring",
+      "category": "MISC",
+      "image": "/cards/MISC/Signet Ring.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "0 lb.",
+        "damage_dice": "0",
+        "damage_type": "",
+        "properties": [
+          "special",
+          "thrown (range 5/15)"
+        ],
+        "category_detail": "Ring",
+        "description": "A ring with a signet on it.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "136",
+      "name": "Soap",
+      "category": "MISC",
+      "image": "/cards/MISC/Soap.png",
+      "stats": {
+        "cost": "0.02 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "For cleaning.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "137",
+      "name": "Spyglass",
+      "category": "MISC",
+      "image": "/cards/MISC/Spyglass.png",
+      "stats": {
+        "cost": "1000 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Objects viewed through a Spyglass are magnified to twice their size.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "138",
+      "name": "Steel Mirror",
+      "category": "MISC",
+      "image": "/cards/MISC/Steel Mirror.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "0.5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A handheld steel Mirror is useful for personal cosmetics but also for peeking around corners and reflecting light as a signal.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "139",
+      "name": "Tent",
+      "category": "MISC",
+      "image": "/cards/MISC/Tent.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "20 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Tent sleeps up to two Small or Medium creatures.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "140",
+      "name": "Tinderbox",
+      "category": "MISC",
+      "image": "/cards/MISC/Tinderbox.png",
+      "stats": {
+        "cost": "0.5 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch—or anything else with exposed fuel—takes a Bonus Action. Lighting any other fire takes 1 minute.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "141",
+      "name": "Whetstone",
+      "category": "MISC",
+      "image": "/cards/MISC/Whetstone.png",
+      "stats": {
+        "cost": "0.01 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "For sharpening.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "142",
+      "name": "Bit and Bridle",
+      "category": "Mount Equipment",
+      "image": "/cards/Mount Equipment/Bit and Bridle.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Standard equipment used to direct a mount.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "143",
+      "name": "Exotic Saddle",
+      "category": "Mount Equipment",
+      "image": "/cards/Mount Equipment/Exotic Saddle.png",
+      "stats": {
+        "cost": "60 gp",
+        "weight": "40 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A saddle designed for unusual mounts, such as aquatic or flying creatures.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "144",
+      "name": "Military Saddle",
+      "category": "Mount Equipment",
+      "image": "/cards/Mount Equipment/Military Saddle.png",
+      "stats": {
+        "cost": "20 gp",
+        "weight": "30 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A saddle designed for combat, providing advantage on checks to remain mounted.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "145",
+      "name": "Pack Saddle",
+      "category": "Mount Equipment",
+      "image": "/cards/Mount Equipment/Pack Saddle.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": " 15 lbs",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A standard saddle for a pack mount.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "146",
+      "name": "Riding Saddle",
+      "category": "Mount Equipment",
+      "image": "/cards/Mount Equipment/Riding Saddle.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "25 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A standard saddle for riding mounts.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "147",
+      "name": "Saddlebags",
+      "category": "Mount Equipment",
+      "image": "/cards/Mount Equipment/Saddlebags.png",
+      "stats": {
+        "cost": "4 gp",
+        "weight": " 8 lbs",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Standard saddlebags that can be attached to a mount's saddle.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "148",
+      "name": "Acid Vial",
+      "category": "Potions and Combustibles",
+      "image": "/cards/Potions and Combustibles/Acid Vial.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "149",
+      "name": "Alchemist Fire",
+      "category": "Potions and Combustibles",
+      "image": "/cards/Potions and Combustibles/Alchemist Fire.png",
+      "stats": {
+        "cost": "50 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Weapon",
+        "description": "When you take the Attack action, you can replace one of your attacks with throwing a flask of Alchemist's Fire. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 1d4 Fire damage and start burning (see \"Rules Glossary\").",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "150",
+      "name": "Antitoxin",
+      "category": "Potions and Combustibles",
+      "image": "/cards/Potions and Combustibles/Antitoxin.png",
+      "stats": {
+        "cost": "50 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Potion",
+        "description": "As a Bonus Action, you can drink a vial of Antitoxin to gain Advantage on saving throws to avoid or end the Poisoned condition for 1 hour. abo",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "151",
+      "name": "Holy Water",
+      "category": "Potions and Combustibles",
+      "image": "/cards/Potions and Combustibles/Holy Water.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Weapon",
+        "description": "When you take the Attack action, you can replace one of your attacks with throwing a flask of Holy Water. Target one creature you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d8 Radiant damage if it is a Fiend or an Undead.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "152",
+      "name": "Oil",
+      "category": "Potions and Combustibles",
+      "image": "/cards/Potions and Combustibles/Oil.png",
+      "stats": {
+        "cost": "0.1 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Weapon",
+        "description": "You can douse a creature, object, or space with Oil or use it as fuel, as detailed below. Dousing a Creature or an Object. When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra 5 Fire damage from burning oil. Dousing a Space. You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn. Fuel. Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn't need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "153",
+      "name": " Poison, Basic (vial)",
+      "category": "Potions and Combustibles",
+      "image": "/cards/Potions and Combustibles/Poison Vial.png",
+      "stats": {
+        "cost": "100 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Poison",
+        "description": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must succeed on a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "154",
+      "name": "Potion of Extreme Healing",
+      "category": "Potions and Combustibles",
+      "image": "/cards/Potions and Combustibles/Potion of Extreme Healing.png",
+      "stats": {
+        "cost": "0 gp",
+        "weight": "0.5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Potion",
+        "description": "You regain hit points when you drink this potion. The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated. HP Regained 8d4 + 8",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "155",
+      "name": "Potion of Greater Healing",
+      "category": "Potions and Combustibles",
+      "image": "/cards/Potions and Combustibles/Potion of Greater Healing.png",
+      "stats": {
+        "cost": "0 gp",
+        "weight": "0.5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Potion",
+        "description": "You regain hit points when you drink this potion. The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated. HP Regained 4d4 + 4",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "156",
+      "name": "Potion of Healing",
+      "category": "Potions and Combustibles",
+      "image": "/cards/Potions and Combustibles/Potion of Healing.png",
+      "stats": {
+        "cost": "50 gp",
+        "weight": "0.5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Potion",
+        "description": "This potion is a magic item. As a Bonus Action, you can drink it or administer it to another creature within 5 feet of yourself. The creature that drinks the magical red fluid in this vial regains 2d4 + 2 Hit Points.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "157",
+      "name": "Potion of Superior Healing",
+      "category": "Potions and Combustibles",
+      "image": "/cards/Potions and Combustibles/Potion of Superior Healing.png",
+      "stats": {
+        "cost": "0 gp",
+        "weight": "0.5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Potion",
+        "description": "You regain hit points when you drink this potion. The number of hit points depends on the potion's rarity, as shown in the Potions of Healing table. Whatever its potency, the potion's red liquid glimmers when agitated. HP Regained 10d4 + 20",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "158",
+      "name": "Crystal",
+      "category": "Spell Casting Focus Items",
+      "image": "/cards/Spell Casting Focus Items/Crystal.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Can be used as an arcane focus.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "159",
+      "name": "Holy Amulet",
+      "category": "Spell Casting Focus Items",
+      "image": "/cards/Spell Casting Focus Items/Holy Amulet.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Mount",
+        "description": "A sturdy mount known for its reliability and carrying capacity.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "160",
+      "name": "Holy Emblem",
+      "category": "Spell Casting Focus Items",
+      "image": "/cards/Spell Casting Focus Items/Holy Emblem.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Can be used as a holy symbol.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "161",
+      "name": "Orb",
+      "category": "Spell Casting Focus Items",
+      "image": "/cards/Spell Casting Focus Items/Orb.png",
+      "stats": {
+        "cost": "20 gp",
+        "weight": "3 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Can be used as an Arcane Focus.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "162",
+      "name": "Reliquary",
+      "category": "Spell Casting Focus Items",
+      "image": "/cards/Spell Casting Focus Items/Reliquary.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "2 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Can be used as a holy symbol.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "163",
+      "name": "Rod",
+      "category": "Spell Casting Focus Items",
+      "image": "/cards/Spell Casting Focus Items/Rod.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Rod",
+        "description": "Can be used as an arcane focus.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "164",
+      "name": "Sprig Of Mistletoe",
+      "category": "Spell Casting Focus Items",
+      "image": "/cards/Spell Casting Focus Items/Sprig Of Mistletoe.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "A sprig of mistletoe that can be used as a druidic focus.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "165",
+      "name": "Staff",
+      "category": "Spell Casting Focus Items",
+      "image": "/cards/Spell Casting Focus Items/Staff.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "4 lb.",
+        "damage_dice": "1d6",
+        "damage_type": "bludgeoning",
+        "properties": [
+          "versatile (1d8)"
+        ],
+        "category_detail": "Staff",
+        "description": "Can be used as an arcane focus.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "166",
+      "name": "Totem",
+      "category": "Spell Casting Focus Items",
+      "image": "/cards/Spell Casting Focus Items/Totem.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Can be used as a druidic focus.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "167",
+      "name": "Wand",
+      "category": "Spell Casting Focus Items",
+      "image": "/cards/Spell Casting Focus Items/Wand.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Wand",
+        "description": "Can be used as an arcane focus.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "168",
+      "name": "Wooden Staff",
+      "category": "Spell Casting Focus Items",
+      "image": "/cards/Spell Casting Focus Items/Wooden Staff.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "4 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Adventuring Gear",
+        "description": "Can be used as a druidic focus.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "169",
+      "name": "Yew Wand",
+      "category": "Spell Casting Focus Items",
+      "image": "/cards/Spell Casting Focus Items/Yew Wand.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Wand",
+        "description": "Can be used as a druidic focus.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "170",
+      "name": "Alchemist Supplies",
+      "category": "Supply Kits",
+      "image": "/cards/Supply Kits/Alchemist Supplies.png",
+      "stats": {
+        "cost": "50 gp",
+        "weight": "8 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "171",
+      "name": "Brewers Supplies",
+      "category": "Supply Kits",
+      "image": "/cards/Supply Kits/Brewers Supplies.png",
+      "stats": {
+        "cost": "20 gp",
+        "weight": "9 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "172",
+      "name": "Calligraphers Supplies",
+      "category": "Supply Kits",
+      "image": "/cards/Supply Kits/Calligraphers Supplies.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "173",
+      "name": "Painters Supplies",
+      "category": "Supply Kits",
+      "image": "/cards/Supply Kits/Painters Supplies.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Tools",
+        "description": "These special tools include the items needed to pursue a craft or trade.\\n\\n\r\nProficiency with a set of artisan’s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan’s tools requires a separate proficiency.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "174",
+      "name": "Airship",
+      "category": "Vehicles",
+      "image": "/cards/Vehicles/Airship.png",
+      "stats": {
+        "cost": "40000 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Wondrous Item",
+        "description": "A magical flying vessel capable of air travel.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "175",
+      "name": "Carriage",
+      "category": "Vehicles",
+      "image": "/cards/Vehicles/Carriage.png",
+      "stats": {
+        "cost": "100 gp",
+        "weight": "600 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Land Vehicle",
+        "description": "A four-wheeled vehicle pulled by horses, designed for passenger transport.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "176",
+      "name": "Cart",
+      "category": "Vehicles",
+      "image": "/cards/Vehicles/Cart.png",
+      "stats": {
+        "cost": "15 gp",
+        "weight": "200 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Land Vehicle",
+        "description": "A two-wheeled vehicle pulled by a single horse, designed for cargo transport.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "177",
+      "name": "Chariot",
+      "category": "Vehicles",
+      "image": "/cards/Vehicles/Chariot.png",
+      "stats": {
+        "cost": "250 gp",
+        "weight": "100 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Land Vehicle",
+        "description": "A two-wheeled vehicle pulled by horses, designed for speed and combat.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "178",
+      "name": "Galley",
+      "category": "Vehicles",
+      "image": "/cards/Vehicles/Galley.png",
+      "stats": {
+        "cost": "30000 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Waterborne Vehicle",
+        "description": "A large warship propelled by oars and sails.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "179",
+      "name": "Keelboat",
+      "category": "Vehicles",
+      "image": "/cards/Vehicles/Keelboat.png",
+      "stats": {
+        "cost": "3000 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Waterborne Vehicle",
+        "description": "A small riverboat with a keel.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "180",
+      "name": "Longship",
+      "category": "Vehicles",
+      "image": "/cards/Vehicles/Longship.png",
+      "stats": {
+        "cost": "10000 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Waterborne Vehicle",
+        "description": "A swift ship designed for raiding and exploration.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "181",
+      "name": "Rowboat",
+      "category": "Vehicles",
+      "image": "/cards/Vehicles/Rowboat.png",
+      "stats": {
+        "cost": "50 gp",
+        "weight": "100 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Waterborne Vehicle",
+        "description": "A small boat propelled by oars.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "182",
+      "name": "Sailing Ship",
+      "category": "Vehicles",
+      "image": "/cards/Vehicles/Sailing Ship.png",
+      "stats": {
+        "cost": "10000 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Waterborne Vehicle",
+        "description": "A large ship propelled by sails.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "183",
+      "name": "Sled",
+      "category": "Vehicles",
+      "image": "/cards/Vehicles/Sled.png",
+      "stats": {
+        "cost": "20 gp",
+        "weight": "300 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Land Vehicle",
+        "description": "A vehicle designed for travel over snow and ice.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "184",
+      "name": "Wagon",
+      "category": "Vehicles",
+      "image": "/cards/Vehicles/Wagon.png",
+      "stats": {
+        "cost": "35 gp",
+        "weight": "400 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Land Vehicle",
+        "description": "A four-wheeled vehicle pulled by horses, designed for heavy cargo transport.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "185",
+      "name": "Warship",
+      "category": "Vehicles",
+      "image": "/cards/Vehicles/Warship.png",
+      "stats": {
+        "cost": "25000 gp",
+        "weight": "0 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Waterborne Vehicle",
+        "description": "A heavily armed ship designed for naval combat.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "186",
+      "name": "battleaxe",
+      "category": "Weapons",
+      "image": "/cards/Weapons/battleaxe.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "4 lb.",
+        "damage_dice": "1d8",
+        "damage_type": "slashing",
+        "properties": [
+          "versatile (1d10)"
+        ],
+        "category_detail": "Weapon",
+        "description": "A battleaxe.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "187",
+      "name": "Blowgun",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Blowgun.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "1 lb.",
+        "damage_dice": "1",
+        "damage_type": "piercing",
+        "properties": [
+          "ammunition (range 25/100)",
+          "loading"
+        ],
+        "category_detail": "Weapon",
+        "description": "A blowgun.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "188",
+      "name": "Club",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Club Card.png",
+      "stats": {
+        "cost": "0.1 gp",
+        "weight": "2 lb.",
+        "damage_dice": "1d4",
+        "damage_type": "bludgeoning",
+        "properties": [
+          "light"
+        ],
+        "category_detail": "Weapon",
+        "description": "A club.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "189",
+      "name": "Dagger",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Dagger Card.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "1 lb.",
+        "damage_dice": "1d4",
+        "damage_type": "piercing",
+        "properties": [
+          "finesse",
+          "light",
+          "thrown (range 20/60)"
+        ],
+        "category_detail": "Weapon",
+        "description": "A dagger.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "190",
+      "name": "Dart",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Dart.png",
+      "stats": {
+        "cost": "0.05 gp",
+        "weight": "1 lb.",
+        "damage_dice": "1d4",
+        "damage_type": "piercing",
+        "properties": [
+          "finesse",
+          "thrown (range 20/60)"
+        ],
+        "category_detail": "Weapon",
+        "description": "A dart.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "191",
+      "name": "Flail",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Flail.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "2 lb.",
+        "damage_dice": "1d8",
+        "damage_type": "bludgeoning",
+        "properties": [],
+        "category_detail": "Weapon",
+        "description": "A flail.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "192",
+      "name": "Glaive",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Glaive.png",
+      "stats": {
+        "cost": "20 gp",
+        "weight": "6 lb.",
+        "damage_dice": "1d10",
+        "damage_type": "slashing",
+        "properties": [
+          "heavy",
+          "reach",
+          "two-handed"
+        ],
+        "category_detail": "Weapon",
+        "description": "A glaive.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "193",
+      "name": "Greataxe",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Greataxe.png",
+      "stats": {
+        "cost": "30 gp",
+        "weight": "7 lb.",
+        "damage_dice": "1d12",
+        "damage_type": "slashing",
+        "properties": [
+          "heavy",
+          "two-handed"
+        ],
+        "category_detail": "Weapon",
+        "description": "A greataxe.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "194",
+      "name": "Greatclub",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Greatclub.png",
+      "stats": {
+        "cost": "0.2 gp",
+        "weight": "10 lb.",
+        "damage_dice": "1d8",
+        "damage_type": "bludgeoning",
+        "properties": [
+          "two-handed"
+        ],
+        "category_detail": "Weapon",
+        "description": "A greatclub.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "195",
+      "name": "Greatsword",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Greatsword.png",
+      "stats": {
+        "cost": "50 gp",
+        "weight": "6 lb.",
+        "damage_dice": "2d6",
+        "damage_type": "slashing",
+        "properties": [
+          "heavy",
+          "two-handed"
+        ],
+        "category_detail": "Weapon",
+        "description": "A greatsword.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "196",
+      "name": "halbred",
+      "category": "Weapons",
+      "image": "/cards/Weapons/halbred.png",
+      "stats": {
+        "cost": "20 gp",
+        "weight": "6 lb.",
+        "damage_dice": "1d10",
+        "damage_type": "slashing",
+        "properties": [
+          "heavy",
+          "reach",
+          "two-handed"
+        ],
+        "category_detail": "Weapon",
+        "description": "A halberd.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "197",
+      "name": "hand crossbow",
+      "category": "Weapons",
+      "image": "/cards/Weapons/hand crossbow.png",
+      "stats": {
+        "cost": "75 gp",
+        "weight": "3 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Weapon",
+        "description": "A hand crossbow.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "198",
+      "name": "handaxe",
+      "category": "Weapons",
+      "image": "/cards/Weapons/handaxe.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "2 lb.",
+        "damage_dice": "1d6",
+        "damage_type": "slashing",
+        "properties": [
+          "light",
+          "thrown (range 20/60)"
+        ],
+        "category_detail": "Weapon",
+        "description": "A handaxe.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "199",
+      "name": "Heavy Crossbow",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Heavy Crossbow.png",
+      "stats": {
+        "cost": "50 gp",
+        "weight": "18 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Weapon",
+        "description": "A heavy crossbow.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "200",
+      "name": "JAVELIN",
+      "category": "Weapons",
+      "image": "/cards/Weapons/JAVELIN.png",
+      "stats": {
+        "cost": "0.5 gp",
+        "weight": "2 lb.",
+        "damage_dice": "1d6",
+        "damage_type": "piercing",
+        "properties": [
+          "thrown (range 30/120)"
+        ],
+        "category_detail": "Weapon",
+        "description": "A javelin.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "201",
+      "name": "Lance",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Lance.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "6 lb.",
+        "damage_dice": "1d12",
+        "damage_type": "piercing",
+        "properties": [
+          "reach",
+          "special"
+        ],
+        "category_detail": "Weapon",
+        "description": "A lance.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "202",
+      "name": "Light Crossbow",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Light Crossbow.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "5 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Weapon",
+        "description": "A light crossbow.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "203",
+      "name": "Light Hammer",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Light Hammer.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "2 lb.",
+        "damage_dice": "1d4",
+        "damage_type": "bludgeoning",
+        "properties": [
+          "light",
+          "thrown (range 20/60)"
+        ],
+        "category_detail": "Weapon",
+        "description": "A light hammer.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "204",
+      "name": "Longbow",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Longbow.png",
+      "stats": {
+        "cost": "50 gp",
+        "weight": "2 lb.",
+        "damage_dice": "1d8",
+        "damage_type": "piercing",
+        "properties": [
+          "ammunition (range 150/600)",
+          "heavy",
+          "two-handed"
+        ],
+        "category_detail": "Weapon",
+        "description": "A longbow.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "205",
+      "name": "Longsword",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Longsword.png",
+      "stats": {
+        "cost": "15 gp",
+        "weight": "3 lb.",
+        "damage_dice": "1d8",
+        "damage_type": "slashing",
+        "properties": [
+          "versatile (1d10)"
+        ],
+        "category_detail": "Weapon",
+        "description": "A longsword.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "206",
+      "name": "Mace",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Mace.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "4 lb.",
+        "damage_dice": "1d6",
+        "damage_type": "bludgeoning",
+        "properties": [],
+        "category_detail": "Weapon",
+        "description": "A mace.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "207",
+      "name": "Maul",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Maul.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "10 lb.",
+        "damage_dice": "2d6",
+        "damage_type": "bludgeoning",
+        "properties": [
+          "heavy",
+          "two-handed"
+        ],
+        "category_detail": "Weapon",
+        "description": "A maul.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "208",
+      "name": "Morningstar",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Morningstar.png",
+      "stats": {
+        "cost": "15 gp",
+        "weight": "4 lb.",
+        "damage_dice": "1d8",
+        "damage_type": "piercing",
+        "properties": [],
+        "category_detail": "Weapon",
+        "description": "A morningstar.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "209",
+      "name": "Net",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Net.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "3 lb.",
+        "damage_dice": "0",
+        "damage_type": "",
+        "properties": [
+          "special",
+          "thrown (range 5/15)"
+        ],
+        "category_detail": "Weapon",
+        "description": "When you take the Attack action, you can replace one of your attacks with throwing a Net. Target a creature you can see within 15 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or have the Restrained condition until it escapes. The target succeeds automatically if it is Huge or larger. To escape, the target or a creature within 5 feet of it must take an action to make a DC 10 Strength (Athletics) check, freeing the Restrained creature on a success. Destroying the Net (AC 10; 5 HP; Immunity to Bludgeoning, Poison, and Psychic damage) also frees the target, ending the effect.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "210",
+      "name": "Pike",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Pike.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "18 lb.",
+        "damage_dice": "1d10",
+        "damage_type": "piercing",
+        "properties": [
+          "heavy",
+          "reach",
+          "two-handed"
+        ],
+        "category_detail": "Weapon",
+        "description": "A pike.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "211",
+      "name": "Quarterstaff",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Quarterstaff.png",
+      "stats": {
+        "cost": "0.2 gp",
+        "weight": "4 lb.",
+        "damage_dice": "1d6",
+        "damage_type": "bludgeoning",
+        "properties": [
+          "versatile (1d8)"
+        ],
+        "category_detail": "Weapon",
+        "description": "A quarterstaff.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "212",
+      "name": "Rapier",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Rapier.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "2 lb.",
+        "damage_dice": "1d8",
+        "damage_type": "piercing",
+        "properties": [
+          "finesse"
+        ],
+        "category_detail": "Weapon",
+        "description": "A rapier.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "213",
+      "name": "Scimitar",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Scimitar.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "3 lb.",
+        "damage_dice": "1d6",
+        "damage_type": "slashing",
+        "properties": [
+          "finesse",
+          "light"
+        ],
+        "category_detail": "Weapon",
+        "description": "A scimitar.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "214",
+      "name": "shortbow",
+      "category": "Weapons",
+      "image": "/cards/Weapons/shortbow.png",
+      "stats": {
+        "cost": "25 gp",
+        "weight": "2 lb.",
+        "damage_dice": "1d6",
+        "damage_type": "piercing",
+        "properties": [
+          "ammunition (range 80/320)",
+          "two-handed"
+        ],
+        "category_detail": "Weapon",
+        "description": "A shortbow.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "215",
+      "name": "shortsword",
+      "category": "Weapons",
+      "image": "/cards/Weapons/shortsword.png",
+      "stats": {
+        "cost": "10 gp",
+        "weight": "2 lb.",
+        "damage_dice": "1d6",
+        "damage_type": "piercing",
+        "properties": [
+          "finesse",
+          "light"
+        ],
+        "category_detail": "Weapon",
+        "description": "A shortsword.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "216",
+      "name": "Sickle",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Sickle.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "2 lb.",
+        "damage_dice": "1d4",
+        "damage_type": "slashing",
+        "properties": [
+          "light"
+        ],
+        "category_detail": "Weapon",
+        "description": "A sickle.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "217",
+      "name": "Silvered Weapons",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Silvered Weapons.png",
+      "stats": {
+        "cost": "100 gp",
+        "weight": "1 lb.",
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": "Trade Good",
+        "description": "1lb of silver",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "218",
+      "name": "Sling",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Sling.png",
+      "stats": {
+        "cost": "0.1 gp",
+        "weight": "0 lb.",
+        "damage_dice": "1d4",
+        "damage_type": "bludgeoning",
+        "properties": [
+          "ammunition (range 30/120)"
+        ],
+        "category_detail": "Weapon",
+        "description": "A sling.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "219",
+      "name": "Spear",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Spear.png",
+      "stats": {
+        "cost": "1 gp",
+        "weight": "3 lb.",
+        "damage_dice": "1d6",
+        "damage_type": "piercing",
+        "properties": [
+          "thrown (range 20/60)",
+          "versatile (1d8)"
+        ],
+        "category_detail": "Weapon",
+        "description": "A spear.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "220",
+      "name": "Trident",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Trident.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "4 lb.",
+        "damage_dice": "1d6",
+        "damage_type": "piercing",
+        "properties": [
+          "thrown (range 20/60)",
+          "versatile (1d8)"
+        ],
+        "category_detail": "Weapon",
+        "description": "A trident.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "221",
+      "name": "War Pick",
+      "category": "Weapons",
+      "image": "/cards/Weapons/War Pick.png",
+      "stats": {
+        "cost": "5 gp",
+        "weight": "2 lb.",
+        "damage_dice": "1d8",
+        "damage_type": "piercing",
+        "properties": [],
+        "category_detail": "Weapon",
+        "description": "A war pick.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "222",
+      "name": "Warhammer",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Warhammer.png",
+      "stats": {
+        "cost": "15 gp",
+        "weight": "5 lb.",
+        "damage_dice": "1d8",
+        "damage_type": "bludgeoning",
+        "properties": [
+          "versatile (1d10)"
+        ],
+        "category_detail": "Weapon",
+        "description": "A warhammer.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    },
+    {
+      "id": "223",
+      "name": "Whip",
+      "category": "Weapons",
+      "image": "/cards/Weapons/Whip.png",
+      "stats": {
+        "cost": "2 gp",
+        "weight": "3 lb.",
+        "damage_dice": "1d4",
+        "damage_type": "slashing",
+        "properties": [
+          "finesse",
+          "reach"
+        ],
+        "category_detail": "Weapon",
+        "description": "A whip.",
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      }
+    }
+  ]
+}
