@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# Card images (too large for GitHub, ~332MB)
+public/cards/
+
+# Conversation transcript
+conversation.jsonl
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
