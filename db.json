@@ -4,7 +4,6 @@
       "id": "1",
       "name": "Arrows",
       "category": "Ammunition",
-      "image": "/cards/Ammunition/Arrows.png",
       "stats": {
         "cost": "1 gp",
         "weight": "1 lb.",
@@ -16,13 +15,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Ammunition/Arrows.svg"
     },
     {
       "id": "2",
       "name": "Blowgun Needles",
       "category": "Ammunition",
-      "image": "/cards/Ammunition/Blowgun Needles.png",
       "stats": {
         "cost": "1 gp",
         "weight": "1 lb.",
@@ -37,13 +36,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Ammunition/Blowgun Needles.svg"
     },
     {
       "id": "3",
       "name": "Crossbow Bolts",
       "category": "Ammunition",
-      "image": "/cards/Ammunition/Crossbow Bolts.png",
       "stats": {
         "cost": "1 gp",
         "weight": "1.5 lb.",
@@ -55,13 +54,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Ammunition/Crossbow Bolts.svg"
     },
     {
       "id": "4",
       "name": "Sling bullets",
       "category": "Ammunition",
-      "image": "/cards/Ammunition/Sling bullets.png",
       "stats": {
         "cost": "0.04 gp",
         "weight": "1.5 lb.",
@@ -75,13 +74,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Ammunition/Sling Bullets.svg"
     },
     {
       "id": "5",
       "name": "Breastplate Armor",
       "category": "Armor",
-      "image": "/cards/Armor/Breastplate Armor.png",
       "stats": {
         "cost": "400 gp",
         "weight": "20 lb.",
@@ -93,13 +92,13 @@
         "ac_display": "14 + Dex modifier (max 2)",
         "stealth_disadvantage": false,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Armour/Breastplate.svg"
     },
     {
       "id": "6",
       "name": "Chain Mail",
       "category": "Armor",
-      "image": "/cards/Armor/Chain Mail Armor.png",
       "stats": {
         "cost": "75 gp",
         "weight": "55 lb.",
@@ -111,13 +110,13 @@
         "ac_display": "16",
         "stealth_disadvantage": true,
         "strength_required": 13
-      }
+      },
+      "icon": "/icons/Armour/Chain mail.svg"
     },
     {
       "id": "7",
       "name": "Chain Shirt",
       "category": "Armor",
-      "image": "/cards/Armor/Chain Shirt.png",
       "stats": {
         "cost": "50 gp",
         "weight": "20 lb.",
@@ -129,13 +128,13 @@
         "ac_display": "13 + Dex modifier (max 2)",
         "stealth_disadvantage": false,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Armour/Chain Shirt.svg"
     },
     {
       "id": "8",
       "name": "half plate armor",
       "category": "Armor",
-      "image": "/cards/Armor/half plate armor.png",
       "stats": {
         "cost": "750 gp",
         "weight": "40 lb.",
@@ -147,13 +146,13 @@
         "ac_display": "15 + Dex modifier (max 2)",
         "stealth_disadvantage": true,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Armour/Half Plate Armour.svg"
     },
     {
       "id": "9",
       "name": "Hide",
       "category": "Armor",
-      "image": "/cards/Armor/Hide.png",
       "stats": {
         "cost": "10 gp",
         "weight": "12 lb.",
@@ -165,13 +164,13 @@
         "ac_display": "12 + Dex modifier (max 2)",
         "stealth_disadvantage": false,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Armour/Hide Armour.svg"
     },
     {
       "id": "10",
       "name": "Leather",
       "category": "Armor",
-      "image": "/cards/Armor/Leather Armor.png",
       "stats": {
         "cost": "10 gp",
         "weight": "10 lb.",
@@ -183,13 +182,13 @@
         "ac_display": "11 + Dex modifier",
         "stealth_disadvantage": false,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Armour/Leather Armour.svg"
     },
     {
       "id": "11",
       "name": "Padded armor",
       "category": "Armor",
-      "image": "/cards/Armor/Padded armor.png",
       "stats": {
         "cost": "5 gp",
         "weight": "8 lb.",
@@ -201,13 +200,13 @@
         "ac_display": "11 + Dex modifier",
         "stealth_disadvantage": true,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Armour/Padded Armour.svg"
     },
     {
       "id": "12",
       "name": "plate",
       "category": "Armor",
-      "image": "/cards/Armor/plate.png",
       "stats": {
         "cost": "1500 gp",
         "weight": "65 lb.",
@@ -219,13 +218,13 @@
         "ac_display": "18",
         "stealth_disadvantage": true,
         "strength_required": 15
-      }
+      },
+      "icon": "/icons/Armour/Plate Armour.svg"
     },
     {
       "id": "13",
       "name": "Ring Mail",
       "category": "Armor",
-      "image": "/cards/Armor/Ring Mail.png",
       "stats": {
         "cost": "30 gp",
         "weight": "40 lb.",
@@ -237,13 +236,13 @@
         "ac_display": "14",
         "stealth_disadvantage": true,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Armour/Ring Mail.svg"
     },
     {
       "id": "14",
       "name": "Scale Mail",
       "category": "Armor",
-      "image": "/cards/Armor/Scale Mail.png",
       "stats": {
         "cost": "50 gp",
         "weight": "45 lb.",
@@ -255,13 +254,13 @@
         "ac_display": "14 + Dex modifier (max 2)",
         "stealth_disadvantage": true,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Armour/Scale mail.svg"
     },
     {
       "id": "15",
       "name": "shield",
       "category": "Armor",
-      "image": "/cards/Armor/sheild.png",
       "stats": {
         "cost": "10 gp",
         "weight": "6 lb.",
@@ -273,13 +272,13 @@
         "ac_display": "2",
         "stealth_disadvantage": false,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Armour/Shield (round).svg"
     },
     {
       "id": "16",
       "name": "Splint",
       "category": "Armor",
-      "image": "/cards/Armor/Splint Armor.png",
       "stats": {
         "cost": "200 gp",
         "weight": "60 lb.",
@@ -291,13 +290,13 @@
         "ac_display": "17",
         "stealth_disadvantage": true,
         "strength_required": 15
-      }
+      },
+      "icon": "/icons/Armour/Splint Armour.svg"
     },
     {
       "id": "17",
       "name": "Studded leather",
       "category": "Armor",
-      "image": "/cards/Armor/Studded leather.png",
       "stats": {
         "cost": "45 gp",
         "weight": "13 lb.",
@@ -309,13 +308,13 @@
         "ac_display": "12 + Dex modifier",
         "stealth_disadvantage": false,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Armour/Studded Leather Armour.svg"
     },
     {
       "id": "18",
       "name": "Carpenters Tools",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Carpenters Tools.png",
       "stats": {
         "cost": "8 gp",
         "weight": "6 lb.",
@@ -327,13 +326,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Carpenter Tools.svg"
     },
     {
       "id": "19",
       "name": "Cartographers Tools",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Cartographers Tools.png",
       "stats": {
         "cost": "15 gp",
         "weight": "6 lb.",
@@ -345,13 +344,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Cartographer Tools.svg"
     },
     {
       "id": "20",
       "name": "Cobblers Tools",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Cobblers Tools.png",
       "stats": {
         "cost": "5 gp",
         "weight": "5 lb.",
@@ -363,13 +362,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Cobbler Tools.svg"
     },
     {
       "id": "21",
       "name": "Cooks Utensils",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Cooks Utensils.png",
       "stats": {
         "cost": "1 gp",
         "weight": "8 lb.",
@@ -381,13 +380,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Cook Utensils.svg"
     },
     {
       "id": "22",
       "name": "Glassblowers Tools",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Glassblowers Tools.png",
       "stats": {
         "cost": "30 gp",
         "weight": "5 lb.",
@@ -399,13 +398,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Glassblower Tools.svg"
     },
     {
       "id": "23",
       "name": "Leatherworkers Tools",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Leatherworkers Tools.png",
       "stats": {
         "cost": "5 gp",
         "weight": "5 lb.",
@@ -417,13 +416,13 @@
         "ac_display": "11 + Dex modifier",
         "stealth_disadvantage": false,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Leatherworker Tools.svg"
     },
     {
       "id": "24",
       "name": "Masons Tools",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Masons Tools.png",
       "stats": {
         "cost": "10 gp",
         "weight": "8 lb.",
@@ -435,13 +434,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Mason Tools.svg"
     },
     {
       "id": "25",
       "name": "Navigators Tools",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Navigators Tools.png",
       "stats": {
         "cost": "25 gp",
         "weight": "2 lb.",
@@ -453,13 +452,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Navigators Tools.svg"
     },
     {
       "id": "26",
       "name": "Potters Tools",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Potters Tools.png",
       "stats": {
         "cost": "10 gp",
         "weight": "3 lb.",
@@ -471,13 +470,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Potter Tools.svg"
     },
     {
       "id": "27",
       "name": "Smiths Tools",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Smiths Tools.png",
       "stats": {
         "cost": "20 gp",
         "weight": "8 lb.",
@@ -489,13 +488,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Smith Tools.svg"
     },
     {
       "id": "28",
       "name": "Thieves Tools",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Thieves Tools.png",
       "stats": {
         "cost": "25 gp",
         "weight": "1 lb.",
@@ -507,13 +506,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Thieves Tools.svg"
     },
     {
       "id": "29",
       "name": "Weavers Tools",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Weavers Tools.png",
       "stats": {
         "cost": "1 gp",
         "weight": "5 lb.",
@@ -525,13 +524,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Weaver Tools.svg"
     },
     {
       "id": "30",
       "name": "Woodcarvers Tools",
       "category": "Artisans Tools",
-      "image": "/cards/Artisans Tools/Woodcarvers Tools.png",
       "stats": {
         "cost": "1 gp",
         "weight": "5 lb.",
@@ -543,13 +542,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Woodcarver Tools.svg"
     },
     {
       "id": "31",
       "name": "Book",
       "category": "Books And Paper",
-      "image": "/cards/Books And Paper/Book.png",
       "stats": {
         "cost": "25 gp",
         "weight": "5 lb.",
@@ -561,13 +560,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Book.svg"
     },
     {
       "id": "32",
       "name": "Paper",
       "category": "Books And Paper",
-      "image": "/cards/Books And Paper/Paper.png",
       "stats": {
         "cost": "0.2 gp",
         "weight": "0 lb.",
@@ -579,13 +578,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Paper (one sheet).svg"
     },
     {
       "id": "33",
       "name": "Parchment",
       "category": "Books And Paper",
-      "image": "/cards/Books And Paper/Parchment.png",
       "stats": {
         "cost": "0.1 gp",
         "weight": "0 lb.",
@@ -597,13 +596,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Parchment (one sheet).svg"
     },
     {
       "id": "34",
       "name": "Spellbook",
       "category": "Books And Paper",
-      "image": "/cards/Books And Paper/Spellbook.png",
       "stats": {
         "cost": "50 gp",
         "weight": "3 lb.",
@@ -615,13 +614,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Spellbook.svg"
     },
     {
       "id": "35",
       "name": "Common Clothes",
       "category": "Clothes",
-      "image": "/cards/Clothes/Common Clothes.png",
       "stats": {
         "cost": "0.5 gp",
         "weight": "3 lb.",
@@ -633,13 +632,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Common Clothes.svg"
     },
     {
       "id": "36",
       "name": "costume clothes",
       "category": "Clothes",
-      "image": "/cards/Clothes/costume clothes.png",
       "stats": {
         "cost": "5 gp",
         "weight": "4 lb.",
@@ -651,13 +650,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Costume Clothes.svg"
     },
     {
       "id": "37",
       "name": "Fine Clothes",
       "category": "Clothes",
-      "image": "/cards/Clothes/Fine Clothes.png",
       "stats": {
         "cost": "15 gp",
         "weight": "6 lb.",
@@ -669,13 +668,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Fine Clothes.svg"
     },
     {
       "id": "38",
       "name": "Robe",
       "category": "Clothes",
-      "image": "/cards/Clothes/Robe.png",
       "stats": {
         "cost": "1 gp",
         "weight": "4 lb.",
@@ -687,13 +686,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Robes.svg"
     },
     {
       "id": "39",
       "name": "Travelers Clothes",
       "category": "Clothes",
-      "image": "/cards/Clothes/Travelers Clothes.png",
       "stats": {
         "cost": "2 gp",
         "weight": "4 lb.",
@@ -705,13 +704,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Traveler's Clothes.svg"
     },
     {
       "id": "40",
       "name": "Chain",
       "category": "Common Tools",
-      "image": "/cards/Common Tools/Chain.png",
       "stats": {
         "cost": "5 gp",
         "weight": "10 lb.",
@@ -723,13 +722,13 @@
         "ac_display": "16",
         "stealth_disadvantage": true,
         "strength_required": 13
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Chain.svg"
     },
     {
       "id": "41",
       "name": "Crowbar",
       "category": "Common Tools",
-      "image": "/cards/Common Tools/Crowbar.png",
       "stats": {
         "cost": "2 gp",
         "weight": "5 lb.",
@@ -741,13 +740,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Crowbar.svg"
     },
     {
       "id": "42",
       "name": "Grappling Hook",
       "category": "Common Tools",
-      "image": "/cards/Common Tools/Grappling Hook.png",
       "stats": {
         "cost": "2 gp",
         "weight": "4 lb.",
@@ -759,13 +758,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Grappling Hook.svg"
     },
     {
       "id": "43",
       "name": "Hammer",
       "category": "Common Tools",
-      "image": "/cards/Common Tools/Hammer.png",
       "stats": {
         "cost": "1 gp",
         "weight": "3 lb.",
@@ -780,13 +779,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Hammer.svg"
     },
     {
       "id": "44",
       "name": "Hempen Rope",
       "category": "Common Tools",
-      "image": "/cards/Common Tools/Hempen Rope.png",
       "stats": {
         "cost": "1 gp",
         "weight": "5 lb.",
@@ -798,13 +797,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Hempen Rope.svg"
     },
     {
       "id": "45",
       "name": "Ladder",
       "category": "Common Tools",
-      "image": "/cards/Common Tools/Ladder.png",
       "stats": {
         "cost": "0.1 gp",
         "weight": "25 lb.",
@@ -816,13 +815,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Ladder.svg"
     },
     {
       "id": "46",
       "name": "Miners Pick",
       "category": "Common Tools",
-      "image": "/cards/Common Tools/Miners Pick.png",
       "stats": {
         "cost": "2 gp",
         "weight": "10 lb.",
@@ -834,13 +833,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Miners Pick.svg"
     },
     {
       "id": "47",
       "name": "Pole",
       "category": "Common Tools",
-      "image": "/cards/Common Tools/Pole.png",
       "stats": {
         "cost": "0.05 gp",
         "weight": "7 lb.",
@@ -852,13 +851,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Pole (10-foot).svg"
     },
     {
       "id": "48",
       "name": "Shovel",
       "category": "Common Tools",
-      "image": "/cards/Common Tools/Shovel.png",
       "stats": {
         "cost": "2 gp",
         "weight": "5 lb.",
@@ -870,13 +869,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Shovel.svg"
     },
     {
       "id": "49",
       "name": "Silk Rope",
       "category": "Common Tools",
-      "image": "/cards/Common Tools/Silk Rope.png",
       "stats": {
         "cost": "1 gp",
         "weight": "5 lb.",
@@ -888,13 +887,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Silk Rope.svg"
     },
     {
       "id": "50",
       "name": "Hammer, Sledge",
       "category": "Common Tools",
-      "image": "/cards/Common Tools/Sledgehammer.png",
       "stats": {
         "cost": "2 gp",
         "weight": "10 lb.",
@@ -906,13 +905,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Sledgehammer.svg"
     },
     {
       "id": "51",
       "name": "Backpack",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Backpack.png",
       "stats": {
         "cost": "2 gp",
         "weight": "5 lb.",
@@ -924,13 +923,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Backpack.svg"
     },
     {
       "id": "52",
       "name": "Barrel",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Barrel.png",
       "stats": {
         "cost": "2 gp",
         "weight": "70 lb.",
@@ -942,13 +941,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Barrel.svg"
     },
     {
       "id": "53",
       "name": "Basket",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Basket.png",
       "stats": {
         "cost": "0.4 gp",
         "weight": "2 lb.",
@@ -960,13 +959,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Basket.svg"
     },
     {
       "id": "54",
       "name": "Bottle",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Bottle.png",
       "stats": {
         "cost": "2 gp",
         "weight": "2 lb.",
@@ -978,13 +977,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Bottle.svg"
     },
     {
       "id": "55",
       "name": "Bucket",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Bucket.png",
       "stats": {
         "cost": "0.05 gp",
         "weight": "2 lb.",
@@ -996,13 +995,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Bucket.svg"
     },
     {
       "id": "56",
       "name": "Chest",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Chest.png",
       "stats": {
         "cost": "5 gp",
         "weight": "25 lb.",
@@ -1014,13 +1013,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Chest.svg"
     },
     {
       "id": "57",
       "name": "Component Pouch",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Component Pouch.png",
       "stats": {
         "cost": "25 gp",
         "weight": "2 lb.",
@@ -1032,13 +1031,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Component Pouch.svg"
     },
     {
       "id": "58",
       "name": "Crossbow Bolt Case",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Crossbow Bolt Case.png",
       "stats": {
         "cost": "0.05 gp",
         "weight": "0.08 lb.",
@@ -1050,13 +1049,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Crossbow Bolt Case.svg"
     },
     {
       "id": "59",
       "name": "Flask",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Flask.png",
       "stats": {
         "cost": "0.02 gp",
         "weight": "1 lb.",
@@ -1068,13 +1067,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Potions, Poisions, Bottles, and Vials/Flask.svg"
     },
     {
       "id": "60",
       "name": "Ink Vial",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Ink Vial.png",
       "stats": {
         "cost": "10 gp",
         "weight": "0 lb.",
@@ -1086,13 +1085,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Ink.svg"
     },
     {
       "id": "61",
       "name": "Iron Pot",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Iron Pot.png",
       "stats": {
         "cost": "2 gp",
         "weight": "1 lb.",
@@ -1104,13 +1103,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Iron Pot.svg"
     },
     {
       "id": "62",
       "name": "Jug",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Jug.png",
       "stats": {
         "cost": "0.02 gp",
         "weight": "4 lb.",
@@ -1122,13 +1121,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Jug.svg"
     },
     {
       "id": "63",
       "name": "Pitcher",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Pitcher.png",
       "stats": {
         "cost": "0.02 gp",
         "weight": "4 lb.",
@@ -1140,13 +1139,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Pitcher.svg"
     },
     {
       "id": "64",
       "name": "Pouch",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Pouch.png",
       "stats": {
         "cost": "0.5 gp",
         "weight": "1 lb.",
@@ -1158,13 +1157,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Pouch.svg"
     },
     {
       "id": "65",
       "name": "Quiver",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Quiver.png",
       "stats": {
         "cost": "1 gp",
         "weight": "1 lb.",
@@ -1176,13 +1175,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Quiver.svg"
     },
     {
       "id": "66",
       "name": "Sack",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Sack.png",
       "stats": {
         "cost": "0.01 gp",
         "weight": "0.5 lb.",
@@ -1194,13 +1193,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Sack.svg"
     },
     {
       "id": "67",
       "name": "Map or Scroll Case",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Scroll Case.png",
       "stats": {
         "cost": "1 gp",
         "weight": "1 lb.",
@@ -1212,13 +1211,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Map or Scroll Case.svg"
     },
     {
       "id": "68",
       "name": "Tankard",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Tankard.png",
       "stats": {
         "cost": "0.02 gp",
         "weight": "1 lb.",
@@ -1230,13 +1229,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Tankard.svg"
     },
     {
       "id": "69",
       "name": "Vial",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Vial.png",
       "stats": {
         "cost": "1 gp",
         "weight": "0 lb.",
@@ -1248,13 +1247,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Potions, Poisions, Bottles, and Vials/Vial (empty).svg"
     },
     {
       "id": "70",
       "name": "Waterskin",
       "category": "Containers and Pouches",
-      "image": "/cards/Containers and Pouches/Waterskin.png",
       "stats": {
         "cost": "0.2 gp",
         "weight": "5 lb.",
@@ -1266,13 +1265,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Waterskin.svg"
     },
     {
       "id": "71",
       "name": "Apple",
       "category": "Food And Drink",
-      "image": "/cards/Food And Drink/Apple.png",
       "stats": {
         "cost": "0.03 gp",
         "weight": "0.5 lb.",
@@ -1284,13 +1283,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Food and Drink/Apple.svg"
     },
     {
       "id": "72",
       "name": "Bread Loaf",
       "category": "Food And Drink",
-      "image": "/cards/Food And Drink/Bread Loaf.png",
       "stats": {
         "cost": "0.2 gp",
         "weight": null,
@@ -1302,13 +1301,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Food and Drink/Loaf of Bread.svg"
     },
     {
       "id": "73",
       "name": "Feed",
       "category": "Food And Drink",
-      "image": "/cards/Food And Drink/Feed.png",
       "stats": {
         "cost": "0.05 gp",
         "weight": "10 lb.",
@@ -1320,13 +1319,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Mount and Tack/Feed (per day).svg"
     },
     {
       "id": "74",
       "name": "Fine Wine",
       "category": "Food And Drink",
-      "image": "/cards/Food And Drink/Fine Wine.png",
       "stats": {
         "cost": "10 gp",
         "weight": null,
@@ -1338,13 +1337,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Food and Drink/Fine Wine (Bottle).svg"
     },
     {
       "id": "75",
       "name": "Gallon of Ale",
       "category": "Food And Drink",
-      "image": "/cards/Food And Drink/Gallon of Ale.png",
       "stats": {
         "cost": "0.2 gp",
         "weight": null,
@@ -1356,13 +1355,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Food and Drink/Ale (gallon).svg"
     },
     {
       "id": "76",
       "name": "Hunk of Cheese",
       "category": "Food And Drink",
-      "image": "/cards/Food And Drink/Hunk of Cheese.png",
       "stats": {
         "cost": "0.1 gp",
         "weight": null,
@@ -1374,13 +1373,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Food and Drink/Hunk of Cheese.svg"
     },
     {
       "id": "77",
       "name": "Meat Chunk",
       "category": "Food And Drink",
-      "image": "/cards/Food And Drink/Meat Chunk.png",
       "stats": {
         "cost": "0.3 gp",
         "weight": "1 lb.",
@@ -1392,13 +1391,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Food and Drink/Chunk of Meat.svg"
     },
     {
       "id": "78",
       "name": "Mug of Ale",
       "category": "Food And Drink",
-      "image": "/cards/Food And Drink/Mug of Ale.png",
       "stats": {
         "cost": "0.04 gp",
         "weight": null,
@@ -1410,13 +1409,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Food and Drink/Ale (Mug).svg"
     },
     {
       "id": "79",
       "name": "Pitcher of Wine",
       "category": "Food And Drink",
-      "image": "/cards/Food And Drink/Pitcher of Wine.png",
       "stats": {
         "cost": "0.2 gp",
         "weight": null,
@@ -1428,13 +1427,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Food and Drink/Common Wine (Pitcher).svg"
     },
     {
       "id": "80",
       "name": "Rations",
       "category": "Food And Drink",
-      "image": "/cards/Food And Drink/Rations.png",
       "stats": {
         "cost": "0.5 gp",
         "weight": "2 lb.",
@@ -1446,13 +1445,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Rations (1 day).svg"
     },
     {
       "id": "81",
       "name": "Turkey Leg",
       "category": "Food And Drink",
-      "image": "/cards/Food And Drink/Turkey Leg.png",
       "stats": {
         "cost": "0.2 gp",
         "weight": "1/2 lb.",
@@ -1464,13 +1463,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Food and Drink/Chunk of Meat.svg"
     },
     {
       "id": "82",
       "name": "3 Dragon Ante Set",
       "category": "Game Sets",
-      "image": "/cards/Game Sets/3 Dragon Ante Set.png",
       "stats": {
         "cost": "1 GP",
         "weight": null,
@@ -1482,13 +1481,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Gaming Sets/Three-Dragon Ante Set.svg"
     },
     {
       "id": "83",
       "name": "Dice Set",
       "category": "Game Sets",
-      "image": "/cards/Game Sets/Dice Set.png",
       "stats": {
         "cost": "0.1 gp",
         "weight": "0 lb.",
@@ -1500,13 +1499,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Gaming Sets/Dice Set.svg"
     },
     {
       "id": "84",
       "name": "Dragonchess Set",
       "category": "Game Sets",
-      "image": "/cards/Game Sets/Dragonchess Set.png",
       "stats": {
         "cost": "1 gp",
         "weight": "0.5 lb.",
@@ -1518,13 +1517,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Gaming Sets/Dragonchess Set.svg"
     },
     {
       "id": "85",
       "name": "Playing Card Set",
       "category": "Game Sets",
-      "image": "/cards/Game Sets/Playing Card Set.png",
       "stats": {
         "cost": "0.5 gp",
         "weight": "0 lb.",
@@ -1536,13 +1535,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Gaming Sets/Playing Card.svg"
     },
     {
       "id": "86",
       "name": "Bagpipes",
       "category": "Instruments",
-      "image": "/cards/Instruments/Bagpipes.png",
       "stats": {
         "cost": "30 gp",
         "weight": "6 lb.",
@@ -1554,13 +1553,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Instruments/Bagpipes.svg"
     },
     {
       "id": "87",
       "name": "Drum",
       "category": "Instruments",
-      "image": "/cards/Instruments/Drum.png",
       "stats": {
         "cost": "6 gp",
         "weight": "3 lb.",
@@ -1572,13 +1571,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Instruments/Drum.svg"
     },
     {
       "id": "88",
       "name": "Dulcimer",
       "category": "Instruments",
-      "image": "/cards/Instruments/Dulcimer.png",
       "stats": {
         "cost": "25 gp",
         "weight": "10 lb.",
@@ -1590,13 +1589,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Instruments/Dulcimer.svg"
     },
     {
       "id": "89",
       "name": "Flute",
       "category": "Instruments",
-      "image": "/cards/Instruments/Flute.png",
       "stats": {
         "cost": "2 gp",
         "weight": "1 lb.",
@@ -1608,13 +1607,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Instruments/Flute.svg"
     },
     {
       "id": "90",
       "name": "Lute",
       "category": "Instruments",
-      "image": "/cards/Instruments/Lute.png",
       "stats": {
         "cost": "35 gp",
         "weight": "2 lb.",
@@ -1626,13 +1625,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Instruments/Lute.svg"
     },
     {
       "id": "91",
       "name": "Lyre",
       "category": "Instruments",
-      "image": "/cards/Instruments/Lyre.png",
       "stats": {
         "cost": "30 gp",
         "weight": "2 lb.",
@@ -1644,13 +1643,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Instruments/Lyre.svg"
     },
     {
       "id": "92",
       "name": "Pan Flute",
       "category": "Instruments",
-      "image": "/cards/Instruments/Pan Flute.png",
       "stats": {
         "cost": "12 gp",
         "weight": "2 lb.",
@@ -1662,13 +1661,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Instruments/Pan Flute.svg"
     },
     {
       "id": "93",
       "name": "Shawm",
       "category": "Instruments",
-      "image": "/cards/Instruments/Shawm.png",
       "stats": {
         "cost": "2 gp",
         "weight": "1 lb.",
@@ -1680,13 +1679,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Instruments/Shawm.svg"
     },
     {
       "id": "94",
       "name": "Viol",
       "category": "Instruments",
-      "image": "/cards/Instruments/Viol.png",
       "stats": {
         "cost": "30 gp",
         "weight": "1 lb.",
@@ -1698,13 +1697,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Instruments/Viol.svg"
     },
     {
       "id": "95",
       "name": "Aristocratic Room Key",
       "category": "Keys",
-      "image": "/cards/Keys/Aristocratic Room Key.png",
       "stats": {
         "cost": "4 gp",
         "weight": null,
@@ -1716,13 +1715,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Key.svg"
     },
     {
       "id": "96",
       "name": "Comfortable Room Key",
       "category": "Keys",
-      "image": "/cards/Keys/Comfortable Room Key.png",
       "stats": {
         "cost": "0.8 gp",
         "weight": null,
@@ -1734,13 +1733,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Key.svg"
     },
     {
       "id": "97",
       "name": "Modest Room Key",
       "category": "Keys",
-      "image": "/cards/Keys/Modest Room Key.png",
       "stats": {
         "cost": "0.5 gp",
         "weight": null,
@@ -1752,20 +1751,20 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Magical Items/Mystery Key.svg"
     },
     {
       "id": "98",
       "name": "Mysterious or Random Key",
       "category": "Keys",
-      "image": "/cards/Keys/Mysterious or Random Key.png",
-      "stats": null
+      "stats": null,
+      "icon": "/icons/Magical Items/Mystery Key.svg"
     },
     {
       "id": "99",
       "name": "Poor Room Key",
       "category": "Keys",
-      "image": "/cards/Keys/Poor Room Key.png",
       "stats": {
         "cost": "0.1 gp",
         "weight": null,
@@ -1777,13 +1776,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Key.svg"
     },
     {
       "id": "100",
       "name": "Squalid Room Key",
       "category": "Keys",
-      "image": "/cards/Keys/Squalid Room Key.png",
       "stats": {
         "cost": "0.07 gp",
         "weight": null,
@@ -1795,13 +1794,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Key.svg"
     },
     {
       "id": "101",
       "name": "Wealthy Room Key",
       "category": "Keys",
-      "image": "/cards/Keys/Wealthy Room Key.png",
       "stats": {
         "cost": "2 gp",
         "weight": null,
@@ -1813,13 +1812,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Key.svg"
     },
     {
       "id": "102",
       "name": "Climbers Kit",
       "category": "Kits",
-      "image": "/cards/Kits/Climbers Kit.png",
       "stats": {
         "cost": "25 gp",
         "weight": "12 lb.",
@@ -1831,13 +1830,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Climbers Kit.svg"
     },
     {
       "id": "103",
       "name": "Disguise Kit",
       "category": "Kits",
-      "image": "/cards/Kits/Disguise Kit.png",
       "stats": {
         "cost": "25 gp",
         "weight": "3 lb.",
@@ -1849,13 +1848,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Disguise Kit.svg"
     },
     {
       "id": "104",
       "name": "Forgery Kit",
       "category": "Kits",
-      "image": "/cards/Kits/Forgery Kit.png",
       "stats": {
         "cost": "15 gp",
         "weight": "5 lb.",
@@ -1867,13 +1866,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Forgery Kit.svg"
     },
     {
       "id": "105",
       "name": "Healers Kit",
       "category": "Kits",
-      "image": "/cards/Kits/Healers Kit.png",
       "stats": {
         "cost": "5 gp",
         "weight": "3 lb.",
@@ -1885,13 +1884,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Healers Kit.svg"
     },
     {
       "id": "106",
       "name": "Herbalism Kit",
       "category": "Kits",
-      "image": "/cards/Kits/Herbalism Kit.png",
       "stats": {
         "cost": "5 gp",
         "weight": "3 lb.",
@@ -1903,13 +1902,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Herbalism Kit.svg"
     },
     {
       "id": "107",
       "name": "Mess Kit",
       "category": "Kits",
-      "image": "/cards/Kits/Mess Kit.png",
       "stats": {
         "cost": "0.2 gp",
         "weight": "1 lb.",
@@ -1921,13 +1920,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Mess Kit.svg"
     },
     {
       "id": "108",
       "name": "Poisoners Kit",
       "category": "Kits",
-      "image": "/cards/Kits/Poisoners Kit.png",
       "stats": {
         "cost": "50 gp",
         "weight": "2 lb.",
@@ -1939,13 +1938,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Poisoners Kit.svg"
     },
     {
       "id": "109",
       "name": "Bullseye Lantern",
       "category": "Lighting",
-      "image": "/cards/Lighting/Bullseye Lantern.png",
       "stats": {
         "cost": "10 gp",
         "weight": "2 lb.",
@@ -1957,13 +1956,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Bullseye Lantern.svg"
     },
     {
       "id": "110",
       "name": "Candle",
       "category": "Lighting",
-      "image": "/cards/Lighting/Candle.png",
       "stats": {
         "cost": "0.01 gp",
         "weight": "0 lb.",
@@ -1975,13 +1974,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Candle.svg"
     },
     {
       "id": "111",
       "name": "Hooded Lantern",
       "category": "Lighting",
-      "image": "/cards/Lighting/Hooded Lantern.png",
       "stats": {
         "cost": "5 gp",
         "weight": "2 lb.",
@@ -1993,13 +1992,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Hooded Lantern.svg"
     },
     {
       "id": "112",
       "name": "Lamp",
       "category": "Lighting",
-      "image": "/cards/Lighting/Lamp.png",
       "stats": {
         "cost": "0.5 gp",
         "weight": "1 lb.",
@@ -2011,13 +2010,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Lamp.svg"
     },
     {
       "id": "113",
       "name": "Torch",
       "category": "Lighting",
-      "image": "/cards/Lighting/Torch.png",
       "stats": {
         "cost": "0.05 gp",
         "weight": "1 lb.",
@@ -2029,13 +2028,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Torch.svg"
     },
     {
       "id": "114",
       "name": "Abacus",
       "category": "MISC",
-      "image": "/cards/MISC/Abacus.png",
       "stats": {
         "cost": "2 gp",
         "weight": "2 lb.",
@@ -2047,13 +2046,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Abacus.svg"
     },
     {
       "id": "115",
       "name": "Ball Bearings",
       "category": "MISC",
-      "image": "/cards/MISC/Ball Bearings.png",
       "stats": {
         "cost": "1 gp",
         "weight": "2 lb.",
@@ -2065,13 +2064,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Ball Bearings (bag of 1000).svg"
     },
     {
       "id": "116",
       "name": "Bedroll",
       "category": "MISC",
-      "image": "/cards/MISC/Bedroll.png",
       "stats": {
         "cost": "1 gp",
         "weight": "7 lb.",
@@ -2083,13 +2082,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Bedroll.svg"
     },
     {
       "id": "117",
       "name": "Bell",
       "category": "MISC",
-      "image": "/cards/MISC/Bell.png",
       "stats": {
         "cost": "1 gp",
         "weight": "0 lb.",
@@ -2101,13 +2100,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Bell.svg"
     },
     {
       "id": "118",
       "name": "Blanket",
       "category": "MISC",
-      "image": "/cards/MISC/Blanket.png",
       "stats": {
         "cost": "0.5 gp",
         "weight": "3 lb.",
@@ -2119,13 +2118,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Blanket.svg"
     },
     {
       "id": "119",
       "name": "Block And Tackle",
       "category": "MISC",
-      "image": "/cards/MISC/Block And Tackle.png",
       "stats": {
         "cost": "1 gp",
         "weight": "5 lb.",
@@ -2137,13 +2136,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Block and Tackle.svg"
     },
     {
       "id": "120",
       "name": "Chalk",
       "category": "MISC",
-      "image": "/cards/MISC/Chalk.png",
       "stats": {
         "cost": "0.01 gp",
         "weight": "0 lb.",
@@ -2155,13 +2154,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Chalk.svg"
     },
     {
       "id": "121",
       "name": "Fishing Tackle",
       "category": "MISC",
-      "image": "/cards/MISC/Fishing Tackle.png",
       "stats": {
         "cost": "1 gp",
         "weight": "4 lb.",
@@ -2173,13 +2172,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Fishing Tackle.svg"
     },
     {
       "id": "122",
       "name": "Hourglass",
       "category": "MISC",
-      "image": "/cards/MISC/Hourglass.png",
       "stats": {
         "cost": "25 gp",
         "weight": "1 lb.",
@@ -2191,13 +2190,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Hourglass.svg"
     },
     {
       "id": "123",
       "name": "Hunting Trap",
       "category": "MISC",
-      "image": "/cards/MISC/Hunting Trap.png",
       "stats": {
         "cost": "5 gp",
         "weight": "25 lb.",
@@ -2209,13 +2208,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Hunting Trap.svg"
     },
     {
       "id": "124",
       "name": "Ink Pen",
       "category": "MISC",
-      "image": "/cards/MISC/Ink Pen.png",
       "stats": {
         "cost": "0.02 gp",
         "weight": "0 lb.",
@@ -2227,13 +2226,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Ink Pen.svg"
     },
     {
       "id": "125",
       "name": "Iron Spike",
       "category": "MISC",
-      "image": "/cards/MISC/Iron Spike.png",
       "stats": {
         "cost": "5 gp",
         "weight": "18 lb.",
@@ -2249,13 +2248,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Iron Spike.svg"
     },
     {
       "id": "126",
       "name": "Lock",
       "category": "MISC",
-      "image": "/cards/MISC/Lock.png",
       "stats": {
         "cost": "10 gp",
         "weight": "1 lb.",
@@ -2267,13 +2266,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Lock.svg"
     },
     {
       "id": "127",
       "name": "Magnifying Glass",
       "category": "MISC",
-      "image": "/cards/MISC/Magnifying Glass.png",
       "stats": {
         "cost": "100 gp",
         "weight": "0 lb.",
@@ -2285,13 +2284,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Magnifying Glass.svg"
     },
     {
       "id": "128",
       "name": "Manacles",
       "category": "MISC",
-      "image": "/cards/MISC/Manacles.png",
       "stats": {
         "cost": "2 gp",
         "weight": "6 lb.",
@@ -2303,20 +2302,20 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Manacles.svg"
     },
     {
       "id": "129",
       "name": "Merchants Scale",
       "category": "MISC",
-      "image": "/cards/MISC/Merchants Scale.png",
-      "stats": null
+      "stats": null,
+      "icon": "/icons/Adventuring Gear/Merchants Scales.svg"
     },
     {
       "id": "130",
       "name": "Perfume",
       "category": "MISC",
-      "image": "/cards/MISC/Perfume.png",
       "stats": {
         "cost": "5 gp",
         "weight": "0 lb.",
@@ -2328,13 +2327,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Perfume.svg"
     },
     {
       "id": "131",
       "name": "Piton",
       "category": "MISC",
-      "image": "/cards/MISC/Piton.png",
       "stats": {
         "cost": "0.05 gp",
         "weight": "0.25 lb.",
@@ -2346,13 +2345,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Pitons.svg"
     },
     {
       "id": "132",
       "name": "Portable Ram",
       "category": "MISC",
-      "image": "/cards/MISC/Portable Ram.png",
       "stats": {
         "cost": "4 gp",
         "weight": " 35 lbs",
@@ -2364,13 +2363,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Portable Ram.svg"
     },
     {
       "id": "133",
       "name": "Sealing Wax",
       "category": "MISC",
-      "image": "/cards/MISC/Sealing Wax.png",
       "stats": {
         "cost": "0.5 gp",
         "weight": "0 lb.",
@@ -2382,13 +2381,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Sealing Wax.svg"
     },
     {
       "id": "134",
       "name": "Signal Whistle",
       "category": "MISC",
-      "image": "/cards/MISC/Signal Whistle.png",
       "stats": {
         "cost": "0.05 gp",
         "weight": "0 lb.",
@@ -2400,13 +2399,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Signal Whistle.svg"
     },
     {
       "id": "135",
       "name": "Signet Ring",
       "category": "MISC",
-      "image": "/cards/MISC/Signet Ring.png",
       "stats": {
         "cost": "5 gp",
         "weight": "0 lb.",
@@ -2421,13 +2420,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Signet Ring - Dove.svg"
     },
     {
       "id": "136",
       "name": "Soap",
       "category": "MISC",
-      "image": "/cards/MISC/Soap.png",
       "stats": {
         "cost": "0.02 gp",
         "weight": "0 lb.",
@@ -2439,13 +2438,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Soap.svg"
     },
     {
       "id": "137",
       "name": "Spyglass",
       "category": "MISC",
-      "image": "/cards/MISC/Spyglass.png",
       "stats": {
         "cost": "1000 gp",
         "weight": "1 lb.",
@@ -2457,13 +2456,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Spyglass.svg"
     },
     {
       "id": "138",
       "name": "Steel Mirror",
       "category": "MISC",
-      "image": "/cards/MISC/Steel Mirror.png",
       "stats": {
         "cost": "5 gp",
         "weight": "0.5 lb.",
@@ -2475,13 +2474,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Steel Mirror.svg"
     },
     {
       "id": "139",
       "name": "Tent",
       "category": "MISC",
-      "image": "/cards/MISC/Tent.png",
       "stats": {
         "cost": "2 gp",
         "weight": "20 lb.",
@@ -2493,13 +2492,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Two-Person Tent.svg"
     },
     {
       "id": "140",
       "name": "Tinderbox",
       "category": "MISC",
-      "image": "/cards/MISC/Tinderbox.png",
       "stats": {
         "cost": "0.5 gp",
         "weight": "1 lb.",
@@ -2511,13 +2510,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Tinderbox.svg"
     },
     {
       "id": "141",
       "name": "Whetstone",
       "category": "MISC",
-      "image": "/cards/MISC/Whetstone.png",
       "stats": {
         "cost": "0.01 gp",
         "weight": "1 lb.",
@@ -2529,13 +2528,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Adventuring Gear/Whetstone.svg"
     },
     {
       "id": "142",
       "name": "Bit and Bridle",
       "category": "Mount Equipment",
-      "image": "/cards/Mount Equipment/Bit and Bridle.png",
       "stats": {
         "cost": "2 gp",
         "weight": "1 lb.",
@@ -2547,13 +2546,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Mount and Tack/Bit and bridle.svg"
     },
     {
       "id": "143",
       "name": "Exotic Saddle",
       "category": "Mount Equipment",
-      "image": "/cards/Mount Equipment/Exotic Saddle.png",
       "stats": {
         "cost": "60 gp",
         "weight": "40 lb.",
@@ -2565,13 +2564,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Mount and Tack/Exotic Saddle.svg"
     },
     {
       "id": "144",
       "name": "Military Saddle",
       "category": "Mount Equipment",
-      "image": "/cards/Mount Equipment/Military Saddle.png",
       "stats": {
         "cost": "20 gp",
         "weight": "30 lb.",
@@ -2583,13 +2582,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Mount and Tack/Exotic Saddle.svg"
     },
     {
       "id": "145",
       "name": "Pack Saddle",
       "category": "Mount Equipment",
-      "image": "/cards/Mount Equipment/Pack Saddle.png",
       "stats": {
         "cost": "5 gp",
         "weight": " 15 lbs",
@@ -2601,13 +2600,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Mount and Tack/Riding Saddle.svg"
     },
     {
       "id": "146",
       "name": "Riding Saddle",
       "category": "Mount Equipment",
-      "image": "/cards/Mount Equipment/Riding Saddle.png",
       "stats": {
         "cost": "10 gp",
         "weight": "25 lb.",
@@ -2619,13 +2618,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Mount and Tack/Riding Saddle.svg"
     },
     {
       "id": "147",
       "name": "Saddlebags",
       "category": "Mount Equipment",
-      "image": "/cards/Mount Equipment/Saddlebags.png",
       "stats": {
         "cost": "4 gp",
         "weight": " 8 lbs",
@@ -2637,13 +2636,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Mount and Tack/Saddlebags.svg"
     },
     {
       "id": "148",
       "name": "Acid Vial",
       "category": "Potions and Combustibles",
-      "image": "/cards/Potions and Combustibles/Acid Vial.png",
       "stats": {
         "cost": "25 gp",
         "weight": "1 lb.",
@@ -2655,13 +2654,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Potions, Poisions, Bottles, and Vials/Acid (vial).svg"
     },
     {
       "id": "149",
       "name": "Alchemist Fire",
       "category": "Potions and Combustibles",
-      "image": "/cards/Potions and Combustibles/Alchemist Fire.png",
       "stats": {
         "cost": "50 gp",
         "weight": "1 lb.",
@@ -2673,13 +2672,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Potions, Poisions, Bottles, and Vials/Alchemist's Fire (flask).svg"
     },
     {
       "id": "150",
       "name": "Antitoxin",
       "category": "Potions and Combustibles",
-      "image": "/cards/Potions and Combustibles/Antitoxin.png",
       "stats": {
         "cost": "50 gp",
         "weight": "0 lb.",
@@ -2691,13 +2690,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Potions, Poisions, Bottles, and Vials/Antitoxin (vial).svg"
     },
     {
       "id": "151",
       "name": "Holy Water",
       "category": "Potions and Combustibles",
-      "image": "/cards/Potions and Combustibles/Holy Water.png",
       "stats": {
         "cost": "25 gp",
         "weight": "1 lb.",
@@ -2709,13 +2708,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Potions, Poisions, Bottles, and Vials/Holy Water (flask).svg"
     },
     {
       "id": "152",
       "name": "Oil",
       "category": "Potions and Combustibles",
-      "image": "/cards/Potions and Combustibles/Oil.png",
       "stats": {
         "cost": "0.1 gp",
         "weight": "1 lb.",
@@ -2727,13 +2726,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Potions, Poisions, Bottles, and Vials/Oil (flask).svg"
     },
     {
       "id": "153",
       "name": " Poison, Basic (vial)",
       "category": "Potions and Combustibles",
-      "image": "/cards/Potions and Combustibles/Poison Vial.png",
       "stats": {
         "cost": "100 gp",
         "weight": "0 lb.",
@@ -2745,13 +2744,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Potions, Poisions, Bottles, and Vials/Basic Poison (vial).svg"
     },
     {
       "id": "154",
       "name": "Potion of Extreme Healing",
       "category": "Potions and Combustibles",
-      "image": "/cards/Potions and Combustibles/Potion of Extreme Healing.png",
       "stats": {
         "cost": "0 gp",
         "weight": "0.5 lb.",
@@ -2763,13 +2762,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Potions, Poisions, Bottles, and Vials/Potion of Supreme Healing.svg"
     },
     {
       "id": "155",
       "name": "Potion of Greater Healing",
       "category": "Potions and Combustibles",
-      "image": "/cards/Potions and Combustibles/Potion of Greater Healing.png",
       "stats": {
         "cost": "0 gp",
         "weight": "0.5 lb.",
@@ -2781,13 +2780,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Potions, Poisions, Bottles, and Vials/Potion of Greater Healing.svg"
     },
     {
       "id": "156",
       "name": "Potion of Healing",
       "category": "Potions and Combustibles",
-      "image": "/cards/Potions and Combustibles/Potion of Healing.png",
       "stats": {
         "cost": "50 gp",
         "weight": "0.5 lb.",
@@ -2799,13 +2798,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Potions, Poisions, Bottles, and Vials/Potion of Healing.svg"
     },
     {
       "id": "157",
       "name": "Potion of Superior Healing",
       "category": "Potions and Combustibles",
-      "image": "/cards/Potions and Combustibles/Potion of Superior Healing.png",
       "stats": {
         "cost": "0 gp",
         "weight": "0.5 lb.",
@@ -2817,13 +2816,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Potions, Poisions, Bottles, and Vials/Potion of Superior Healing.svg"
     },
     {
       "id": "158",
       "name": "Crystal",
       "category": "Spell Casting Focus Items",
-      "image": "/cards/Spell Casting Focus Items/Crystal.png",
       "stats": {
         "cost": "10 gp",
         "weight": "1 lb.",
@@ -2835,31 +2834,31 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Spell Components and Spellcasting foci/Crystal.svg"
     },
     {
       "id": "159",
       "name": "Holy Amulet",
       "category": "Spell Casting Focus Items",
-      "image": "/cards/Spell Casting Focus Items/Holy Amulet.png",
       "stats": {
         "cost": "5 gp",
         "weight": "0 lb.",
         "damage_dice": null,
         "damage_type": null,
         "properties": [],
-        "category_detail": "Mount",
+        "category_detail": "Adventuring Gear",
         "description": "A sturdy mount known for its reliability and carrying capacity.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Spell Components and Spellcasting foci/Holy Amulet.svg"
     },
     {
       "id": "160",
       "name": "Holy Emblem",
       "category": "Spell Casting Focus Items",
-      "image": "/cards/Spell Casting Focus Items/Holy Emblem.png",
       "stats": {
         "cost": "5 gp",
         "weight": "0 lb.",
@@ -2871,13 +2870,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Spell Components and Spellcasting foci/Emblem.svg"
     },
     {
       "id": "161",
       "name": "Orb",
       "category": "Spell Casting Focus Items",
-      "image": "/cards/Spell Casting Focus Items/Orb.png",
       "stats": {
         "cost": "20 gp",
         "weight": "3 lb.",
@@ -2889,13 +2888,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Spell Components and Spellcasting foci/Orb.svg"
     },
     {
       "id": "162",
       "name": "Reliquary",
       "category": "Spell Casting Focus Items",
-      "image": "/cards/Spell Casting Focus Items/Reliquary.png",
       "stats": {
         "cost": "5 gp",
         "weight": "2 lb.",
@@ -2907,13 +2906,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Spell Components and Spellcasting foci/Gold-Inlaid Vial (Summon Elemental).svg"
     },
     {
       "id": "163",
       "name": "Rod",
       "category": "Spell Casting Focus Items",
-      "image": "/cards/Spell Casting Focus Items/Rod.png",
       "stats": {
         "cost": "10 gp",
         "weight": "0 lb.",
@@ -2925,13 +2924,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Spell Components and Spellcasting foci/Rod.svg"
     },
     {
       "id": "164",
       "name": "Sprig Of Mistletoe",
       "category": "Spell Casting Focus Items",
-      "image": "/cards/Spell Casting Focus Items/Sprig Of Mistletoe.png",
       "stats": {
         "cost": "1 gp",
         "weight": "0 lb.",
@@ -2943,13 +2942,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Spell Components and Spellcasting foci/Sprig of Mistletoe.svg"
     },
     {
       "id": "165",
       "name": "Staff",
       "category": "Spell Casting Focus Items",
-      "image": "/cards/Spell Casting Focus Items/Staff.png",
       "stats": {
         "cost": "5 gp",
         "weight": "4 lb.",
@@ -2963,13 +2962,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Staff.svg"
     },
     {
       "id": "166",
       "name": "Totem",
       "category": "Spell Casting Focus Items",
-      "image": "/cards/Spell Casting Focus Items/Totem.png",
       "stats": {
         "cost": "1 gp",
         "weight": "0 lb.",
@@ -2981,13 +2980,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Spell Components and Spellcasting foci/Totem.svg"
     },
     {
       "id": "167",
       "name": "Wand",
       "category": "Spell Casting Focus Items",
-      "image": "/cards/Spell Casting Focus Items/Wand.png",
       "stats": {
         "cost": "10 gp",
         "weight": "1 lb.",
@@ -2999,13 +2998,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Spell Components and Spellcasting foci/Wand.svg"
     },
     {
       "id": "168",
       "name": "Wooden Staff",
       "category": "Spell Casting Focus Items",
-      "image": "/cards/Spell Casting Focus Items/Wooden Staff.png",
       "stats": {
         "cost": "5 gp",
         "weight": "4 lb.",
@@ -3017,13 +3016,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Wooden Staff.svg"
     },
     {
       "id": "169",
       "name": "Yew Wand",
       "category": "Spell Casting Focus Items",
-      "image": "/cards/Spell Casting Focus Items/Yew Wand.png",
       "stats": {
         "cost": "10 gp",
         "weight": "1 lb.",
@@ -3035,13 +3034,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Spell Components and Spellcasting foci/Yew Wand.svg"
     },
     {
       "id": "170",
       "name": "Alchemist Supplies",
       "category": "Supply Kits",
-      "image": "/cards/Supply Kits/Alchemist Supplies.png",
       "stats": {
         "cost": "50 gp",
         "weight": "8 lb.",
@@ -3053,13 +3052,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Alchemists Supplies.svg"
     },
     {
       "id": "171",
       "name": "Brewers Supplies",
       "category": "Supply Kits",
-      "image": "/cards/Supply Kits/Brewers Supplies.png",
       "stats": {
         "cost": "20 gp",
         "weight": "9 lb.",
@@ -3071,13 +3070,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Brewer Supplies.svg"
     },
     {
       "id": "172",
       "name": "Calligraphers Supplies",
       "category": "Supply Kits",
-      "image": "/cards/Supply Kits/Calligraphers Supplies.png",
       "stats": {
         "cost": "10 gp",
         "weight": "5 lb.",
@@ -3089,13 +3088,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Calligrapher Supplies.svg"
     },
     {
       "id": "173",
       "name": "Painters Supplies",
       "category": "Supply Kits",
-      "image": "/cards/Supply Kits/Painters Supplies.png",
       "stats": {
         "cost": "10 gp",
         "weight": "5 lb.",
@@ -3107,13 +3106,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Tools, Kits, and Artisan Tools/Painter Supplies.svg"
     },
     {
       "id": "174",
       "name": "Airship",
       "category": "Vehicles",
-      "image": "/cards/Vehicles/Airship.png",
       "stats": {
         "cost": "40000 gp",
         "weight": "0 lb.",
@@ -3125,13 +3124,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Vehicles/Airship - Deed.svg"
     },
     {
       "id": "175",
       "name": "Carriage",
       "category": "Vehicles",
-      "image": "/cards/Vehicles/Carriage.png",
       "stats": {
         "cost": "100 gp",
         "weight": "600 lb.",
@@ -3143,13 +3142,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Vehicles/Carriage.svg"
     },
     {
       "id": "176",
       "name": "Cart",
       "category": "Vehicles",
-      "image": "/cards/Vehicles/Cart.png",
       "stats": {
         "cost": "15 gp",
         "weight": "200 lb.",
@@ -3161,13 +3160,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Vehicles/Cart.svg"
     },
     {
       "id": "177",
       "name": "Chariot",
       "category": "Vehicles",
-      "image": "/cards/Vehicles/Chariot.png",
       "stats": {
         "cost": "250 gp",
         "weight": "100 lb.",
@@ -3179,13 +3178,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Vehicles/Chariot - Deed.svg"
     },
     {
       "id": "178",
       "name": "Galley",
       "category": "Vehicles",
-      "image": "/cards/Vehicles/Galley.png",
       "stats": {
         "cost": "30000 gp",
         "weight": "0 lb.",
@@ -3197,13 +3196,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Vehicles/Galley - Deed.svg"
     },
     {
       "id": "179",
       "name": "Keelboat",
       "category": "Vehicles",
-      "image": "/cards/Vehicles/Keelboat.png",
       "stats": {
         "cost": "3000 gp",
         "weight": "0 lb.",
@@ -3215,13 +3214,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Vehicles/Keelboat - Deed.svg"
     },
     {
       "id": "180",
       "name": "Longship",
       "category": "Vehicles",
-      "image": "/cards/Vehicles/Longship.png",
       "stats": {
         "cost": "10000 gp",
         "weight": "0 lb.",
@@ -3233,13 +3232,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Vehicles/Longship - Deed.svg"
     },
     {
       "id": "181",
       "name": "Rowboat",
       "category": "Vehicles",
-      "image": "/cards/Vehicles/Rowboat.png",
       "stats": {
         "cost": "50 gp",
         "weight": "100 lb.",
@@ -3251,13 +3250,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Vehicles/Rowboat - Deed.svg"
     },
     {
       "id": "182",
       "name": "Sailing Ship",
       "category": "Vehicles",
-      "image": "/cards/Vehicles/Sailing Ship.png",
       "stats": {
         "cost": "10000 gp",
         "weight": "0 lb.",
@@ -3269,13 +3268,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Vehicles/Sailing Ship - Deed.svg"
     },
     {
       "id": "183",
       "name": "Sled",
       "category": "Vehicles",
-      "image": "/cards/Vehicles/Sled.png",
       "stats": {
         "cost": "20 gp",
         "weight": "300 lb.",
@@ -3287,13 +3286,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Vehicles/Sled - Deed.svg"
     },
     {
       "id": "184",
       "name": "Wagon",
       "category": "Vehicles",
-      "image": "/cards/Vehicles/Wagon.png",
       "stats": {
         "cost": "35 gp",
         "weight": "400 lb.",
@@ -3305,13 +3304,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Vehicles/Wagon - Deed.svg"
     },
     {
       "id": "185",
       "name": "Warship",
       "category": "Vehicles",
-      "image": "/cards/Vehicles/Warship.png",
       "stats": {
         "cost": "25000 gp",
         "weight": "0 lb.",
@@ -3323,13 +3322,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Vehicles/Warship - Deed.svg"
     },
     {
       "id": "186",
       "name": "battleaxe",
       "category": "Weapons",
-      "image": "/cards/Weapons/battleaxe.png",
       "stats": {
         "cost": "10 gp",
         "weight": "4 lb.",
@@ -3343,13 +3342,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Battleaxe.svg"
     },
     {
       "id": "187",
       "name": "Blowgun",
       "category": "Weapons",
-      "image": "/cards/Weapons/Blowgun.png",
       "stats": {
         "cost": "10 gp",
         "weight": "1 lb.",
@@ -3364,13 +3363,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Blowgun.svg"
     },
     {
       "id": "188",
       "name": "Club",
       "category": "Weapons",
-      "image": "/cards/Weapons/Club Card.png",
       "stats": {
         "cost": "0.1 gp",
         "weight": "2 lb.",
@@ -3384,13 +3383,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Club.svg"
     },
     {
       "id": "189",
       "name": "Dagger",
       "category": "Weapons",
-      "image": "/cards/Weapons/Dagger Card.png",
       "stats": {
         "cost": "2 gp",
         "weight": "1 lb.",
@@ -3406,13 +3405,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Dagger.svg"
     },
     {
       "id": "190",
       "name": "Dart",
       "category": "Weapons",
-      "image": "/cards/Weapons/Dart.png",
       "stats": {
         "cost": "0.05 gp",
         "weight": "1 lb.",
@@ -3427,13 +3426,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Dart.svg"
     },
     {
       "id": "191",
       "name": "Flail",
       "category": "Weapons",
-      "image": "/cards/Weapons/Flail.png",
       "stats": {
         "cost": "10 gp",
         "weight": "2 lb.",
@@ -3445,13 +3444,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Flail.svg"
     },
     {
       "id": "192",
       "name": "Glaive",
       "category": "Weapons",
-      "image": "/cards/Weapons/Glaive.png",
       "stats": {
         "cost": "20 gp",
         "weight": "6 lb.",
@@ -3467,13 +3466,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Glaive.svg"
     },
     {
       "id": "193",
       "name": "Greataxe",
       "category": "Weapons",
-      "image": "/cards/Weapons/Greataxe.png",
       "stats": {
         "cost": "30 gp",
         "weight": "7 lb.",
@@ -3488,13 +3487,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Greataxe.svg"
     },
     {
       "id": "194",
       "name": "Greatclub",
       "category": "Weapons",
-      "image": "/cards/Weapons/Greatclub.png",
       "stats": {
         "cost": "0.2 gp",
         "weight": "10 lb.",
@@ -3508,13 +3507,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Greatclub.svg"
     },
     {
       "id": "195",
       "name": "Greatsword",
       "category": "Weapons",
-      "image": "/cards/Weapons/Greatsword.png",
       "stats": {
         "cost": "50 gp",
         "weight": "6 lb.",
@@ -3529,13 +3528,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Greatsword.svg"
     },
     {
       "id": "196",
       "name": "halbred",
       "category": "Weapons",
-      "image": "/cards/Weapons/halbred.png",
       "stats": {
         "cost": "20 gp",
         "weight": "6 lb.",
@@ -3551,13 +3550,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Halberd.svg"
     },
     {
       "id": "197",
       "name": "hand crossbow",
       "category": "Weapons",
-      "image": "/cards/Weapons/hand crossbow.png",
       "stats": {
         "cost": "75 gp",
         "weight": "3 lb.",
@@ -3569,13 +3568,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Hand Crossbow.svg"
     },
     {
       "id": "198",
       "name": "handaxe",
       "category": "Weapons",
-      "image": "/cards/Weapons/handaxe.png",
       "stats": {
         "cost": "5 gp",
         "weight": "2 lb.",
@@ -3590,13 +3589,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Handaxe.svg"
     },
     {
       "id": "199",
       "name": "Heavy Crossbow",
       "category": "Weapons",
-      "image": "/cards/Weapons/Heavy Crossbow.png",
       "stats": {
         "cost": "50 gp",
         "weight": "18 lb.",
@@ -3608,13 +3607,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Heavy Crossbow.svg"
     },
     {
       "id": "200",
       "name": "JAVELIN",
       "category": "Weapons",
-      "image": "/cards/Weapons/JAVELIN.png",
       "stats": {
         "cost": "0.5 gp",
         "weight": "2 lb.",
@@ -3628,13 +3627,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Javelin.svg"
     },
     {
       "id": "201",
       "name": "Lance",
       "category": "Weapons",
-      "image": "/cards/Weapons/Lance.png",
       "stats": {
         "cost": "10 gp",
         "weight": "6 lb.",
@@ -3649,13 +3648,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Lance.svg"
     },
     {
       "id": "202",
       "name": "Light Crossbow",
       "category": "Weapons",
-      "image": "/cards/Weapons/Light Crossbow.png",
       "stats": {
         "cost": "25 gp",
         "weight": "5 lb.",
@@ -3667,13 +3666,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Light Crossbow.svg"
     },
     {
       "id": "203",
       "name": "Light Hammer",
       "category": "Weapons",
-      "image": "/cards/Weapons/Light Hammer.png",
       "stats": {
         "cost": "2 gp",
         "weight": "2 lb.",
@@ -3688,13 +3687,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Light Hammer.svg"
     },
     {
       "id": "204",
       "name": "Longbow",
       "category": "Weapons",
-      "image": "/cards/Weapons/Longbow.png",
       "stats": {
         "cost": "50 gp",
         "weight": "2 lb.",
@@ -3710,13 +3709,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Longbow.svg"
     },
     {
       "id": "205",
       "name": "Longsword",
       "category": "Weapons",
-      "image": "/cards/Weapons/Longsword.png",
       "stats": {
         "cost": "15 gp",
         "weight": "3 lb.",
@@ -3730,13 +3729,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Longsword.svg"
     },
     {
       "id": "206",
       "name": "Mace",
       "category": "Weapons",
-      "image": "/cards/Weapons/Mace.png",
       "stats": {
         "cost": "5 gp",
         "weight": "4 lb.",
@@ -3748,13 +3747,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Mace.svg"
     },
     {
       "id": "207",
       "name": "Maul",
       "category": "Weapons",
-      "image": "/cards/Weapons/Maul.png",
       "stats": {
         "cost": "10 gp",
         "weight": "10 lb.",
@@ -3769,13 +3768,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Maul.svg"
     },
     {
       "id": "208",
       "name": "Morningstar",
       "category": "Weapons",
-      "image": "/cards/Weapons/Morningstar.png",
       "stats": {
         "cost": "15 gp",
         "weight": "4 lb.",
@@ -3787,13 +3786,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Morningstar.svg"
     },
     {
       "id": "209",
       "name": "Net",
       "category": "Weapons",
-      "image": "/cards/Weapons/Net.png",
       "stats": {
         "cost": "1 gp",
         "weight": "3 lb.",
@@ -3808,13 +3807,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Net.svg"
     },
     {
       "id": "210",
       "name": "Pike",
       "category": "Weapons",
-      "image": "/cards/Weapons/Pike.png",
       "stats": {
         "cost": "5 gp",
         "weight": "18 lb.",
@@ -3830,13 +3829,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Pike.svg"
     },
     {
       "id": "211",
       "name": "Quarterstaff",
       "category": "Weapons",
-      "image": "/cards/Weapons/Quarterstaff.png",
       "stats": {
         "cost": "0.2 gp",
         "weight": "4 lb.",
@@ -3850,13 +3849,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Quarterstaff.svg"
     },
     {
       "id": "212",
       "name": "Rapier",
       "category": "Weapons",
-      "image": "/cards/Weapons/Rapier.png",
       "stats": {
         "cost": "25 gp",
         "weight": "2 lb.",
@@ -3870,13 +3869,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Rapier.svg"
     },
     {
       "id": "213",
       "name": "Scimitar",
       "category": "Weapons",
-      "image": "/cards/Weapons/Scimitar.png",
       "stats": {
         "cost": "25 gp",
         "weight": "3 lb.",
@@ -3891,13 +3890,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Scimitar.svg"
     },
     {
       "id": "214",
       "name": "shortbow",
       "category": "Weapons",
-      "image": "/cards/Weapons/shortbow.png",
       "stats": {
         "cost": "25 gp",
         "weight": "2 lb.",
@@ -3912,13 +3911,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Shortbow.svg"
     },
     {
       "id": "215",
       "name": "shortsword",
       "category": "Weapons",
-      "image": "/cards/Weapons/shortsword.png",
       "stats": {
         "cost": "10 gp",
         "weight": "2 lb.",
@@ -3933,13 +3932,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Shortsword.svg"
     },
     {
       "id": "216",
       "name": "Sickle",
       "category": "Weapons",
-      "image": "/cards/Weapons/Sickle.png",
       "stats": {
         "cost": "1 gp",
         "weight": "2 lb.",
@@ -3953,13 +3952,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Sickle.svg"
     },
     {
       "id": "217",
       "name": "Silvered Weapons",
       "category": "Weapons",
-      "image": "/cards/Weapons/Silvered Weapons.png",
       "stats": {
         "cost": "100 gp",
         "weight": "1 lb.",
@@ -3971,13 +3970,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Shortsword.svg"
     },
     {
       "id": "218",
       "name": "Sling",
       "category": "Weapons",
-      "image": "/cards/Weapons/Sling.png",
       "stats": {
         "cost": "0.1 gp",
         "weight": "0 lb.",
@@ -3991,13 +3990,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Sling.svg"
     },
     {
       "id": "219",
       "name": "Spear",
       "category": "Weapons",
-      "image": "/cards/Weapons/Spear.png",
       "stats": {
         "cost": "1 gp",
         "weight": "3 lb.",
@@ -4012,13 +4011,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Spear.svg"
     },
     {
       "id": "220",
       "name": "Trident",
       "category": "Weapons",
-      "image": "/cards/Weapons/Trident.png",
       "stats": {
         "cost": "5 gp",
         "weight": "4 lb.",
@@ -4033,13 +4032,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Trident.svg"
     },
     {
       "id": "221",
       "name": "War Pick",
       "category": "Weapons",
-      "image": "/cards/Weapons/War Pick.png",
       "stats": {
         "cost": "5 gp",
         "weight": "2 lb.",
@@ -4051,13 +4050,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/War Pick.svg"
     },
     {
       "id": "222",
       "name": "Warhammer",
       "category": "Weapons",
-      "image": "/cards/Weapons/Warhammer.png",
       "stats": {
         "cost": "15 gp",
         "weight": "5 lb.",
@@ -4071,13 +4070,13 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Warhammer.svg"
     },
     {
       "id": "223",
       "name": "Whip",
       "category": "Weapons",
-      "image": "/cards/Weapons/Whip.png",
       "stats": {
         "cost": "2 gp",
         "weight": "3 lb.",
@@ -4092,42 +4091,98 @@
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
-      }
+      },
+      "icon": "/icons/Weapons/Whip.svg"
     },
     {
       "id": "224",
       "name": "Custom Item 1",
       "category": "00_Custom",
-      "image": "/cards/Custom/custom_card.png",
-      "stats": { "cost": null, "weight": null, "damage_dice": null, "damage_type": null, "properties": [], "category_detail": null, "description": null, "ac_display": null, "stealth_disadvantage": null, "strength_required": null }
+      "stats": {
+        "cost": null,
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": null,
+        "description": null,
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      },
+      "icon": null
     },
     {
       "id": "225",
       "name": "Custom Item 2",
       "category": "00_Custom",
-      "image": "/cards/Custom/custom_card.png",
-      "stats": { "cost": null, "weight": null, "damage_dice": null, "damage_type": null, "properties": [], "category_detail": null, "description": null, "ac_display": null, "stealth_disadvantage": null, "strength_required": null }
+      "stats": {
+        "cost": null,
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": null,
+        "description": null,
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      },
+      "icon": null
     },
     {
       "id": "226",
       "name": "Custom Item 3",
       "category": "00_Custom",
-      "image": "/cards/Custom/custom_card.png",
-      "stats": { "cost": null, "weight": null, "damage_dice": null, "damage_type": null, "properties": [], "category_detail": null, "description": null, "ac_display": null, "stealth_disadvantage": null, "strength_required": null }
+      "stats": {
+        "cost": null,
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": null,
+        "description": null,
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      },
+      "icon": null
     },
     {
       "id": "227",
       "name": "Custom Item 4",
       "category": "00_Custom",
-      "image": "/cards/Custom/custom_card.png",
-      "stats": { "cost": null, "weight": null, "damage_dice": null, "damage_type": null, "properties": [], "category_detail": null, "description": null, "ac_display": null, "stealth_disadvantage": null, "strength_required": null }
+      "stats": {
+        "cost": null,
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": null,
+        "description": null,
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      },
+      "icon": null
     },
     {
       "id": "228",
       "name": "Custom Item 5",
       "category": "00_Custom",
-      "image": "/cards/Custom/custom_card.png",
-      "stats": { "cost": null, "weight": null, "damage_dice": null, "damage_type": null, "properties": [], "category_detail": null, "description": null, "ac_display": null, "stealth_disadvantage": null, "strength_required": null }
+      "stats": {
+        "cost": null,
+        "weight": null,
+        "damage_dice": null,
+        "damage_type": null,
+        "properties": [],
+        "category_detail": null,
+        "description": null,
+        "ac_display": null,
+        "stealth_disadvantage": null,
+        "strength_required": null
+      },
+      "icon": null
     }
   ]
 }

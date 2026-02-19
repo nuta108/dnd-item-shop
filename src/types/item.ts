@@ -16,7 +16,7 @@ export interface Item {
   id: string;
   name: string;
   category: string;
-  image: string;
+  icon?: string | null;
   stats: ItemStats | null;
 }
 

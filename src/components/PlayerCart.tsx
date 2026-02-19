@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import type { Item } from '../types/item';
 import { ItemCard } from './ItemCard';
+import type { DisplayMode } from './ItemCard';
 
 interface PlayerCartProps {
   items: Item[];
   onDropItem: (item: Item) => void;
   onEditItem?: (id: string, patch: Partial<Item>) => Promise<unknown>;
   onBuyItem?: (item: Item) => void;
+  displayMode?: DisplayMode;
+  itemSize?: number;
 }
 
 function parseCostGp(cost: string | null | undefined): number | null {
@@ -19,7 +22,7 @@ function fmtGp(gp: number): string {
   return Number.isInteger(gp) ? `${gp} gp` : `${gp.toFixed(2)} gp`;
 }
 
-export function PlayerCart({ items, onDropItem, onEditItem, onBuyItem }: PlayerCartProps) {
+export function PlayerCart({ items, onDropItem, onEditItem, onBuyItem, displayMode = 'icon', itemSize = 3 }: PlayerCartProps) {
   const [dragOver, setDragOver] = useState(false);
   const [adjustment, setAdjustment] = useState(0);
 
@@ -45,7 +48,10 @@ export function PlayerCart({ items, onDropItem, onEditItem, onBuyItem }: PlayerC
         e.preventDefault();
         setDragOver(false);
         const data = e.dataTransfer.getData('application/json');
-        if (data) onDropItem(JSON.parse(data) as Item);
+        if (!data) return;
+        const { _dragSource, ...item } = JSON.parse(data);
+        if (_dragSource === 'player-cart') return;
+        onDropItem(item as Item);
       }}
     >
       <div className="flex items-center justify-between mb-3">
@@ -62,7 +68,7 @@ export function PlayerCart({ items, onDropItem, onEditItem, onBuyItem }: PlayerC
           <div className="flex flex-wrap gap-2">
             {items.map((item) => (
               <div key={item.id} className="relative group/card">
-                <ItemCard item={item} displayMode="image" onEdit={onEditItem} />
+                <ItemCard item={item} displayMode={displayMode} itemSize={itemSize} dragSource="player-cart" onEdit={onEditItem} />
                 {onBuyItem && (
                   <button
                     onClick={(e) => { e.stopPropagation(); onBuyItem(item); }}

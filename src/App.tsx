@@ -58,38 +58,27 @@ function AboutModal({ onClose }: { onClose: () => void }) {
         </div>
 
         <div className="mt-3 border-t border-gray-700 pt-3 text-xs text-gray-400 space-y-1.5">
-          <p className="text-gray-300 font-semibold">Card Image Credits</p>
+          <p className="text-gray-300 font-semibold">Icon Credits</p>
           <p>
-            All card images are free assets created by{' '}
+            Icons by{' '}
             <a
-              href="https://www.facebook.com/groups/dmweber/"
+              href="https://github.com/Gwillewyn/dnd-item-icons-by-gwill"
               target="_blank"
               rel="noopener noreferrer"
               className="text-amber-400 hover:text-amber-300 underline"
             >
-              Paul Weber
+              Gwillewyn
             </a>
-            . You can download them at:
-          </p>
-          <p>
+            {' '}based on{' '}
             <a
-              href="https://www.facebook.com/groups/dmweber/"
+              href="https://game-icons.net"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-amber-400 hover:text-amber-300 underline break-all"
+              className="text-amber-400 hover:text-amber-300 underline"
             >
-              facebook.com/groups/dmweber
+              game-icons.net
             </a>
-          </p>
-          <p>
-            <a
-              href="https://www.sageadvice.eu/dd-equipment-treasure-and-condition-cards/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-amber-400 hover:text-amber-300 underline break-all"
-            >
-              D&amp;D Equipment, Treasure and Condition Cards! — sageadvice.eu
-            </a>
+            {' '}— CC BY 3.0
           </p>
         </div>
 
@@ -110,7 +99,9 @@ const DEFAULT_SHOPS: ShopData[] = [
 
 function App() {
   const [mode, setMode] = useLocalStorage<Mode>('dnd-mode', 'dm');
-  const [displayMode, setDisplayMode] = useLocalStorage<DisplayMode>('dnd-display-mode', 'image');
+  const [displayMode, setDisplayMode] = useLocalStorage<DisplayMode>('dnd-display-mode', 'icon');
+  const [itemSize, setItemSize] = useLocalStorage<number>('dnd-item-size', 3);
+  const handleSizeChange = (delta: number) => setItemSize((s) => Math.min(5, Math.max(1, s + delta)));
   const [showAbout, setShowAbout] = useState(false);
   const [leftPct, setLeftPct] = useState(40);
   const dragging = useRef(false);
@@ -217,6 +208,7 @@ function App() {
     items: activeShopItems,
     onDropItem: handleDropToShop,
     displayMode,
+    itemSize,
     onEditItem: editItem,
     onSelectShop: setActiveShopId,
     onAddShop: handleAddShop,
@@ -282,7 +274,9 @@ function App() {
                 items={inventory}
                 onReturnFromShop={handleReturnToInventory}
                 displayMode={displayMode}
-                onToggleDisplayMode={() => setDisplayMode((d) => d === 'image' ? 'text' : 'image')}
+                onToggleDisplayMode={() => setDisplayMode((d) => d === 'icon' ? 'text' : 'icon')}
+                itemSize={itemSize}
+                onSizeChange={handleSizeChange}
                 onEditItem={editItem}
               />
             </section>
@@ -318,7 +312,7 @@ function App() {
             </div>
 
             <section className="bg-gray-800/50 rounded-lg p-4 overflow-hidden flex-1 min-w-0">
-              <PlayerCart items={cart} onDropItem={handleDropToCart} onEditItem={editItem} onBuyItem={handleBuyItem} />
+              <PlayerCart items={cart} onDropItem={handleDropToCart} onEditItem={editItem} onBuyItem={handleBuyItem} displayMode={displayMode} itemSize={itemSize} />
             </section>
           </>
         )}

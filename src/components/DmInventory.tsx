@@ -8,10 +8,12 @@ interface DmInventoryProps {
   onReturnFromShop: (item: Item) => void;
   displayMode: DisplayMode;
   onToggleDisplayMode: () => void;
+  itemSize: number;
+  onSizeChange: (delta: number) => void;
   onEditItem?: (id: string, patch: Partial<Item>) => Promise<unknown>;
 }
 
-export function DmInventory({ items, onReturnFromShop, displayMode, onToggleDisplayMode, onEditItem }: DmInventoryProps) {
+export function DmInventory({ items, onReturnFromShop, displayMode, onToggleDisplayMode, itemSize, onSizeChange, onEditItem }: DmInventoryProps) {
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
   const [dragOver, setDragOver] = useState(false);
   const [search, setSearch] = useState('');
@@ -39,18 +41,36 @@ export function DmInventory({ items, onReturnFromShop, displayMode, onToggleDisp
         e.preventDefault();
         setDragOver(false);
         const data = e.dataTransfer.getData('application/json');
-        if (data) onReturnFromShop(JSON.parse(data) as Item);
+        if (!data) return;
+        const { _dragSource, ...item } = JSON.parse(data);
+        if (_dragSource === 'dm-inventory') return;
+        onReturnFromShop(item as Item);
       }}
     >
       <div className="flex items-center justify-between mb-3">
         <h2 className="text-lg font-bold">DM Inventory</h2>
         <div className="flex items-center gap-2">
           <span className="text-xs text-gray-400">{items.length} items</span>
+          {/* Size controls */}
+          <div className="flex items-center gap-0.5">
+            <button
+              onClick={() => onSizeChange(-1)}
+              disabled={itemSize <= 1}
+              className="w-6 h-6 rounded bg-gray-700 hover:bg-gray-600 disabled:opacity-30 disabled:cursor-not-allowed text-sm font-bold cursor-pointer transition-colors"
+              title="Decrease size"
+            >−</button>
+            <button
+              onClick={() => onSizeChange(1)}
+              disabled={itemSize >= 5}
+              className="w-6 h-6 rounded bg-gray-700 hover:bg-gray-600 disabled:opacity-30 disabled:cursor-not-allowed text-sm font-bold cursor-pointer transition-colors"
+              title="Increase size"
+            >+</button>
+          </div>
           <button
             onClick={onToggleDisplayMode}
             className="text-xs px-2 py-1 rounded bg-gray-700 hover:bg-gray-600 transition-colors cursor-pointer"
           >
-            {displayMode === 'image' ? 'Text' : 'Image'}
+            {displayMode === 'icon' ? 'Text' : 'Icon'}
           </button>
         </div>
       </div>
@@ -78,7 +98,7 @@ export function DmInventory({ items, onReturnFromShop, displayMode, onToggleDisp
               {!collapsed[cat] && (
                 <div className="flex flex-wrap gap-2 mt-1.5">
                   {grouped[cat].map((item) => (
-                    <ItemCard key={item.id} item={item} displayMode={displayMode} onEdit={onEditItem} />
+                    <ItemCard key={item.id} item={item} displayMode={displayMode} itemSize={itemSize} dragSource="dm-inventory" onEdit={onEditItem} />
                   ))}
                 </div>
               )}

@@ -1,18 +1,24 @@
-import { useState, useRef, useCallback } from 'react';
+import { useState } from 'react';
 import type { Item, ItemStats } from '../types/item';
 import { ItemEditForm } from './ItemEditForm';
 
-export type DisplayMode = 'image' | 'text';
+export type DisplayMode = 'icon' | 'text';
 
 interface ItemCardProps {
   item: Item;
   displayMode: DisplayMode;
+  itemSize?: number; // 1–5, default 3
+  dragSource?: string; // e.g. 'shop' | 'player-cart' | 'dm-inventory'
   onEdit?: (id: string, patch: Partial<Item>) => Promise<unknown>;
 }
 
-const THUMB_W = 82;
-const PREVIEW_W = 410;
-const PREVIEW_H = 560;
+const SIZE_MAP = [
+  { card: 60,  icon: 28, text: '8px',  textMode: '10px' },
+  { card: 72,  icon: 36, text: '9px',  textMode: '11px' },
+  { card: 88,  icon: 44, text: '10px', textMode: '12px' },
+  { card: 108, icon: 56, text: '12px', textMode: '13px' },
+  { card: 132, icon: 70, text: '13px', textMode: '14px' },
+];
 
 // ── D&D Stat Block ────────────────────────────────────────────────────────────
 
@@ -96,63 +102,40 @@ function StatBlock({ name, stats }: { name: string; stats: ItemStats }) {
 
 // ── ItemCard ──────────────────────────────────────────────────────────────────
 
-export function ItemCard({ item, displayMode, onEdit }: ItemCardProps) {
-  const [showPreview, setShowPreview] = useState(false);
+export function ItemCard({ item, displayMode, itemSize = 3, dragSource, onEdit }: ItemCardProps) {
   const [showModal, setShowModal] = useState(false);
   const [editing, setEditing] = useState(false);
-  const [previewPos, setPreviewPos] = useState({ top: 0, left: 0 });
-  const cardRef = useRef<HTMLDivElement>(null);
-
-  const handleMouseEnter = useCallback(() => {
-    if (displayMode !== 'image' || !cardRef.current) return;
-    setShowPreview(true);
-
-    const rect = cardRef.current.getBoundingClientRect();
-    let left = rect.right + 8;
-    let top = rect.top;
-
-    if (left + PREVIEW_W > window.innerWidth) left = rect.left - PREVIEW_W - 8;
-    if (left < 0) left = Math.max(0, (window.innerWidth - PREVIEW_W) / 2);
-    if (top + PREVIEW_H > window.innerHeight) top = window.innerHeight - PREVIEW_H;
-    if (top < 0) top = 0;
-
-    setPreviewPos({ top, left });
-  }, [displayMode]);
+  const sz = SIZE_MAP[Math.min(Math.max(itemSize - 1, 0), SIZE_MAP.length - 1)];
 
   return (
     <>
       <div
-        ref={cardRef}
         className="inline-block w-fit cursor-grab active:cursor-grabbing"
         draggable
         onDragStart={(e) => {
-          e.dataTransfer.setData('application/json', JSON.stringify(item));
+          const payload = dragSource ? { ...item, _dragSource: dragSource } : item;
+          e.dataTransfer.setData('application/json', JSON.stringify(payload));
           e.dataTransfer.effectAllowed = 'move';
         }}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={() => setShowPreview(false)}
         onClick={() => setShowModal(true)}
       >
-        {displayMode === 'image' ? (
-          <div className="relative">
-            <img src={item.image} alt={item.name} width={THUMB_W} className="rounded" draggable={false} />
-            <div className="absolute bottom-0 left-0 right-0 bg-black/70 rounded-b text-center py-0.5">
-              <span className="text-[10px] text-white leading-tight">{item.name}</span>
-            </div>
+        {displayMode === 'icon' ? (
+          <div
+            className="bg-gray-800 rounded border border-gray-600 hover:border-gray-400 transition-colors p-2 flex flex-col items-center gap-1"
+            style={{ width: sz.card }}
+          >
+            {item.icon
+              ? <img src={item.icon} alt={item.name} width={sz.icon} height={sz.icon} draggable={false} />
+              : <div className="flex items-center justify-center text-gray-500" style={{ width: sz.icon, height: sz.icon, fontSize: sz.icon * 0.5 }}>?</div>
+            }
+            <p className="text-gray-300 leading-tight text-center break-words w-full" style={{ fontSize: sz.text }}>{item.name}</p>
           </div>
         ) : (
-          <div className="bg-gray-800 rounded border border-gray-600 hover:border-gray-400 transition-colors p-2 text-center">
-            <p className="text-xs truncate">{item.name}</p>
+          <div className="bg-gray-800 rounded border border-gray-600 hover:border-gray-400 transition-colors px-2 py-1.5 text-center">
+            <p className="text-gray-200" style={{ fontSize: sz.textMode }}>{item.name}</p>
           </div>
         )}
       </div>
-
-      {/* Hover preview */}
-      {showPreview && displayMode === 'image' && (
-        <div className="fixed z-50 pointer-events-none" style={{ top: previewPos.top, left: previewPos.left }}>
-          <img src={item.image} alt={item.name} width={PREVIEW_W} className="rounded-lg shadow-2xl shadow-black/80" draggable={false} />
-        </div>
-      )}
 
       {/* Click modal */}
       {showModal && (
@@ -164,13 +147,31 @@ export function ItemCard({ item, displayMode, onEdit }: ItemCardProps) {
             className="flex items-start gap-4"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Card image */}
-            <img
-              src={item.image}
-              alt={item.name}
-              className="max-h-[85vh] rounded-lg shadow-2xl shrink-0"
-              draggable={false}
-            />
+            {/* Left panel: icon panel (not shown in text mode) */}
+            {displayMode === 'icon' && (
+              <div
+                className="shrink-0 flex flex-col items-center gap-4 rounded-xl p-6 min-w-[180px] shadow-2xl border border-amber-800/50 overflow-visible"
+                style={{ background: 'linear-gradient(145deg, #1c1008, #111827)' }}
+              >
+                {item.icon
+                  ? <img
+                      src={item.icon}
+                      alt={item.name}
+                      width={140}
+                      height={140}
+                      draggable={false}
+                      className="transition-transform duration-200 cursor-zoom-in hover:scale-[2] relative z-10"
+                    />
+                  : <div className="w-36 h-36 flex items-center justify-center text-gray-600 text-6xl">?</div>
+                }
+                <div className="text-center">
+                  <p className="text-amber-300 font-bold text-lg leading-tight">{item.name}</p>
+                  {item.stats?.category_detail && (
+                    <p className="text-gray-500 text-xs italic mt-1">{item.stats.category_detail}</p>
+                  )}
+                </div>
+              </div>
+            )}
 
             {/* Stat block or edit form */}
             <div className="self-start">
