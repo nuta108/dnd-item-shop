@@ -3337,8 +3337,8 @@
         "properties": [
           "versatile (1d10)"
         ],
-        "category_detail": "Weapon",
-        "description": "A battleaxe.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A versatile axe used by warriors. Can be wielded with one or two hands.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3358,8 +3358,8 @@
           "ammunition (range 25/100)",
           "loading"
         ],
-        "category_detail": "Weapon",
-        "description": "A blowgun.",
+        "category_detail": "Martial Ranged Weapon",
+        "description": "A long tube through which needles are blown. Requires proficiency to use effectively.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3378,8 +3378,8 @@
         "properties": [
           "light"
         ],
-        "category_detail": "Weapon",
-        "description": "A club.",
+        "category_detail": "Simple Melee Weapon",
+        "description": "A basic bludgeoning weapon made of wood or bone. Easy to use and commonly found.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3400,8 +3400,8 @@
           "light",
           "thrown (range 20/60)"
         ],
-        "category_detail": "Weapon",
-        "description": "A dagger.",
+        "category_detail": "Simple Melee Weapon",
+        "description": "A short blade useful for close combat. Can also be thrown. Favored by rogues.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3421,8 +3421,8 @@
           "finesse",
           "thrown (range 20/60)"
         ],
-        "category_detail": "Weapon",
-        "description": "A dart.",
+        "category_detail": "Simple Ranged Weapon",
+        "description": "A small thrown weapon with a weighted tip. Light and easy to conceal.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3439,8 +3439,8 @@
         "damage_dice": "1d8",
         "damage_type": "bludgeoning",
         "properties": [],
-        "category_detail": "Weapon",
-        "description": "A flail.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A spiked ball on a chain attached to a handle. Difficult to block with a shield.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3461,8 +3461,8 @@
           "reach",
           "two-handed"
         ],
-        "category_detail": "Weapon",
-        "description": "A glaive.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A long pole weapon with a curved blade at the end. Excellent reach weapon.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3482,8 +3482,8 @@
           "heavy",
           "two-handed"
         ],
-        "category_detail": "Weapon",
-        "description": "A greataxe.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A massive two-handed axe that deals devastating damage. Requires both hands to wield.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3502,8 +3502,8 @@
         "properties": [
           "two-handed"
         ],
-        "category_detail": "Weapon",
-        "description": "A greatclub.",
+        "category_detail": "Simple Melee Weapon",
+        "description": "A large, heavy club that deals significant damage. Requires both hands.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3523,8 +3523,8 @@
           "heavy",
           "two-handed"
         ],
-        "category_detail": "Weapon",
-        "description": "A greatsword.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A massive two-handed sword prized for its ability to deal heavy damage.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3545,8 +3545,8 @@
           "reach",
           "two-handed"
         ],
-        "category_detail": "Weapon",
-        "description": "A halberd.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A polearm combining an axe blade with a spear point. Effective reach weapon.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3563,8 +3563,8 @@
         "damage_dice": null,
         "damage_type": null,
         "properties": [],
-        "category_detail": "Weapon",
-        "description": "A hand crossbow.",
+        "category_detail": "Martial Ranged Weapon",
+        "description": "A small crossbow that can be used one-handed. Compact and concealable.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3584,8 +3584,8 @@
           "light",
           "thrown (range 20/60)"
         ],
-        "category_detail": "Weapon",
-        "description": "A handaxe.",
+        "category_detail": "Simple Melee Weapon",
+        "description": "A light axe that can be used in melee or thrown at range.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3602,8 +3602,8 @@
         "damage_dice": null,
         "damage_type": null,
         "properties": [],
-        "category_detail": "Weapon",
-        "description": "A heavy crossbow.",
+        "category_detail": "Martial Ranged Weapon",
+        "description": "A powerful crossbow that fires heavy bolts over long distances.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3622,8 +3622,8 @@
         "properties": [
           "thrown (range 30/120)"
         ],
-        "category_detail": "Weapon",
-        "description": "A javelin.",
+        "category_detail": "Simple Melee Weapon",
+        "description": "A light spear designed for throwing, but can also be used in melee.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3643,8 +3643,8 @@
           "reach",
           "special"
         ],
-        "category_detail": "Weapon",
-        "description": "A lance.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A long cavalry weapon designed for charging attacks. Disadvantage when used within 5 feet.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3661,8 +3661,8 @@
         "damage_dice": null,
         "damage_type": null,
         "properties": [],
-        "category_detail": "Weapon",
-        "description": "A light crossbow.",
+        "category_detail": "Simple Ranged Weapon",
+        "description": "A simple crossbow easy enough for most adventurers to use without martial training.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3682,8 +3682,8 @@
           "light",
           "thrown (range 20/60)"
         ],
-        "category_detail": "Weapon",
-        "description": "A light hammer.",
+        "category_detail": "Simple Melee Weapon",
+        "description": "A small hammer that can be used in melee or thrown at range.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3704,8 +3704,8 @@
           "heavy",
           "two-handed"
         ],
-        "category_detail": "Weapon",
-        "description": "A longbow.",
+        "category_detail": "Martial Ranged Weapon",
+        "description": "A tall bow requiring strength and training to use effectively. Excellent range.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3724,8 +3724,8 @@
         "properties": [
           "versatile (1d10)"
         ],
-        "category_detail": "Weapon",
-        "description": "A longsword.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A versatile sword that can be wielded with one or two hands. Standard knight's weapon.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3742,8 +3742,8 @@
         "damage_dice": "1d6",
         "damage_type": "bludgeoning",
         "properties": [],
-        "category_detail": "Weapon",
-        "description": "A mace.",
+        "category_detail": "Simple Melee Weapon",
+        "description": "A bludgeoning weapon with a heavy head. Popular among clerics and paladins.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3763,8 +3763,8 @@
           "heavy",
           "two-handed"
         ],
-        "category_detail": "Weapon",
-        "description": "A maul.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A massive two-handed hammer that deals devastating bludgeoning damage.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3781,8 +3781,8 @@
         "damage_dice": "1d8",
         "damage_type": "piercing",
         "properties": [],
-        "category_detail": "Weapon",
-        "description": "A morningstar.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A spiked bludgeoning weapon combining the properties of a mace and a club.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3802,8 +3802,8 @@
           "special",
           "thrown (range 5/15)"
         ],
-        "category_detail": "Weapon",
-        "description": "When you take the Attack action, you can replace one of your attacks with throwing a Net. Target a creature you can see within 15 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or have the Restrained condition until it escapes. The target succeeds automatically if it is Huge or larger. To escape, the target or a creature within 5 feet of it must take an action to make a DC 10 Strength (Athletics) check, freeing the Restrained creature on a success. Destroying the Net (AC 10; 5 HP; Immunity to Bludgeoning, Poison, and Psychic damage) also frees the target, ending the effect.",
+        "category_detail": "Martial Ranged Weapon",
+        "description": "Thrown at a target to restrain it. Large or larger creatures are unaffected.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3824,8 +3824,8 @@
           "reach",
           "two-handed"
         ],
-        "category_detail": "Weapon",
-        "description": "A pike.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A very long spear designed for formation fighting. Excellent reach weapon.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3844,8 +3844,8 @@
         "properties": [
           "versatile (1d8)"
         ],
-        "category_detail": "Weapon",
-        "description": "A quarterstaff.",
+        "category_detail": "Simple Melee Weapon",
+        "description": "A wooden staff used as a weapon. Can be wielded with one or two hands. Favored by monks and druids.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3864,8 +3864,8 @@
         "properties": [
           "finesse"
         ],
-        "category_detail": "Weapon",
-        "description": "A rapier.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A slender, sharply pointed blade designed for thrusting. Uses Dexterity for finesse attacks.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3885,8 +3885,8 @@
           "finesse",
           "light"
         ],
-        "category_detail": "Weapon",
-        "description": "A scimitar.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A curved slashing blade. Light enough for dual-wielding. Uses Dexterity for finesse attacks.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3906,8 +3906,8 @@
           "ammunition (range 80/320)",
           "two-handed"
         ],
-        "category_detail": "Weapon",
-        "description": "A shortbow.",
+        "category_detail": "Simple Ranged Weapon",
+        "description": "A small bow suitable for most adventurers without martial training.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3927,8 +3927,8 @@
           "finesse",
           "light"
         ],
-        "category_detail": "Weapon",
-        "description": "A shortsword.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A light, fast blade popular among rogues. Uses Dexterity for finesse attacks.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3947,8 +3947,8 @@
         "properties": [
           "light"
         ],
-        "category_detail": "Weapon",
-        "description": "A sickle.",
+        "category_detail": "Simple Melee Weapon",
+        "description": "A curved blade primarily used as a farming tool but effective in combat.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3965,8 +3965,8 @@
         "damage_dice": null,
         "damage_type": null,
         "properties": [],
-        "category_detail": "Trade Good",
-        "description": "1lb of silver",
+        "category_detail": "Special — Weapon Modification",
+        "description": "A weapon coated in silver. Useful against creatures such as werewolves and vampires that are resistant to non-silvered weapons. Costs 100 gp to silver a weapon.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -3985,8 +3985,8 @@
         "properties": [
           "ammunition (range 30/120)"
         ],
-        "category_detail": "Weapon",
-        "description": "A sling.",
+        "category_detail": "Simple Ranged Weapon",
+        "description": "A strap used to hurl stones or bullets. Cheap and easy to use.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -4006,8 +4006,8 @@
           "thrown (range 20/60)",
           "versatile (1d8)"
         ],
-        "category_detail": "Weapon",
-        "description": "A spear.",
+        "category_detail": "Simple Melee Weapon",
+        "description": "A pole topped with a pointed tip. Can be thrown and used in melee. Versatile weapon.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -4027,8 +4027,8 @@
           "thrown (range 20/60)",
           "versatile (1d8)"
         ],
-        "category_detail": "Weapon",
-        "description": "A trident.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A three-pronged spear usable in melee or thrown. Can be wielded with one or two hands.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -4045,8 +4045,8 @@
         "damage_dice": "1d8",
         "damage_type": "piercing",
         "properties": [],
-        "category_detail": "Weapon",
-        "description": "A war pick.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A pick-shaped weapon designed to pierce armor. Effective against heavily armored foes.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -4065,8 +4065,8 @@
         "properties": [
           "versatile (1d10)"
         ],
-        "category_detail": "Weapon",
-        "description": "A warhammer.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A heavy hammer favored by dwarves and paladins. Can be wielded with one or two hands.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
@@ -4086,8 +4086,8 @@
           "finesse",
           "reach"
         ],
-        "category_detail": "Weapon",
-        "description": "A whip.",
+        "category_detail": "Martial Melee Weapon",
+        "description": "A long leather weapon with reach. Uses Dexterity for finesse attacks. Can hit targets 10 feet away.",
         "ac_display": null,
         "stealth_disadvantage": null,
         "strength_required": null
