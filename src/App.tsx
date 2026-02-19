@@ -26,7 +26,7 @@ function AboutModal({ onClose }: { onClose: () => void }) {
         onClick={(e) => e.stopPropagation()}
       >
         <h2 className="text-xl font-bold text-amber-400 mb-1">D&D Item Shop</h2>
-        <span className="text-xs bg-gray-700 text-gray-400 px-2 py-0.5 rounded-full">Free Version v0.1.0</span>
+        <span className="text-xs bg-gray-700 text-gray-400 px-2 py-0.5 rounded-full">Free Version</span>
 
         <p className="text-gray-300 text-sm mt-4 leading-relaxed">
           Created by <span className="text-white font-semibold">TarMee</span>
@@ -40,7 +40,7 @@ function AboutModal({ onClose }: { onClose: () => void }) {
             <span className="text-amber-400 font-semibold"> Supporter Version</span> with more features.
           </p>
           <a
-            href="https://www.patreon.com/cw/TarMeeTRPGTools"
+            href="https://patreon.com/aTarMeeTRPGTools?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full text-center bg-[#FF424D] hover:bg-[#e03a45] text-white font-bold py-2 rounded-lg transition-colors"
@@ -240,7 +240,7 @@ function App() {
       <header className="border-b border-gray-700 px-4 py-3 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-2">
           <h1 className="text-xl font-bold tracking-tight">D&D Item Shop</h1>
-          <span className="text-[10px] bg-gray-700 text-gray-400 px-1.5 py-0.5 rounded-full leading-none">Free v0.1.0</span>
+          <span className="text-[10px] bg-gray-700 text-gray-400 px-1.5 py-0.5 rounded-full leading-none">Free</span>
         </div>
         <div className="flex items-center gap-2">
           <span className="text-xs text-gray-400 mr-1">View as:</span>
