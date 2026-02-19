@@ -1346,7 +1346,7 @@
       "category": "Food And Drink",
       "image": "/cards/Food And Drink/Gallon of Ale.png",
       "stats": {
-        "cost": "0.2 sp",
+        "cost": "0.2 gp",
         "weight": null,
         "damage_dice": null,
         "damage_type": null,
@@ -1364,7 +1364,7 @@
       "category": "Food And Drink",
       "image": "/cards/Food And Drink/Hunk of Cheese.png",
       "stats": {
-        "cost": "0.1 sp",
+        "cost": "0.1 gp",
         "weight": null,
         "damage_dice": null,
         "damage_type": null,
@@ -1742,7 +1742,7 @@
       "category": "Keys",
       "image": "/cards/Keys/Modest Room Key.png",
       "stats": {
-        "cost": "0.5 sp",
+        "cost": "0.5 gp",
         "weight": null,
         "damage_dice": null,
         "damage_type": null,
