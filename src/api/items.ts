@@ -1,6 +1,8 @@
 import type { Item } from '../types/item';
 
-const API = 'http://localhost:3001';
+// Dev (WSL2): use Vite proxy at /api → localhost:3001
+// Production (start.bat on Windows): connect directly
+const API = import.meta.env.DEV ? '/api' : 'http://localhost:3001';
 
 export async function fetchItems(): Promise<Item[]> {
   const res = await fetch(`${API}/items`);

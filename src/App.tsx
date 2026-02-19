@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import type { Item, ShopData } from './types/item';
 import { useItems } from './hooks/useItems';
 import { useLocalStorage } from './hooks/useLocalStorage';
@@ -9,13 +9,110 @@ import type { DisplayMode } from './components/ItemCard';
 
 type Mode = 'dm' | 'player';
 
+function AboutModal({ onClose }: { onClose: () => void }) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+
+  return (
+    <div
+      className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-6"
+      onClick={onClose}
+    >
+      <div
+        className="bg-gray-800 border border-gray-600 rounded-xl p-6 max-w-sm w-full shadow-2xl max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <h2 className="text-xl font-bold text-amber-400 mb-1">D&D Item Shop</h2>
+        <span className="text-xs bg-gray-700 text-gray-400 px-2 py-0.5 rounded-full">Free Version</span>
+
+        <p className="text-gray-300 text-sm mt-4 leading-relaxed">
+          Created by <span className="text-white font-semibold">TarMee</span>
+          <br />
+          A tool to help DMs manage item shops for D&amp;D campaigns.
+        </p>
+
+        <div className="mt-4 border-t border-gray-700 pt-4">
+          <p className="text-xs text-gray-400 mb-3">
+            Enjoying this tool? Support on Patreon to unlock the
+            <span className="text-amber-400 font-semibold"> Supporter Version</span> with more features.
+          </p>
+          <a
+            href="https://www.patreon.com/cw/TarMeeTRPGTools"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full text-center bg-[#FF424D] hover:bg-[#e03a45] text-white font-bold py-2 rounded-lg transition-colors"
+          >
+            Support on Patreon
+          </a>
+        </div>
+
+        <div className="mt-3 bg-gray-900/60 rounded-lg p-3 text-xs text-gray-400 space-y-1">
+          <p className="text-gray-300 font-semibold text-xs mb-1">Supporter Version includes:</p>
+          <p>• Up to 20 shops (currently 3)</p>
+          <p>• Freely add &amp; remove items</p>
+          <p>• Custom item card images</p>
+          <p>• Magic Items category (coming soon)</p>
+          <p>• Random item generator (coming soon)</p>
+        </div>
+
+        <div className="mt-3 border-t border-gray-700 pt-3 text-xs text-gray-400 space-y-1.5">
+          <p className="text-gray-300 font-semibold">Card Image Credits</p>
+          <p>
+            All card images are free assets created by{' '}
+            <a
+              href="https://www.facebook.com/groups/dmweber/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:text-amber-300 underline"
+            >
+              Paul Weber
+            </a>
+            . You can download them at:
+          </p>
+          <p>
+            <a
+              href="https://www.facebook.com/groups/dmweber/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:text-amber-300 underline break-all"
+            >
+              facebook.com/groups/dmweber
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.sageadvice.eu/dd-equipment-treasure-and-condition-cards/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:text-amber-300 underline break-all"
+            >
+              D&amp;D Equipment, Treasure and Condition Cards! — sageadvice.eu
+            </a>
+          </p>
+        </div>
+
+        <button
+          onClick={onClose}
+          className="mt-4 w-full text-gray-500 hover:text-gray-300 text-sm cursor-pointer transition-colors"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  );
+}
+
 const DEFAULT_SHOPS: ShopData[] = [
   { id: 'shop-1', name: 'Shop 1', items: [] },
 ];
 
 function App() {
-  const [mode, setMode] = useState<Mode>('dm');
-  const [displayMode, setDisplayMode] = useState<DisplayMode>('image');
+  const [mode, setMode] = useLocalStorage<Mode>('dnd-mode', 'dm');
+  const [displayMode, setDisplayMode] = useLocalStorage<DisplayMode>('dnd-display-mode', 'image');
+  const [showAbout, setShowAbout] = useState(false);
   const [leftPct, setLeftPct] = useState(40);
   const dragging = useRef(false);
   const mainRef = useRef<HTMLElement>(null);
@@ -138,9 +235,13 @@ function App() {
 
   return (
     <div className="h-screen bg-gray-900 text-gray-100 flex flex-col">
+      {showAbout && <AboutModal onClose={() => setShowAbout(false)} />}
       {/* Header */}
       <header className="border-b border-gray-700 px-4 py-3 flex items-center justify-between shrink-0">
-        <h1 className="text-xl font-bold tracking-tight">D&D Item Shop</h1>
+        <div className="flex items-center gap-2">
+          <h1 className="text-xl font-bold tracking-tight">D&D Item Shop</h1>
+          <span className="text-[10px] bg-gray-700 text-gray-400 px-1.5 py-0.5 rounded-full leading-none">Free</span>
+        </div>
         <div className="flex items-center gap-2">
           <span className="text-xs text-gray-400 mr-1">View as:</span>
           <button
@@ -158,6 +259,13 @@ function App() {
             }`}
           >
             Player
+          </button>
+          <button
+            onClick={() => setShowAbout(true)}
+            className="px-3 py-1 text-sm rounded bg-gray-700 text-gray-300 hover:bg-gray-600 transition-colors cursor-pointer"
+            title="About"
+          >
+            ?
           </button>
         </div>
       </header>

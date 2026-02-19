@@ -4093,6 +4093,41 @@
         "stealth_disadvantage": null,
         "strength_required": null
       }
+    },
+    {
+      "id": "224",
+      "name": "Custom Item 1",
+      "category": "00_Custom",
+      "image": "/cards/Custom/custom_card.png",
+      "stats": { "cost": null, "weight": null, "damage_dice": null, "damage_type": null, "properties": [], "category_detail": null, "description": null, "ac_display": null, "stealth_disadvantage": null, "strength_required": null }
+    },
+    {
+      "id": "225",
+      "name": "Custom Item 2",
+      "category": "00_Custom",
+      "image": "/cards/Custom/custom_card.png",
+      "stats": { "cost": null, "weight": null, "damage_dice": null, "damage_type": null, "properties": [], "category_detail": null, "description": null, "ac_display": null, "stealth_disadvantage": null, "strength_required": null }
+    },
+    {
+      "id": "226",
+      "name": "Custom Item 3",
+      "category": "00_Custom",
+      "image": "/cards/Custom/custom_card.png",
+      "stats": { "cost": null, "weight": null, "damage_dice": null, "damage_type": null, "properties": [], "category_detail": null, "description": null, "ac_display": null, "stealth_disadvantage": null, "strength_required": null }
+    },
+    {
+      "id": "227",
+      "name": "Custom Item 4",
+      "category": "00_Custom",
+      "image": "/cards/Custom/custom_card.png",
+      "stats": { "cost": null, "weight": null, "damage_dice": null, "damage_type": null, "properties": [], "category_detail": null, "description": null, "ac_display": null, "stealth_disadvantage": null, "strength_required": null }
+    },
+    {
+      "id": "228",
+      "name": "Custom Item 5",
+      "category": "00_Custom",
+      "image": "/cards/Custom/custom_card.png",
+      "stats": { "cost": null, "weight": null, "damage_dice": null, "damage_type": null, "properties": [], "category_detail": null, "description": null, "ac_display": null, "stealth_disadvantage": null, "strength_required": null }
     }
   ]
 }
