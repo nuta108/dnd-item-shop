@@ -26,7 +26,7 @@ function AboutModal({ onClose }: { onClose: () => void }) {
         onClick={(e) => e.stopPropagation()}
       >
         <h2 className="text-xl font-bold text-amber-400 mb-1">D&D Item Shop</h2>
-        <span className="text-xs bg-amber-700/60 text-amber-300 px-2 py-0.5 rounded-full">Supporter Version v0.2.0</span>
+        <span className="text-xs bg-gray-700 text-gray-400 px-2 py-0.5 rounded-full">Free Version v0.1.0</span>
 
         <p className="text-gray-300 text-sm mt-4 leading-relaxed">
           Created by <span className="text-white font-semibold">TarMee</span>
@@ -35,24 +35,24 @@ function AboutModal({ onClose }: { onClose: () => void }) {
         </p>
 
         <div className="mt-4 border-t border-gray-700 pt-4">
-          <p className="text-xs text-amber-300/80 mb-3 font-semibold">
-            Thank you for supporting! You have access to all Supporter features.
+          <p className="text-xs text-gray-400 mb-3">
+            Enjoying this tool? Support on Patreon to unlock the
+            <span className="text-amber-400 font-semibold"> Supporter Version</span> with more features.
           </p>
           <a
-            href="https://patreon.com/aTarMeeTRPGTools?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
+            href="https://www.patreon.com/cw/TarMeeTRPGTools"
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full text-center bg-[#FF424D] hover:bg-[#e03a45] text-white font-bold py-2 rounded-lg transition-colors"
           >
-            Patreon Page
+            Support on Patreon
           </a>
         </div>
 
         <div className="mt-3 bg-gray-900/60 rounded-lg p-3 text-xs text-gray-400 space-y-1">
-          <p className="text-amber-300 font-semibold text-xs mb-1">Supporter Version features:</p>
-          <p>• Up to 20 shops</p>
-          <p>• Freely add &amp; remove items</p>
-          <p>• Custom item card images</p>
+          <p className="text-gray-300 font-semibold text-xs mb-1">Supporter Version includes:</p>
+          <p>• Up to 20 shops (currently 3)</p>
+          <p>• Adjustable item size</p>
           <p className="text-gray-500">• Magic Items category (coming soon)</p>
           <p className="text-gray-500">• Random item generator (coming soon)</p>
         </div>
@@ -231,7 +231,7 @@ function App() {
       <header className="border-b border-gray-700 px-4 py-3 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-2">
           <h1 className="text-xl font-bold tracking-tight">D&D Item Shop</h1>
-          <span className="text-[10px] bg-amber-700/60 text-amber-300 px-1.5 py-0.5 rounded-full leading-none">Supporter v0.2.0</span>
+          <span className="text-[10px] bg-gray-700 text-gray-400 px-1.5 py-0.5 rounded-full leading-none">Free v0.1.0</span>
         </div>
         <div className="flex items-center gap-2">
           <span className="text-xs text-gray-400 mr-1">View as:</span>

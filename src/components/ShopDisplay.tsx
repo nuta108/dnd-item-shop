@@ -123,11 +123,11 @@ export function ShopDisplay({
             );
           })}
 
-          {shops.length < 20 && (
+          {shops.length < 3 && (
             <button
               onClick={onAddShop}
               className="shrink-0 px-2 py-1.5 rounded-t-lg text-xs text-gray-500 hover:text-gray-200 hover:bg-gray-700/50 cursor-pointer transition-colors border-t border-l border-r border-gray-600/30"
-              title="Add shop (max 20)"
+              title="Add shop (max 3)"
             >
               + New
             </button>
