@@ -40,7 +40,7 @@ function AboutModal({ onClose }: { onClose: () => void }) {
             <span className="text-amber-400 font-semibold"> Supporter Version</span> with more features.
           </p>
           <a
-            href="https://www.patreon.com/cw/TarMeeTRPGTools"
+            href="https://patreon.com/aTarMeeTRPGTools?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_fan&utm_content=copyLink"
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full text-center bg-[#FF424D] hover:bg-[#e03a45] text-white font-bold py-2 rounded-lg transition-colors"
@@ -53,6 +53,7 @@ function AboutModal({ onClose }: { onClose: () => void }) {
           <p className="text-gray-300 font-semibold text-xs mb-1">Supporter Version includes:</p>
           <p>• Up to 20 shops (currently 3)</p>
           <p>• Adjustable item size</p>
+          <p>• Add &amp; remove custom items</p>
           <p className="text-gray-500">• Magic Items category (coming soon)</p>
           <p className="text-gray-500">• Random item generator (coming soon)</p>
         </div>
