@@ -19,3 +19,18 @@ export async function updateItem(id: string, data: Partial<Item>): Promise<Item>
   if (!res.ok) throw new Error(`Failed to update item ${id}: ${res.status}`);
   return res.json();
 }
+
+export async function createItem(data: Omit<Item, 'id'>): Promise<Item> {
+  const res = await fetch(`${API}/items`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  });
+  if (!res.ok) throw new Error(`Failed to create item: ${res.status}`);
+  return res.json();
+}
+
+export async function deleteItem(id: string): Promise<void> {
+  const res = await fetch(`${API}/items/${id}`, { method: 'DELETE' });
+  if (!res.ok) throw new Error(`Failed to delete item ${id}: ${res.status}`);
+}

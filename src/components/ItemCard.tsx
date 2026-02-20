@@ -10,6 +10,7 @@ interface ItemCardProps {
   itemSize?: number; // 1–5, default 3
   dragSource?: string; // e.g. 'shop' | 'player-cart' | 'dm-inventory'
   onEdit?: (id: string, patch: Partial<Item>) => Promise<unknown>;
+  onDelete?: (id: string) => Promise<void>;
 }
 
 const SIZE_MAP = [
@@ -102,7 +103,7 @@ function StatBlock({ name, stats }: { name: string; stats: ItemStats }) {
 
 // ── ItemCard ──────────────────────────────────────────────────────────────────
 
-export function ItemCard({ item, displayMode, itemSize = 3, dragSource, onEdit }: ItemCardProps) {
+export function ItemCard({ item, displayMode, itemSize = 3, dragSource, onEdit, onDelete }: ItemCardProps) {
   const [showModal, setShowModal] = useState(false);
   const [editing, setEditing] = useState(false);
   const sz = SIZE_MAP[Math.min(Math.max(itemSize - 1, 0), SIZE_MAP.length - 1)];
@@ -179,7 +180,8 @@ export function ItemCard({ item, displayMode, itemSize = 3, dragSource, onEdit }
                 <ItemEditForm
                   item={item}
                   onSave={onEdit}
-                  onCancel={() => setEditing(false)}
+                  onDelete={onDelete}
+                  onCancel={() => { setEditing(false); setShowModal(false); }}
                 />
               ) : (
                 <div>

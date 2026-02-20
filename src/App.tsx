@@ -39,7 +39,7 @@ function AboutModal({ onClose }: { onClose: () => void }) {
             Thank you for supporting! You have access to all Supporter features.
           </p>
           <a
-            href="https://patreon.com/aTarMeeTRPGTools?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
+            href="https://patreon.com/aTarMeeTRPGTools?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_fan&utm_content=copyLink"
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full text-center bg-[#FF424D] hover:bg-[#e03a45] text-white font-bold py-2 rounded-lg transition-colors"
@@ -131,7 +131,7 @@ function App() {
     window.addEventListener('mouseup', onMouseUp);
   }, []);
 
-  const { items: inventory, loading, editItem } = useItems();
+  const { items: inventory, loading, editItem, createItem, deleteItem } = useItems();
   const [shops, setShops] = useLocalStorage<ShopData[]>('dnd-shops-v1', DEFAULT_SHOPS);
   const [activeShopId, setActiveShopId] = useState<string>(() => shops[0]?.id ?? 'shop-1');
   const [cart, setCart] = useLocalStorage<Item[]>('dnd-cart-v2', []);
@@ -278,6 +278,8 @@ function App() {
                 itemSize={itemSize}
                 onSizeChange={handleSizeChange}
                 onEditItem={editItem}
+                onCreateItem={createItem}
+                onDeleteItem={deleteItem}
               />
             </section>
 
