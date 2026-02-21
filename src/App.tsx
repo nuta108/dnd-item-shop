@@ -6,6 +6,7 @@ import { DmInventory } from './components/DmInventory';
 import { ShopDisplay } from './components/ShopDisplay';
 import { PlayerCart } from './components/PlayerCart';
 import type { DisplayMode } from './components/ItemCard';
+import type { ShopPreset } from './data/presets';
 
 type Mode = 'dm' | 'player';
 
@@ -26,7 +27,7 @@ function AboutModal({ onClose }: { onClose: () => void }) {
         onClick={(e) => e.stopPropagation()}
       >
         <h2 className="text-xl font-bold text-amber-400 mb-1">D&D Item Shop</h2>
-        <span className="text-xs bg-amber-700/60 text-amber-300 px-2 py-0.5 rounded-full">Supporter Version v0.3.0</span>
+        <span className="text-xs bg-amber-700/60 text-amber-300 px-2 py-0.5 rounded-full">Supporter Version v0.4.0</span>
 
         <p className="text-gray-300 text-sm mt-4 leading-relaxed">
           Created by <span className="text-white font-semibold">TarMee</span>
@@ -58,7 +59,7 @@ function AboutModal({ onClose }: { onClose: () => void }) {
         </div>
 
         <div className="mt-3 bg-indigo-900/30 border border-indigo-700/40 rounded-lg p-3 text-xs space-y-1">
-          <p className="text-indigo-300 font-semibold mb-1.5">✦ What's new in v0.3.0</p>
+          <p className="text-indigo-300 font-semibold mb-1.5">✦ What's new in v0.4.0</p>
           <p className="text-gray-300">• New inventory panel split by category (Adventuring, Magic, Potions…)</p>
           <p className="text-gray-300">• Rarity glow system — items shine by rarity tier</p>
           <p className="text-gray-300">• Cost field now number-only in <span className="text-white font-medium">gp</span> — no more typing "gp" every time</p>
@@ -215,6 +216,53 @@ function App() {
     setShops((prev) => prev.map((s) => (s.id === id ? { ...s, name } : s)));
   };
 
+  const handleLoadPreset = (preset: ShopPreset) => {
+    if (shops.length >= 20) return;
+    const id = `shop-${Date.now()}`;
+    const matchedItems: Item[] = [];
+    let counter = 0;
+    for (const name of preset.itemNames) {
+      const norm = name.toLowerCase().trim();
+      const found = inventory.find((item) => item.name.toLowerCase().trim() === norm);
+      if (found) {
+        matchedItems.push({ ...found, id: `copy-${Date.now()}-${counter++}` });
+      }
+    }
+    setShops((prev) => [...prev, { id, name: preset.name, items: matchedItems }]);
+    setActiveShopId(id);
+  };
+
+  const handleSaveShop = () => {
+    const shop = shops.find((s) => s.id === safeActiveShopId);
+    if (!shop) return;
+    const json = JSON.stringify(shop, null, 2);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${shop.name.replace(/[^a-z0-9]/gi, '_')}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const handleImportShop = async (file: File) => {
+    const text = await file.text();
+    let data: unknown;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      return;
+    }
+    if (
+      typeof data !== 'object' || data === null ||
+      !('name' in data) || !('items' in data) ||
+      !Array.isArray((data as { items: unknown }).items)
+    ) return;
+    const id = `shop-${Date.now()}`;
+    setShops((prev) => [...prev, { ...(data as ShopData), id }]);
+    setActiveShopId(id);
+  };
+
   const shopProps = {
     shops,
     activeShopId: safeActiveShopId,
@@ -227,6 +275,9 @@ function App() {
     onAddShop: handleAddShop,
     onRemoveShop: handleRemoveShop,
     onRenameShop: handleRenameShop,
+    onLoadPreset: handleLoadPreset,
+    onSaveShop: handleSaveShop,
+    onImportShop: handleImportShop,
   };
 
   if (loading) {
@@ -244,7 +295,7 @@ function App() {
       <header className="border-b border-gray-700 px-4 py-3 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-2">
           <h1 className="text-xl font-bold tracking-tight">D&D Item Shop</h1>
-          <span className="text-[10px] bg-amber-700/60 text-amber-300 px-1.5 py-0.5 rounded-full leading-none">Supporter v0.3.0</span>
+          <span className="text-[10px] bg-amber-700/60 text-amber-300 px-1.5 py-0.5 rounded-full leading-none">Supporter v0.4.0</span>
         </div>
         <div className="flex items-center gap-2">
           <span className="text-xs text-gray-400 mr-1">View as:</span>
