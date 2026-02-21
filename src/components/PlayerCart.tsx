@@ -12,10 +12,8 @@ interface PlayerCartProps {
   itemSize?: number;
 }
 
-function parseCostGp(cost: string | null | undefined): number | null {
-  if (!cost) return null;
-  const m = cost.match(/^([\d.]+)\s*gp/i);
-  return m ? parseFloat(m[1]) : null;
+function parseCostGp(cost: number | null | undefined): number | null {
+  return cost ?? null;
 }
 
 function fmtGp(gp: number): string {
