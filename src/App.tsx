@@ -26,7 +26,7 @@ function AboutModal({ onClose }: { onClose: () => void }) {
         onClick={(e) => e.stopPropagation()}
       >
         <h2 className="text-xl font-bold text-amber-400 mb-1">D&D Item Shop</h2>
-        <span className="text-xs bg-amber-700/60 text-amber-300 px-2 py-0.5 rounded-full">Supporter Version v0.2.0</span>
+        <span className="text-xs bg-amber-700/60 text-amber-300 px-2 py-0.5 rounded-full">Supporter Version v0.3.0</span>
 
         <p className="text-gray-300 text-sm mt-4 leading-relaxed">
           Created by <span className="text-white font-semibold">TarMee</span>
@@ -55,6 +55,19 @@ function AboutModal({ onClose }: { onClose: () => void }) {
           <p>• Custom item card images</p>
           <p className="text-gray-500">• Magic Items category (coming soon)</p>
           <p className="text-gray-500">• Random item generator (coming soon)</p>
+        </div>
+
+        <div className="mt-3 bg-indigo-900/30 border border-indigo-700/40 rounded-lg p-3 text-xs space-y-1">
+          <p className="text-indigo-300 font-semibold mb-1.5">✦ What's new in v0.3.0</p>
+          <p className="text-gray-300">• New inventory panel split by category (Adventuring, Magic, Potions…)</p>
+          <p className="text-gray-300">• Rarity glow system — items shine by rarity tier</p>
+          <p className="text-gray-300">• Cost field now number-only in <span className="text-white font-medium">gp</span> — no more typing "gp" every time</p>
+          <p className="text-gray-300">• <span className="text-white font-medium">+818 new items</span> — grew from 227 → 1,045 items total</p>
+          <p className="text-gray-300">• All 13 Ioun Stone variants with individual icons</p>
+          <p className="text-gray-300">• All 10 Rings of Resistance with individual icons</p>
+          <p className="text-gray-300">• Adamantine &amp; Silvered ammunition variants</p>
+          <p className="text-gray-300">• Animal ownership deeds, siege weapons, spell components &amp; more</p>
+          <p className="text-gray-300">• Icon coverage: <span className="text-white font-medium">58% → 79%</span></p>
         </div>
 
         <div className="mt-3 border-t border-gray-700 pt-3 text-xs text-gray-400 space-y-1.5">
@@ -231,7 +244,7 @@ function App() {
       <header className="border-b border-gray-700 px-4 py-3 flex items-center justify-between shrink-0">
         <div className="flex items-center gap-2">
           <h1 className="text-xl font-bold tracking-tight">D&D Item Shop</h1>
-          <span className="text-[10px] bg-amber-700/60 text-amber-300 px-1.5 py-0.5 rounded-full leading-none">Supporter v0.2.0</span>
+          <span className="text-[10px] bg-amber-700/60 text-amber-300 px-1.5 py-0.5 rounded-full leading-none">Supporter v0.3.0</span>
         </div>
         <div className="flex items-center gap-2">
           <span className="text-xs text-gray-400 mr-1">View as:</span>

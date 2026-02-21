@@ -21,26 +21,18 @@ const emptyStats: ItemStats = {
   strength_required: null,
 };
 
-// One icon per category (first icon) for quick picks
-const QUICK_PICKS: { category: string; file: string }[] = [
-  { category: 'Adventuring Gear', file: 'Abacus.svg' },
-  { category: 'Ammunition', file: 'Adamantine Arrow.svg' },
-  { category: 'Armour', file: 'Breastplate.svg' },
-  { category: 'Books and Scrolls', file: 'Alchemical Compendium.svg' },
-  { category: 'Food and Drink', file: 'Ale (Mug).svg' },
-  { category: 'Gaming Sets', file: 'Board Game.svg' },
-  { category: 'Instruments', file: 'Bagpipes.svg' },
-  { category: 'Magical Items', file: 'Abracadabrus.svg' },
-  { category: 'Mount and Tack', file: 'Axe Beak - Deed.svg' },
-  { category: 'Potions, Poisions, Bottles, and Vials', file: 'Acid (vial).svg' },
-  { category: 'Siege Equipment', file: 'Ballista.svg' },
-  { category: 'Spell Components and Spellcasting foci', file: 'Acorn.svg' },
-  { category: 'Tools, Kits, and Artisan Tools', file: 'Alchemists Supplies.svg' },
-  { category: 'Trade Good', file: 'Adamantine Bar.svg' },
-  { category: 'Treasure', file: 'Alexandrite.svg' },
-  { category: 'Vehicles', file: 'Airship - Deed.svg' },
-  { category: 'Weapons', file: 'Battleaxe.svg' },
-];
+const RECENT_ICONS_KEY = 'dm_recent_icons';
+const MAX_RECENT = 12;
+
+function loadRecentIcons(): string[] {
+  try { return JSON.parse(localStorage.getItem(RECENT_ICONS_KEY) ?? '[]'); }
+  catch { return []; }
+}
+
+function saveRecentIcon(path: string) {
+  const list = [path, ...loadRecentIcons().filter((p) => p !== path)].slice(0, MAX_RECENT);
+  localStorage.setItem(RECENT_ICONS_KEY, JSON.stringify(list));
+}
 
 type IconTab = 'pick' | 'custom';
 
@@ -50,9 +42,12 @@ export function CreateItemModal({ categories, onCreateItem, onClose }: CreateIte
   const [customPath, setCustomPath] = useState('');
   const [showIconBrowser, setShowIconBrowser] = useState(false);
 
+  const [recentIcons, setRecentIcons] = useState<string[]>(() => loadRecentIcons());
+
   const [name, setName] = useState('');
   const [category, setCategory] = useState(categories[0] ?? '');
   const [newCategory, setNewCategory] = useState('');
+  const [rarity, setRarity] = useState('');
   const [stats, setStats] = useState<ItemStats>({ ...emptyStats });
   const [saving, setSaving] = useState(false);
   const [nameError, setNameError] = useState(false);
@@ -76,11 +71,18 @@ export function CreateItemModal({ categories, onCreateItem, onClose }: CreateIte
     }
     setSaving(true);
     try {
+      if (resolvedIcon) {
+        saveRecentIcon(resolvedIcon);
+        setRecentIcons(loadRecentIcons());
+      }
       await onCreateItem({
         name: name.trim(),
         category: resolvedCategory || 'Uncategorized',
         icon: resolvedIcon || null,
         stats,
+        rarity: rarity || null,
+        magic_category: null,
+        requires_attunement: null,
       });
       onClose();
     } catch (err) {
@@ -165,31 +167,30 @@ export function CreateItemModal({ categories, onCreateItem, onClose }: CreateIte
 
               {iconTab === 'pick' ? (
                 <>
-                  {/* Quick picks grid */}
-                  <p className="text-[10px] text-gray-500 uppercase tracking-wide">Quick picks</p>
-                  <div className="grid grid-cols-3 gap-1.5">
-                    {QUICK_PICKS.map(({ category: cat, file }) => {
-                      const path = `/icons/${cat}/${file}`;
-                      return (
+                  {/* Recent icons */}
+                  <p className="text-[10px] text-gray-500 uppercase tracking-wide">Recent Icons</p>
+                  {recentIcons.length === 0 ? (
+                    <p className="text-[10px] text-gray-600 italic text-center py-2">
+                      No recent icons yet.<br/>Browse to pick one.
+                    </p>
+                  ) : (
+                    <div className="grid grid-cols-3 gap-1.5">
+                      {recentIcons.map((path) => (
                         <button
                           key={path}
                           onClick={() => setSelectedIcon(path)}
-                          title={file.replace('.svg', '')}
+                          title={path.split('/').pop()?.replace('.svg', '')}
                           className={`p-1 rounded border transition-colors cursor-pointer ${
                             selectedIcon === path
                               ? 'border-amber-400 bg-amber-900/30'
                               : 'border-transparent hover:border-gray-500 hover:bg-gray-700'
                           }`}
                         >
-                          <img
-                            src={path}
-                            alt={file.replace('.svg', '')}
-                            className="w-8 h-8 object-contain"
-                                />
+                          <img src={path} className="w-8 h-8 object-contain" alt="" />
                         </button>
-                      );
-                    })}
-                  </div>
+                      ))}
+                    </div>
+                  )}
                   <button
                     onClick={() => setShowIconBrowser(true)}
                     className="w-full py-1.5 text-xs rounded bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white transition-colors cursor-pointer border border-gray-600"
@@ -256,6 +257,20 @@ export function CreateItemModal({ categories, onCreateItem, onClose }: CreateIte
                   )}
                 </div>
 
+                {/* Rarity */}
+                <div>
+                  <label className="block text-xs font-semibold text-amber-300 mb-1">Rarity</label>
+                  <select
+                    value={rarity}
+                    onChange={(e) => setRarity(e.target.value)}
+                    className="w-full px-2 py-1.5 text-sm rounded bg-gray-700 border border-gray-600 focus:border-amber-400 focus:outline-none text-gray-200 cursor-pointer"
+                  >
+                    {['', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary', 'Artifact', 'Varies'].map((r) => (
+                      <option key={r} value={r}>{r || '— (none)'}</option>
+                    ))}
+                  </select>
+                </div>
+
                 {/* Category Detail */}
                 <div>
                   <label className="block text-xs font-semibold text-amber-300 mb-1">Category Detail</label>
@@ -271,13 +286,18 @@ export function CreateItemModal({ categories, onCreateItem, onClose }: CreateIte
                 {/* Cost */}
                 <div>
                   <label className="block text-xs font-semibold text-amber-300 mb-1">Cost</label>
-                  <input
-                    type="text"
-                    value={stats.cost ?? ''}
-                    onChange={(e) => set('cost', e.target.value || null)}
-                    placeholder="e.g. 15 gp"
-                    className="w-full px-2 py-1.5 text-sm rounded bg-gray-700 border border-gray-600 focus:border-amber-400 focus:outline-none text-gray-200 placeholder-gray-500"
-                  />
+                  <div className="flex items-center gap-1.5">
+                    <input
+                      type="number"
+                      min="0"
+                      step="0.01"
+                      value={stats.cost ?? ''}
+                      onChange={(e) => set('cost', e.target.value === '' ? null : Number(e.target.value))}
+                      placeholder="0"
+                      className="flex-1 px-2 py-1.5 text-sm rounded bg-gray-700 border border-gray-600 focus:border-amber-400 focus:outline-none text-gray-200 placeholder-gray-500"
+                    />
+                    <span className="text-sm font-semibold text-amber-400 shrink-0">gp</span>
+                  </div>
                 </div>
 
                 {/* Weight */}

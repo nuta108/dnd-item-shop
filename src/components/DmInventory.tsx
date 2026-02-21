@@ -16,37 +16,72 @@ interface DmInventoryProps {
   onDeleteItem?: (id: string) => Promise<void>;
 }
 
-type InventoryTab = 'adventuring' | 'magic';
+interface TabConfig {
+  id: string;
+  label: string;
+  filter: (item: Item) => boolean;
+  groupBy: (item: Item) => string;
+  defaultCategory: string;
+}
 
-const MAGIC_CATEGORY = 'Magical Items';
+const MAGIC_CATS  = ['Magic Items'];
+const POTION_CATS = ['Potions and Combustibles'];
+const OTHER_CATS  = ['Trade Good', 'Treasure', '00_Custom'];
 
-const TABS: { id: InventoryTab; label: string }[] = [
-  { id: 'adventuring', label: 'Adventuring Gear' },
-  { id: 'magic',       label: 'Magic Items' },
+const TAB_CONFIG: TabConfig[] = [
+  {
+    id: 'adventuring',
+    label: 'Adventuring Gear',
+    filter: (i) =>
+      !MAGIC_CATS.includes(i.category) &&
+      !POTION_CATS.includes(i.category) &&
+      !OTHER_CATS.includes(i.category),
+    groupBy: (i) => i.category,
+    defaultCategory: 'Adventuring Gear',
+  },
+  {
+    id: 'magic',
+    label: 'Magic Items',
+    filter: (i) => MAGIC_CATS.includes(i.category),
+    groupBy: (i) => i.magic_category ?? 'Other',
+    defaultCategory: 'Magic Items',
+  },
+  {
+    id: 'potions',
+    label: 'Potions',
+    filter: (i) => POTION_CATS.includes(i.category),
+    groupBy: (i) => i.category,
+    defaultCategory: 'Potions and Combustibles',
+  },
+  {
+    id: 'other',
+    label: 'Other',
+    filter: (i) => OTHER_CATS.includes(i.category),
+    groupBy: (i) => i.category,
+    defaultCategory: 'Trade Good',
+  },
 ];
 
 export function DmInventory({
   items, onReturnFromShop, displayMode, onToggleDisplayMode,
   itemSize, onSizeChange, onEditItem, onCreateItem, onDeleteItem,
 }: DmInventoryProps) {
-  const [activeTab, setActiveTab] = useState<InventoryTab>('adventuring');
+  const [activeTabId, setActiveTabId] = useState(TAB_CONFIG[0].id);
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
   const [dragOver, setDragOver] = useState(false);
   const [search, setSearch] = useState('');
   const [showCreateModal, setShowCreateModal] = useState(false);
 
-  // Split items by tab
-  const tabItems = activeTab === 'magic'
-    ? items.filter((i) => i.category === MAGIC_CATEGORY)
-    : items.filter((i) => i.category !== MAGIC_CATEGORY);
+  const activeTabCfg = TAB_CONFIG.find(t => t.id === activeTabId)!;
 
-  // Filter by search then group by category
+  const tabItems = items.filter(activeTabCfg.filter);
+
   const filtered = search
     ? tabItems.filter((i) => i.name.toLowerCase().includes(search.toLowerCase()))
     : tabItems;
 
   const grouped = filtered.reduce<Record<string, Item[]>>((acc, item) => {
-    (acc[item.category] ??= []).push(item);
+    (acc[activeTabCfg.groupBy(item)] ??= []).push(item);
     return acc;
   }, {});
   const sortedCategories = Object.keys(grouped).sort();
@@ -54,19 +89,17 @@ export function DmInventory({
   const toggle = (cat: string) =>
     setCollapsed((prev) => ({ ...prev, [cat]: !prev[cat] }));
 
-  // Categories available for CreateItemModal — scoped to active tab
-  const existingCategories = activeTab === 'magic'
-    ? [MAGIC_CATEGORY, ...new Set(items.filter((i) => i.category === MAGIC_CATEGORY).map((i) => i.category))].filter((v, i, a) => a.indexOf(v) === i).sort()
-    : [...new Set(items.filter((i) => i.category !== MAGIC_CATEGORY).map((i) => i.category))].sort();
+  const existingCategories = [...new Set(
+    tabItems.map(i => activeTabCfg.groupBy(i))
+  )].filter(Boolean).sort();
 
-  const magicCount = items.filter((i) => i.category === MAGIC_CATEGORY).length;
-  const advCount   = items.filter((i) => i.category !== MAGIC_CATEGORY).length;
+  const defaultCat = existingCategories[0] ?? activeTabCfg.defaultCategory;
 
   return (
     <>
       {showCreateModal && onCreateItem && (
         <CreateItemModal
-          categories={existingCategories.length ? existingCategories : [activeTab === 'magic' ? MAGIC_CATEGORY : 'Adventuring Gear']}
+          categories={existingCategories.length ? existingCategories : [defaultCat]}
           onCreateItem={onCreateItem}
           onClose={() => setShowCreateModal(false)}
         />
@@ -117,13 +150,13 @@ export function DmInventory({
 
         {/* Tabs */}
         <div className="flex items-end gap-0.5 shrink-0 overflow-x-auto border-b border-gray-600/40 mb-0">
-          {TABS.map((tab) => {
-            const count = tab.id === 'magic' ? magicCount : advCount;
-            const isActive = activeTab === tab.id;
+          {TAB_CONFIG.map(tab => {
+            const count = items.filter(tab.filter).length;
+            const isActive = activeTabId === tab.id;
             return (
               <button
                 key={tab.id}
-                onClick={() => { setActiveTab(tab.id); setSearch(''); }}
+                onClick={() => { setActiveTabId(tab.id); setSearch(''); }}
                 className={`
                   relative px-3 py-1.5 rounded-t-lg text-xs font-medium cursor-pointer
                   select-none transition-colors border-t border-l border-r shrink-0
@@ -168,7 +201,7 @@ export function DmInventory({
           <div className="flex-1 overflow-y-auto space-y-3 pr-1">
             {sortedCategories.length === 0 ? (
               <div className="text-center mt-10">
-                {activeTab === 'magic'
+                {activeTabId === 'magic'
                   ? (
                     <div className="space-y-2">
                       <p className="text-2xl">✨</p>

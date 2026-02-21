@@ -1,5 +1,5 @@
 export interface ItemStats {
-  cost: string | null;
+  cost: number | null;
   weight: string | null;
   damage_dice: string | null;
   damage_type: string | null;
@@ -16,6 +16,9 @@ export interface Item {
   id: string;
   name: string;
   category: string;
+  magic_category?: string | null;
+  rarity?: string | null;
+  requires_attunement?: boolean | null;
   icon?: string | null;
   stats: ItemStats | null;
 }

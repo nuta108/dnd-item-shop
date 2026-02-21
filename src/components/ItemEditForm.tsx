@@ -22,11 +22,16 @@ const emptyStats: ItemStats = {
   strength_required: null,
 };
 
+const RARITY_OPTIONS = ['', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary', 'Artifact', 'Varies'];
+
 export function ItemEditForm({ item, onSave, onDelete, onCancel }: ItemEditFormProps) {
   const [name, setName] = useState(item.name);
   const [category, setCategory] = useState(item.category);
   const [icon, setIcon] = useState(item.icon ?? '');
   const [stats, setStats] = useState<ItemStats>(item.stats ?? { ...emptyStats });
+  const [rarity, setRarity] = useState(item.rarity ?? '');
+  const [magicCategory, setMagicCat] = useState(item.magic_category ?? '');
+  const [attunement, setAttunement] = useState(item.requires_attunement ?? false);
   const [saving, setSaving] = useState(false);
   const [showIconBrowser, setShowIconBrowser] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
@@ -38,7 +43,15 @@ export function ItemEditForm({ item, onSave, onDelete, onCancel }: ItemEditFormP
   const handleSave = async () => {
     setSaving(true);
     try {
-      await onSave(item.id, { name, category, icon: icon || null, stats });
+      await onSave(item.id, {
+        name,
+        category,
+        icon: icon || null,
+        stats,
+        rarity: rarity || null,
+        magic_category: magicCategory || null,
+        requires_attunement: attunement || null,
+      });
       onCancel();
     } catch (err) {
       console.error('Save failed:', err);
@@ -111,7 +124,35 @@ export function ItemEditForm({ item, onSave, onDelete, onCancel }: ItemEditFormP
 
         <Field label="Name" value={name} onChange={setName} />
         <Field label="Category" value={category} onChange={setCategory} />
-        <Field label="Cost" value={stats.cost ?? ''} onChange={(v) => set('cost', v || null)} />
+
+        {/* Rarity */}
+        <div>
+          <label className="block font-bold text-[#7a200d] mb-0.5">Rarity</label>
+          <select
+            className="w-full rounded border border-amber-300 bg-amber-50 px-2 py-1 text-gray-900 text-sm"
+            value={rarity}
+            onChange={(e) => setRarity(e.target.value)}
+          >
+            {RARITY_OPTIONS.map(opt => (
+              <option key={opt} value={opt}>{opt || '— (none)'}</option>
+            ))}
+          </select>
+        </div>
+
+        {/* Magic Category */}
+        <Field label="Magic Category" value={magicCategory} onChange={setMagicCat} />
+
+        {/* Attunement */}
+        <div className="flex items-center gap-3">
+          <label className="font-bold text-[#7a200d]">Requires Attunement</label>
+          <input
+            type="checkbox"
+            checked={attunement}
+            onChange={(e) => setAttunement(e.target.checked)}
+          />
+        </div>
+
+        <CostField value={stats.cost} onChange={(v) => set('cost', v)} />
         <Field label="Weight" value={stats.weight ?? ''} onChange={(v) => set('weight', v || null)} />
         <Field label="Damage Dice" value={stats.damage_dice ?? ''} onChange={(v) => set('damage_dice', v || null)} />
         <Field label="Damage Type" value={stats.damage_type ?? ''} onChange={(v) => set('damage_type', v || null)} />
@@ -203,6 +244,26 @@ export function ItemEditForm({ item, onSave, onDelete, onCancel }: ItemEditFormP
         )}
       </div>
     </>
+  );
+}
+
+function CostField({ value, onChange }: { value: number | null; onChange: (v: number | null) => void }) {
+  return (
+    <div>
+      <label className="block font-bold text-[#7a200d] mb-0.5">Cost</label>
+      <div className="flex items-center gap-1.5">
+        <input
+          type="number"
+          min="0"
+          step="0.01"
+          className="flex-1 rounded border border-amber-300 bg-amber-50 px-2 py-1 text-gray-900 text-sm"
+          value={value ?? ''}
+          onChange={(e) => onChange(e.target.value === '' ? null : Number(e.target.value))}
+          placeholder="0"
+        />
+        <span className="text-sm font-semibold text-amber-800 shrink-0">gp</span>
+      </div>
+    </div>
   );
 }
 

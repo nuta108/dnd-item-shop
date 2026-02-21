@@ -2,6 +2,122 @@
 
 ---
 
+## Supporter Version v0.3.0 — Session 3
+
+**Date:** 2026-02-21
+
+---
+
+### สรุปสิ่งที่ทำในวันนี้
+
+---
+
+### 1. Inventory Panel แบ่งหมวดหมู่ใหม่
+
+- แบ่ง DM Inventory ออกเป็น 4 tab: Adventuring, Magic Items, Potions, และ อื่นๆ
+- ทำให้หา item ได้ง่ายขึ้นเมื่อ database โตขึ้นมาก
+
+---
+
+### 2. Rarity Glow System
+
+- ไอเทมที่มี rarity จะมีแสงเรืองรองรอบ icon ตาม tier:
+  - Common → สีขาว
+  - Uncommon → สีเขียว
+  - Rare → สีน้ำเงิน
+  - Very Rare → สีม่วง
+  - Legendary → สีส้มทอง
+  - Artifact → สีแดง
+
+---
+
+### 3. ระบบ Cost — เปลี่ยนเป็น number (gp เท่านั้น)
+
+- `cost` field เปลี่ยน type จาก `string | null` → `number | null`
+- db.json แปลงค่าทั้งหมด: `"15 gp"` → `15`, `"1 sp"` → `0.1`, `"5 cp"` → `0.05`
+- ItemCard แสดงผลเป็น `"X gp"` หรือ `"Free"` อัตโนมัติ
+- Edit form และ Create form ใช้ `<input type="number">` มี label "gp" ต่อท้าย — ไม่ต้องพิมพ์สกุลเงินเอง
+
+---
+
+### 4. เพิ่ม Items จาก Unused Icons — +818 items (227 → 1,045)
+
+v0.2.0 มีแค่ 227 items ตอนนี้ 1,045 items
+เขียน Python script match icon ที่เหลือกับ D&D items จริง โดยดึง description + rarity จาก 5etools JSON
+
+**Items ใหม่แยกตาม category:**
+
+| Category | จำนวน | ตัวอย่าง |
+|---|---|---|
+| Ammunition | 13 | Arrow/Bolt/Needle/Bullet แบบเดี่ยว, Adamantine/Silvered variants ทุกตัว |
+| Adventuring Gear | 21 | Ball Bearing, Caltrops, Crampons, Mallet, Sextant, Snowshoes... |
+| Armor | 4 | Goggles, Spiked Armor, Shield (Checked), Shield (Kite) |
+| Artisans Tools | 4 | Artisan Tools, Jeweler's Tools, Lockpicks, Tinker's Tools |
+| Books And Paper | 6 | Anatomy, Locked Book, Prayer Book, Book of Death/Lore/Shadows |
+| Clothes | 6 | Vestments, Wizard Hat, Hat with Feather, Cold Weather Clothing, Signet Rings |
+| Containers and Pouches | 3 | Coin Pouch, Hip Flask, Jar |
+| Food And Drink | 2 | Bottle of Wine, Herb |
+| Game Sets | 1 | Board Game |
+| Instruments | 4 | Bassoon, Horn, Tambourine, Wargong |
+| Magic Items | 36 | Ioun Stones (13 variants), Rings of Resistance (10), Robe of Archmagi Good/Neutral, Elemental Gems, Abracadabrus... |
+| Mount Equipment | 12 | Animal Deeds × 11 (Axe Beak, Camel, Elephant, Warhorse...) + Stabling |
+| Spell Casting Focus Items | 55 | Diamond Dust, Gilded Acorn, Ruby Vial with Human Blood, Silver Wire... |
+| Supply Kits | 7 | Burglar/Diplomat/Dungeoneer/Entertainer/Explorer/Priest's/Scholar Pack |
+| Vehicles | 10 | Siege weapons (Ballista, Trebuchet, Mangonel, Ram, Siege Tower, Cauldron) + Dogsled + Vehicle Deeds |
+| Weapons | 2 | Javelin Stack, Scythe |
+
+---
+
+### 2. อัปเดต Icon สำหรับ Items ที่มีอยู่แล้วแต่ icon = null
+
+อัปเดต 15 items เดิมที่ชื่อตรงแต่ยังไม่มี icon:
+
+- **Magic Tomes (11):** Alchemical Compendium, Atlas of Endless Horizons, Manual of Bodily Health/Gainful Exercise/Golems/Quickness, Tome of Clear Thought/Leadership/Understanding, Book of Exalted Deeds, Book of Vile Darkness
+- **Spell Components (1):** Crystal Ball
+- **Vehicles (3):** Airship, Rowboat, Sled → เปลี่ยนจาก `-Deed.svg` เป็น non-deed icon (สวยกว่า)
+
+---
+
+### 3. Icon Coverage
+
+| | ก่อน | หลัง |
+|---|---|---|
+| Icons ที่ใช้งาน | 526 (58%) | 724 (79%) |
+| Items ใน db.json | 859 | 1,045 |
+| Unused (generic, ตั้งใจข้าม) | — | 181 |
+| Unused (non-generic) | 382 | 3 |
+
+Icons 3 ตัวที่ยังเหลือ = Flask, Glass Bottle, Vial ใน Adventuring Gear folder
+(ซ้ำกับ items ที่มีอยู่แล้วซึ่งใช้ Potions folder icons → intentionally unused)
+
+---
+
+### 5. Version Bump + Cost System
+
+- `package.json`: `0.1.0` → `0.3.0`
+- `src/App.tsx`: version badge → `Supporter v0.3.0`
+- About modal: เพิ่ม "What's new in v0.3.0" section
+- `types/item.ts`: `cost: string | null` → `cost: number | null`
+- `db.json`: แปลงค่า cost ทั้งหมด 373 รายการ (gp/sp/cp → number gp)
+- `ItemCard.tsx`, `ItemEditForm.tsx`, `CreateItemModal.tsx`: อัปเดต cost field
+
+---
+
+### Supporter Version — Features Roadmap
+
+- [x] Up to 20 shops
+- [x] SVG Icon display mode
+- [x] Adjustable item size
+- [x] Inventory panel split by category
+- [x] Rarity glow on item icons
+- [x] Cost field — number only, gp fixed currency
+- [x] Expanded item database (227 → 1,045 items, icon coverage 79%)
+- [ ] Freely add & remove items
+- [ ] Custom item card images
+- [ ] Random item generator
+
+---
+
 ## Supporter Version v0.2.0 — Session 2
 
 **Branch:** `supporter-version`

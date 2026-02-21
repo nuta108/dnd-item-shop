@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import type { Item, ItemStats } from '../types/item';
 import { ItemEditForm } from './ItemEditForm';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 export type DisplayMode = 'icon' | 'text';
 
@@ -21,6 +23,15 @@ const SIZE_MAP = [
   { card: 132, icon: 70, text: '13px', textMode: '14px' },
 ];
 
+const RARITY_COLORS: Record<string, string> = {
+  'Common':    '#9ca3af',
+  'Uncommon':  '#22c55e',
+  'Rare':      '#3b82f6',
+  'Very Rare': '#a855f7',
+  'Legendary': '#f59e0b',
+  'Artifact':  '#ef4444',
+};
+
 // ── D&D Stat Block ────────────────────────────────────────────────────────────
 
 function Divider() {
@@ -36,7 +47,13 @@ function StatRow({ label, value }: { label: string; value: React.ReactNode }) {
   );
 }
 
-function StatBlock({ name, stats }: { name: string; stats: ItemStats }) {
+function StatBlock({ name, stats, rarity, requiresAttunement }: {
+  name: string;
+  stats: ItemStats;
+  rarity?: string | null;
+  requiresAttunement?: boolean | null;
+}) {
+  const rarityColor = rarity ? (RARITY_COLORS[rarity] ?? '#9ca3af') : null;
   return (
     <div
       className="w-72 max-h-[85vh] overflow-y-auto rounded shadow-2xl flex flex-col"
@@ -48,13 +65,19 @@ function StatBlock({ name, stats }: { name: string; stats: ItemStats }) {
         {stats.category_detail && (
           <p className="text-sm italic text-gray-600">{stats.category_detail}</p>
         )}
+        {rarity && (
+          <p className="text-sm font-semibold mt-0.5" style={{ color: rarityColor ?? undefined }}>{rarity}</p>
+        )}
       </div>
 
       <Divider />
 
       {/* Core stats */}
       <div className="px-4 space-y-1">
-        {stats.cost && <StatRow label="Cost" value={<span className="font-mono text-amber-800">{stats.cost}</span>} />}
+        {requiresAttunement && (
+          <StatRow label="Attunement" value={<span className="text-purple-700">Required</span>} />
+        )}
+        {stats.cost != null && <StatRow label="Cost" value={<span className="font-mono text-amber-800">{stats.cost === 0 ? 'Free' : `${stats.cost} gp`}</span>} />}
         {stats.weight && <StatRow label="Weight" value={stats.weight} />}
         {stats.damage_dice && (
           <StatRow
@@ -90,8 +113,17 @@ function StatBlock({ name, stats }: { name: string; stats: ItemStats }) {
       {stats.description && (
         <>
           <Divider />
-          <div className="px-4 pb-4">
-            <p className="text-sm text-gray-800 leading-relaxed">{stats.description}</p>
+          <div className="px-4 pb-4 text-sm text-gray-800
+            [&_p]:leading-relaxed [&_p]:mb-2 [&_p:last-child]:mb-0
+            [&_strong]:font-bold [&_em]:italic
+            [&_table]:w-full [&_table]:border-collapse [&_table]:text-xs [&_table]:my-2
+            [&_th]:border [&_th]:border-gray-400 [&_th]:bg-amber-100 [&_th]:px-2 [&_th]:py-0.5 [&_th]:text-left [&_th]:font-semibold
+            [&_td]:border [&_td]:border-gray-300 [&_td]:px-2 [&_td]:py-0.5
+            [&_tr:nth-child(even)_td]:bg-amber-50/60
+          ">
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              {stats.description}
+            </ReactMarkdown>
           </div>
         </>
       )}
@@ -107,6 +139,7 @@ export function ItemCard({ item, displayMode, itemSize = 3, dragSource, onEdit, 
   const [showModal, setShowModal] = useState(false);
   const [editing, setEditing] = useState(false);
   const sz = SIZE_MAP[Math.min(Math.max(itemSize - 1, 0), SIZE_MAP.length - 1)];
+  const rarityColor = item.rarity ? (RARITY_COLORS[item.rarity] ?? null) : null;
 
   return (
     <>
@@ -122,8 +155,8 @@ export function ItemCard({ item, displayMode, itemSize = 3, dragSource, onEdit, 
       >
         {displayMode === 'icon' ? (
           <div
-            className="bg-gray-800 rounded border border-gray-600 hover:border-gray-400 transition-colors p-2 flex flex-col items-center gap-1"
-            style={{ width: sz.card }}
+            className={`bg-gray-800 rounded border transition-colors p-2 flex flex-col items-center gap-1 ${!rarityColor ? 'border-gray-600 hover:border-gray-400' : ''}`}
+            style={{ width: sz.card, ...(rarityColor ? { borderColor: rarityColor, boxShadow: `0 0 8px 2px ${rarityColor}55, 0 0 2px 0px ${rarityColor}` } : {}) }}
           >
             {item.icon
               ? <img src={item.icon} alt={item.name} width={sz.icon} height={sz.icon} draggable={false} />
@@ -132,7 +165,10 @@ export function ItemCard({ item, displayMode, itemSize = 3, dragSource, onEdit, 
             <p className="text-gray-300 leading-tight text-center break-words w-full" style={{ fontSize: sz.text }}>{item.name}</p>
           </div>
         ) : (
-          <div className="bg-gray-800 rounded border border-gray-600 hover:border-gray-400 transition-colors px-2 py-1.5 text-center">
+          <div
+            className={`bg-gray-800 rounded border transition-colors px-2 py-1.5 text-center ${!rarityColor ? 'border-gray-600 hover:border-gray-400' : ''}`}
+            style={rarityColor ? { borderColor: rarityColor, boxShadow: `0 0 8px 2px ${rarityColor}55, 0 0 2px 0px ${rarityColor}` } : {}}
+          >
             <p className="text-gray-200" style={{ fontSize: sz.textMode }}>{item.name}</p>
           </div>
         )}
@@ -151,8 +187,12 @@ export function ItemCard({ item, displayMode, itemSize = 3, dragSource, onEdit, 
             {/* Left panel: icon panel (not shown in text mode) */}
             {displayMode === 'icon' && (
               <div
-                className="shrink-0 flex flex-col items-center gap-4 rounded-xl p-6 min-w-[180px] shadow-2xl border border-amber-800/50 overflow-visible"
-                style={{ background: 'linear-gradient(145deg, #1c1008, #111827)' }}
+                className="shrink-0 flex flex-col items-center gap-4 rounded-xl p-6 min-w-[180px] shadow-2xl border overflow-visible"
+                style={{
+                  background: 'linear-gradient(145deg, #1c1008, #111827)',
+                  borderColor: rarityColor ?? 'rgba(146, 64, 14, 0.5)',
+                  ...(rarityColor ? { boxShadow: `0 0 16px 2px ${rarityColor}40` } : {}),
+                }}
               >
                 {item.icon
                   ? <img
@@ -185,7 +225,7 @@ export function ItemCard({ item, displayMode, itemSize = 3, dragSource, onEdit, 
                 />
               ) : (
                 <div>
-                  {item.stats && <StatBlock name={item.name} stats={item.stats} />}
+                  {item.stats && <StatBlock name={item.name} stats={item.stats} rarity={item.rarity} requiresAttunement={item.requires_attunement} />}
                   {onEdit && (
                     <button
                       onClick={() => setEditing(true)}

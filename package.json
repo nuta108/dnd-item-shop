@@ -1,7 +1,7 @@
 {
   "name": "dnd-item-shop",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.3.0",
   "type": "module",
   "scripts": {
     "dev": "concurrently \"vite\" \"json-server db.json --port 3001\"",
@@ -16,7 +16,9 @@
     "concurrently": "^9.2.1",
     "json-server": "1.0.0-beta.6",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
